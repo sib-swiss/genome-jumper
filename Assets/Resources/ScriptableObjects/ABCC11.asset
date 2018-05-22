@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: ABCC11
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: ABCC11
+  geneFullName: ABCC11 - 80547 bp - Chr. 16
+  proteinLength: 1382
+  snp: C -> T (missense)
+  population: AsianBoth
+  geneDescENKey: "chromosomewalk : G\xE8ne impliqu\xE9 dans la qualit\xE9 de la cire
+    de nos oreilles. Les europ\xE9ens ont une cire d\u2019oreille humide et les japonais
+    ont une cire d\u2019oreille s\xE8che. game : Cire d'oreil et odeur. Interet pour
+    les pharmacies"
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-16/?g=cire-doreille
+  uniprotLink: https://www.uniprot.org/uniprot/Q96J66
+  nextprotLink: https://www.nextprot.org/entry/NX_Q96J66
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs17822931
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000356608
+  transcript: ENST00000356608
+  snpName: rs17822931
+  objectiveTimeSeconds: 94
+  score1Star: 7475
+  score2Stars: 9200
+  score3Stars: 10925

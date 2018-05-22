@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: AKT1
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: AKT1
+  geneFullName: AKT1 - 26435 bp - Chr. 14
+  proteinLength: 480
+  snp: T -> C (intron variant)
+  population: AllBoth
+  geneDescENKey: "chromosomewalk : G\xE8ne impliqu\xE9 dans l\u2019apparition d\u2019excroissance
+    de certains tissus. Certaines variations de ce g\xE8ne influencent l\u2019effet
+    du cannabis\u2026  game : more sensible to canabis"
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-14/?g=foisonnement-de-cellules
+  uniprotLink: https://www.uniprot.org/uniprot/P31749
+  nextprotLink: https://www.nextprot.org/entry/NX_P31749
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs2494732
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000349310
+  transcript: ENST00000349310
+  snpName: rs2494732
+  objectiveTimeSeconds: 38
+  score1Star: 4485
+  score2Stars: 5520
+  score3Stars: 6555

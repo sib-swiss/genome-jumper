@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: SH2B3
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: SH2B3
+  geneFullName: SH2B3 - 45694 bp - Chr. 12
+  proteinLength: 575
+  snp: C -> T (missense)
+  population: CaucasianBoth
+  geneDescENKey: "Chromosomewalk : G\xE8ne associ\xE9 avec une intol\xE9rance au gluten
+    (maladie coeliaque)."
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-12/?g=intolerance-au-gluten
+  uniprotLink: https://www.uniprot.org/uniprot/Q9UQQ2
+  nextprotLink: https://www.nextprot.org/entry/NX_Q9UQQ2
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs3184504
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000341259
+  transcript: ENST00000341259
+  snpName: rs3184504
+  objectiveTimeSeconds: 27
+  score1Star: 4567
+  score2Stars: 5620
+  score3Stars: 6674

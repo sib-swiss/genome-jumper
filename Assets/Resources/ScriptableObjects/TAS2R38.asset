@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: TAS2R38
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: TAS2R38
+  geneFullName: TAS2R38 - 1147 bp - Chr. 7
+  proteinLength: 333
+  snp: C -> G (missense)
+  population: AllBoth
+  geneDescENKey: "chromosomewalk : G\xE8nes codant pour des prot\xE9ines impliqu\xE9es
+    dans la perception des compos\xE9s amers au niveau de nos poumons (comme par exemple
+    le PTC, une substance retrouv\xE9e dans les brocolis). game : TAS2R38 is a bitter
+    taste receptor..."
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=un-gout-amer
+  uniprotLink: https://www.uniprot.org/uniprot/P59533
+  nextprotLink: https://www.nextprot.org/entry/NX_P59533
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs713598
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000547270
+  transcript: ENST00000547270
+  snpName: rs713598
+  objectiveTimeSeconds: 18
+  score1Star: 6728
+  score2Stars: 8280
+  score3Stars: 9833

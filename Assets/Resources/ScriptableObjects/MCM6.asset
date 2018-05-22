@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: MCM6
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: MCM6
+  geneFullName: MCM6 - 36837 bp - Chr. 2
+  proteinLength: 821
+  snp: T -> C (intron variant)
+  population: CaucasianBoth
+  geneDescENKey: "Chromosomewalk : G\xE8ne associ\xE9 avec une intol\xE9rance au lactose.
+    Il influence l\u2019expression de la lactase au cours de la vie. game : no milk"
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-lorigine-des-flatulences
+  uniprotLink: https://www.uniprot.org/uniprot/Q14566
+  nextprotLink: https://www.nextprot.org/entry/NX_Q14566
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs4988235
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000264156
+  transcript: ENST00000264156
+  snpName: rs4988235
+  objectiveTimeSeconds: 51
+  score1Star: 7215
+  score2Stars: 8880
+  score3Stars: 10545

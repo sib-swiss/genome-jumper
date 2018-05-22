@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: PER2
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: PER2
+  geneFullName: PER2 - 44620 bp - Chr. 2
+  proteinLength: 1255
+  snp: A -> G (missense)
+  population: AllBoth
+  geneDescENKey: "Chromosomewalk : G\xE8ne impliqu\xE9 dans nos rythmes biologiques
+    journaliers. Des variations dans ce g\xE8ne sont li\xE9es \xE0 une r\xE9sistance
+    plus ou moins grande au manque de sommeil."
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=une-horloge-dans-la-peau
+  uniprotLink: https://www.uniprot.org/uniprot/O15055
+  nextprotLink: https://www.nextprot.org/entry/NX_O15055
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs121908635
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000254657
+  transcript: ENST00000254657
+  snpName: rs121908635
+  objectiveTimeSeconds: 78
+  score1Star: 11895
+  score2Stars: 14640
+  score3Stars: 17385

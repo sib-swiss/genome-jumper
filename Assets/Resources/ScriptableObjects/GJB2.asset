@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: GJB2
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: GJB2
+  geneFullName: GJB2 - 5435 bp - Chr. 13
+  proteinLength: 226
+  snp: G -> - (frameshift)
+  population: AllBoth
+  geneDescENKey: "chromosomewalk : G\xE8ne associ\xE9 \xE0 une surdit\xE9 cong\xE9nitale.
+    game : Il gagne un appareil auditif"
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-13/?g=baisse-le-son
+  uniprotLink: https://www.uniprot.org/uniprot/P29033
+  nextprotLink: https://www.nextprot.org/entry/NX_P29033
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs80338939
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000382848
+  transcript: ENST00000382848
+  snpName: rs80338939
+  objectiveTimeSeconds: 15
+  score1Star: 4095
+  score2Stars: 5040
+  score3Stars: 5985

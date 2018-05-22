@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: CYP1A2
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: CYP1A2
+  geneFullName: CYP1A2 - 7375 bp - Chr. 15
+  proteinLength: 516
+  snp: C -> A (intron variant)
+  population: AllBoth
+  geneDescENKey: "chromosomewalk : G\xE8ne impliqu\xE9 dans la d\xE9gradation de certaines
+    mol\xE9cules, dont la caf\xE9ine. game : cafe"
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-15/?g=degradation-moleculaire
+  uniprotLink: https://www.uniprot.org/uniprot/P05177
+  nextprotLink: https://www.nextprot.org/entry/NX_P05177
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs762551
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000343932
+  transcript: ENST00000343932
+  snpName: rs762551
+  objectiveTimeSeconds: 30
+  score1Star: 6338
+  score2Stars: 7800
+  score3Stars: 9263

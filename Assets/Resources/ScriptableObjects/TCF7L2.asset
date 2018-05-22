@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: TCF7L2
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: TCF7L2
+  geneFullName: TCF7L2 - 217461 bp - Chr. 10
+  proteinLength: 619
+  snp: C -> T (intron variant)
+  population: CaucasianBoth
+  geneDescENKey: "chromosomewalk : G\xE8ne impliqu\xE9 dans l\u2019apparition d\u2019un
+    diab\xE8te de type 2."
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=resistance-a-linsuline
+  uniprotLink: https://www.uniprot.org/uniprot/Q9NQB0
+  nextprotLink: https://www.nextprot.org/entry/NX_Q9NQB0
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs7903146
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000355995
+  transcript: ENST00000355995
+  snpName: rs7903146
+  objectiveTimeSeconds: 71
+  score1Star: 7232
+  score2Stars: 8900
+  score3Stars: 10569

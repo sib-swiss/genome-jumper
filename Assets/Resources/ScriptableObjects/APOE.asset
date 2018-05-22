@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: APOE
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: APOE
+  geneFullName: APOE - 3650 bp - Chr. 19
+  proteinLength: 317
+  snp: T -> C (missense)
+  population: CaucasianBoth
+  geneDescENKey: "chromosomewalk : G\xE8ne codant pour une prot\xE9ine qui transporte
+    les graisses dans notre sang et qui peut pr\xE9disposer \xE0 la maladie d\u2019Alzheimer.
+    game : Alzheimer"
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-19/?g=un-taxi-pour-nos-graisses
+  uniprotLink: https://www.uniprot.org/uniprot/P02649
+  nextprotLink: https://www.nextprot.org/entry/NX_P02649
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs429358
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000252486
+  transcript: ENST00000252486
+  snpName: rs429358
+  objectiveTimeSeconds: 20
+  score1Star: 3445
+  score2Stars: 4240
+  score3Stars: 5035

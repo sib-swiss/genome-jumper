@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: SLC24A5
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: SLC24A5
+  geneFullName: SLC24A5 - 21721 bp - Chr. 15
+  proteinLength: 500
+  snp: G -> A (missense)
+  population: AllBoth
+  geneDescENKey: "Chromosomewalk : G\xE8ne impliqu\xE9 dans la synth\xE8se de la m\xE9lanine,
+    un pigment que l\u2019on retrouve dans notre peau, nos cheveux et l\u2019iris
+    de nos yeux. game : This genes is responsible for light skin"
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-15/?g=la-couleur-de-la-peau
+  uniprotLink: https://www.uniprot.org/uniprot/Q71RS6
+  nextprotLink: https://www.nextprot.org/entry/NX_Q71RS6
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs1426654
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000341459
+  transcript: ENST00000341459
+  snpName: rs1426654
+  objectiveTimeSeconds: 30
+  score1Star: 6533
+  score2Stars: 8040
+  score3Stars: 9548

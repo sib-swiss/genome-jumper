@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: PCDH15
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: PCDH15
+  geneFullName: PCDH15 - 993246 bp - Chr. 10
+  proteinLength: 650
+  snp: C -> T (stop)
+  population: AllBoth
+  geneDescENKey: "Chromosomewalk : G\xE8ne associ\xE9 \xE0 une surdit\xE9 cong\xE9nitale
+    et \xE0 une perte de la vision. game : Usher syndrome un gars avec lunette noir
+    et appareil auditif..."
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=baisse-le-son-et-la-vue
+  uniprotLink: https://www.uniprot.org/uniprot/Q96QU1
+  nextprotLink: https://www.nextprot.org/entry/NX_Q96QU1
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs111033260
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000395442
+  transcript: ENST00000395442
+  snpName: rs111033260
+  objectiveTimeSeconds: 120
+  score1Star: 17063
+  score2Stars: 21000
+  score3Stars: 24938

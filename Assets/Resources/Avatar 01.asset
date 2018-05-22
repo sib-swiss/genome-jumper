@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb190f00d77ab2b4c9b18aa91c185a56, type: 3}
+  m_Name: Avatar 01
+  m_EditorClassIdentifier: 
+  levelName: Charles
+  levelThumbnail: {fileID: 2800000, guid: b723908d8f0b613408f73e117e11f5d6, type: 3}
+  avatarImg1: {fileID: 2800000, guid: 589d61bb4281c7f4d94ee568e81eaea1, type: 3}
+  avatarImg2: {fileID: 2800000, guid: 6f220fff5221a81429b1e33906574ff3, type: 3}
+  avatarImg3: {fileID: 2800000, guid: 63f856c3712b9ba46b32a6989bbfe72a, type: 3}
+  gene1: SLC24A5
+  gene2: AR
+  gene3: CYP1A2
+  population: CaucasianMale

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: SERPINE1
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: SERPINE1
+  geneFullName: SERPINE1 - 12198 bp - Chr. 7
+  proteinLength: 402
+  snp: '- -> TA (frameshift)'
+  population: CaucasianBoth
+  geneDescENKey: correlates with increased age in amish population
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=vivre-longtemps
+  uniprotLink: https://www.uniprot.org/uniprot/P05121
+  nextprotLink: https://www.nextprot.org/entry/NX_P05121
+  pubmedLink: 
+  snpediaLink: 
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000223095
+  transcript: ENST00000223095
+  snpName: '-'
+  objectiveTimeSeconds: 27
+  score1Star: 4567
+  score2Stars: 5620
+  score3Stars: 6674

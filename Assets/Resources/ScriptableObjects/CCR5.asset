@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: CCR5
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: CCR5
+  geneFullName: CCR5 - 5359 bp - Chr. 3
+  proteinLength: 352
+  snp: '? -> ? (frameshift)'
+  population: AllBoth
+  geneDescENKey: "Chromosomewalk : G\xE8ne codant pour un r\xE9cepteur \xE0 une cytokine.
+    Certaines versions du g\xE8ne sont associ\xE9es avec une r\xE9sistance \xE0 l\u2019infection
+    par le virus du SIDA. game : Resitance to HIV, in principle we will not include
+    it!"
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-3/?g=stop-sida
+  uniprotLink: https://www.uniprot.org/uniprot/P51681
+  nextprotLink: https://www.nextprot.org/entry/NX_P51681
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs333
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000292303
+  transcript: ENST00000292303
+  snpName: rs333
+  objectiveTimeSeconds: 22
+  score1Star: 4583
+  score2Stars: 5640
+  score3Stars: 6698

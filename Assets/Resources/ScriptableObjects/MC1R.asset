@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: MC1R
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: MC1R
+  geneFullName: MC1R - 7566 bp - Chr. 16
+  proteinLength: 382
+  snp: C -> T (missense)
+  population: CaucasianBoth
+  geneDescENKey: "chromosomewalk : G\xE8ne impliqu\xE9 dans la couleur de la peau,
+    des cheveux (roux) et des yeux. Curieusement, il influence \xE9galement l\u2019efficacit\xE9
+    de certains anesth\xE9siants utilis\xE9s par les dentistes. game : red hair"
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-16/?g=pigmenter
+  uniprotLink: https://www.uniprot.org/uniprot/Q01726
+  nextprotLink: https://www.nextprot.org/entry/NX_Q01726
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs1805007
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000555427
+  transcript: ENST00000555427
+  snpName: rs1805007
+  objectiveTimeSeconds: 28
+  score1Star: 5363
+  score2Stars: 6600
+  score3Stars: 7838

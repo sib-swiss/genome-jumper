@@ -1,0 +1,22 @@
+{
+	"sceneObjects": [
+		{ "machineName":"utr", "x":0, "y":1, "z":0, "scale":5 }
+		{ "machineName":"exon", "x":5, "y":1, "z":0, "scale":10 }
+		{ "machineName":"start_codon", "x":15, "y":1, "z":0, "scale":0.75 }
+		{ "machineName":"exon", "x":15.75, "y":1, "z":0, "scale":10 }
+		{ "machineName":"snp", "x":25.75, "y":1, "z":0, "scale":0.25, "prefab1":"A","prefab2":"G" }
+		{ "machineName":"exon", "x":26, "y":1, "z":0, "scale":10 }
+		{ "machineName":"small-intron", "x":36, "y":1, "z":0, "scale":1 }
+		{ "machineName":"exon", "x":37, "y":1, "z":0, "scale":5 }
+		{ "machineName":"medium-intron", "x":42, "y":1, "z":0, "scale":1 }
+		{ "machineName":"exon", "x":47, "y":1, "z":0, "scale":5 }
+		{ "machineName":"large-intron", "x":52, "y":1, "z":0, "scale":1 }
+		{ "machineName":"exon", "x":62, "y":1, "z":0, "scale":5 }
+		{ "machineName":"big-intron", "x":67, "y":1, "z":0, "scale":1 }
+		{ "machineName":"exon", "x":87, "y":1, "z":0, "scale":5 }
+		{ "machineName":"huge-intron", "x":92, "y":1, "z":0, "scale":1 }
+		{ "machineName":"exon", "x":142, "y":1, "z":0, "scale":5 }
+		{ "machineName":"stop_codon", "x":147, "y":1, "z":0, "scale":0.75,"prefab":"UAA" }
+		{ "machineName":"utr", "x":147.75, "y":1, "z":0, "scale":5 }
+	]
+}

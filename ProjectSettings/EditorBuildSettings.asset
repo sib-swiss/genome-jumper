@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Plugins Ext_/CorgiEngine/Common/SplashScreen.unity
+    guid: 7b96552fd1198fa4eaae54a2f975645e
+  - enabled: 0
+    path: Assets/Plugins Ext_/CorgiEngine/Common/StartScreen.unity
+    guid: b9cf7e391a5874f80a0485164885fe54
+  - enabled: 0
+    path: Assets/Plugins Ext_/CorgiEngine/Common/LoadingScreen.unity
+    guid: 0564d059eb6550c49a366517853b04dd
+  - enabled: 1
+    path: Assets/SIB Scenes/Menu.unity
+    guid: da339c27f7d29b747b0bbcdfc5538370
+  - enabled: 1
+    path: Assets/SIB Scenes/AboutSIB.unity
+    guid: 47e87c829436f8149b81ebe559f4408f
+  - enabled: 1
+    path: Assets/SIB Scenes/Glossaire.unity
+    guid: 6bbff7bddb57c5b489603b6c7bead860
+  - enabled: 1
+    path: Assets/SIB Scenes/Credits.unity
+    guid: 46045734747e9664fad1e55280d648a0
+  - enabled: 1
+    path: Assets/SIB Scenes/Options.unity
+    guid: 3885204ba4624664992743e0e12fe3ff
+  - enabled: 1
+    path: Assets/SIB Scenes/Loading.unity
+    guid: 7cb9fbec16f22de4b94fe189189375af
+  - enabled: 1
+    path: Assets/SIB Scenes/TOS.unity
+    guid: 10c1244bba29f0547871b5b50b4feb1c
+  - enabled: 1
+    path: Assets/SIB Scenes/AboutGame.unity
+    guid: b20818f12b2bf1e48aeaec4af61a23be
+  - enabled: 1
+    path: Assets/SIB Scenes/Tutorial.unity
+    guid: e00c7ceab258df74c82f30a0c5704e8c
+  - enabled: 1
+    path: Assets/SIB Scenes/LevelSelection.unity
+    guid: d8aeb18678ab51048a960e8b9c1c2134
+  - enabled: 1
+    path: Assets/SIB Scenes/Settings.unity
+    guid: 62e443d9e81be0e4a8e80e5e65ea42af
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/SLC24A5.unity
+    guid: 4984cdc0eeeac4a48bfdd27dba7ee159
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/ALDH2.unity
+    guid: 1a91bd34dbfbfc847b3ec0977d8437cd
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/AR.unity
+    guid: fb4f065c1f9f7d0479d7068478926120
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/CYP1A2.unity
+    guid: 6940fc370bc1baa49a53a7e88279fc32
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/EDAR.unity
+    guid: f1cb0eee92dad9141aace92b9b3e0d1c
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/EPOR.unity
+    guid: 3349d4b9b3d221d4aa5c32412633f4df
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/ABCC11.unity
+    guid: 05793753996033d4baf160c7e94d0421
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/ABO.unity
+    guid: 95f2dcf05e0b0aa4f9517487a1181c1c
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/ACTN3.unity
+    guid: 7ed61d6257846b84c9ba5c51dd982e03
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/AKT1.unity
+    guid: 5af8c86405f1174488388bb3dbb191d0
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/APOE.unity
+    guid: 9ed1635f237cafa42a89d633be67aac5
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/BRAF.unity
+    guid: 82a1a2dc32cf2ec4a8a6528640e8f1a6
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/BRCA1.unity
+    guid: a059a792945cad14db2df34eee3ac2b7
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/CCR5.unity
+    guid: f04ec946cbbfd534b9c09d74bb9534f9
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/FGFR3.unity
+    guid: 50f9645a8a061a2478def29ee61256ae
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/FOXO3.unity
+    guid: b3237aeeeb8da1947a6575481fff2d5f
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/FOXO3Alternate.unity
+    guid: 8b33bbac2c3fa964b86421169afabab2
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/GJB2.unity
+    guid: 8f8ed613295b57a4ea343effca376460
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/HBB.unity
+    guid: 7f246e899687b8949b2065d396b1a165
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/HERC2.unity
+    guid: 372d915df0210194ab0e0b3975769a46
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/LCT.unity
+    guid: 445620d7a217c784b8179ecba5374782
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/MC1R.unity
+    guid: 369e90b399fa0a04fb251f0e162979e1
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/MCM6.unity
+    guid: ec15e58876560434bacff01b25247080
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/OCA2.unity
+    guid: 102e4d1edf0724f4aa3c520ede0b5324
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/OPN1MW.unity
+    guid: 803c8c2a2d904744da0013605b4388b8
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/OPN4.unity
+    guid: 0890e67ce523e664f8566aea43e79ef4
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/OR2J3.unity
+    guid: d0cf11ab8f4bdfe4da6b685832d5f773
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/PCDH15.unity
+    guid: d334da4c7a91e174c8c99fe3125aad28
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/SERPINE1.unity
+    guid: 0d154d9f8bf1d5b4488a290b6674bef9
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/SH2B3.unity
+    guid: fae68b602ab94e44c8ab126c53a227dd
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/SLC45A2.unity
+    guid: 6ac01bac213275143ac9ea838fc48fed
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/SMARCAD1.unity
+    guid: 22adb6d5de556414884b41245d5a0d7b
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/TCF7L2.unity
+    guid: 3bc246c72da1c374d8e86dee70a21054
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/TCHH.unity
+    guid: 5ba85b54332bdae42bcd6d2caca28aad
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/PER2.unity
+    guid: 9d211bb32a77479489f0c40dae3ab38c
+  - enabled: 1
+    path: Assets/SIB Scenes/Genes/TAS2R38.unity
+    guid: d1bed405ebf0720408e046797accf700

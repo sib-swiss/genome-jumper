@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: EPOR
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: EPOR
+  geneFullName: EPOR - 7126 bp - Chr. 19
+  proteinLength: 508
+  snp: G -> A (stop)
+  population: AllBoth
+  geneDescENKey: "chromosomewalk : G\xE8ne codant pour le r\xE9cepteur de l\u2019EPO,
+    une hormone impliqu\xE9e dans la fabrication des globules rouges. Des variations
+    dans ce g\xE8ne sont associ\xE9es avec un taux \xE9lev\xE9 de globules rouges
+    dans le sang. Un athl\xE8te finlandais, Eero M\xE4ntyranta, porteur d\u2019une
+    de ces variations, a gagn\xE9 une m\xE9daille d\u2019or aux Jeux Olympiques d\u2019hiver
+    en 1964. \xC9tait-il avantag\xE9? game : beaucoup de globule rouge"
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-19/?g=medailles-olympiques
+  uniprotLink: https://www.uniprot.org/uniprot/P19235
+  nextprotLink: https://www.nextprot.org/entry/NX_P19235
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs121918116
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000222139
+  transcript: ENST00000222139
+  snpName: rs121918116
+  objectiveTimeSeconds: 24
+  score1Star: 9848
+  score2Stars: 12120
+  score3Stars: 14393

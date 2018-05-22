@@ -1,0 +1,23 @@
+{"lvlParams":[{
+		"LvlName" : "Gene01",
+		"ObjectiveTime" : 30,
+		"Score1Star" : 1000,
+		"Score2Stars" : 1800,
+		"Score3Stars" : 2100
+	},
+	{
+		"LvlName" : "Gene02",
+		"ObjectiveTime" : 320,
+		"Score1Star" : 1000,
+		"Score2Stars" : 2000,
+		"Score3Stars" : 3000
+	},
+	{
+		"LvlName" : "Gene03",
+		"ObjectiveTime" : 420,
+		"Score1Star" : 1000,
+		"Score2Stars" : 2000,
+		"Score3Stars" : 3000
+	}]
+}
+

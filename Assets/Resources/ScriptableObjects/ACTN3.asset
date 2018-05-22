@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: ACTN3
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: ACTN3
+  geneFullName: ACTN3 - 16976 bp - Chr. 11
+  proteinLength: 944
+  snp: T -> C (stop)
+  population: AllBoth
+  geneDescENKey: "Chromosomewalk : G\xE8ne codant pour une prot\xE9ine importante
+    pour la structure des muscles sollicit\xE9s lors d\u2019efforts rapides et intenses.
+    Environ 18 % de la population poss\xE8de une prot\xE9ine ACTN3 plus courte: cette
+    variation est associ\xE9e avec une meilleure endurance physique! game : muscle? "
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=medailles-olympiques
+  uniprotLink: https://www.uniprot.org/uniprot/Q08043
+  nextprotLink: https://www.nextprot.org/entry/NX_Q08043
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs1815739
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000502692
+  transcript: ENST00000502692
+  snpName: rs1815739
+  objectiveTimeSeconds: 66
+  score1Star: 5688
+  score2Stars: 7000
+  score3Stars: 8313

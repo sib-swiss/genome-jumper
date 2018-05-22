@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a3a0bf329c56a43808e70b9593a8df, type: 3}
+  m_Name: BRCA1
+  m_EditorClassIdentifier: 
+  geneImg: {fileID: 0}
+  geneName: BRCA1
+  geneFullName: BRCA1 - 81124 bp - Chr. 17
+  proteinLength: 1863
+  snp: '- -> G (frameshift)'
+  population: AllFemale
+  geneDescENKey: "Chromosomewalk : G\xE8ne impliqu\xE9 dans la prolif\xE9ration des
+    cellules et associ\xE9 en particulier au cancer du sein."
+  chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-17/?g=foisonnement-de-cellules
+  uniprotLink: https://www.uniprot.org/uniprot/P38398
+  nextprotLink: https://www.nextprot.org/entry/NX_P38398
+  pubmedLink: 
+  snpediaLink: https://www.snpedia.com/index.php/rs80357914
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000357654
+  transcript: ENST00000357654
+  snpName: rs80357914
+  objectiveTimeSeconds: 84
+  score1Star: 11245
+  score2Stars: 13840
+  score3Stars: 16435

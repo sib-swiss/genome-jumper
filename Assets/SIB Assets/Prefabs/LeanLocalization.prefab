@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1517072911406830}
+  m_IsPrefabParent: 1
+--- !u!1 &1517072911406830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4531229412425454}
+  - component: {fileID: 114230109523964064}
+  - component: {fileID: 114988448502085720}
+  - component: {fileID: 114669974430493188}
+  - component: {fileID: 114964543323604654}
+  m_Layer: 0
+  m_Name: LeanLocalization
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4531229412425454
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517072911406830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114230109523964064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517072911406830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultLanguage: 
+  DetectLanguage: 1
+  SaveLanguage: 1
+  Languages:
+  - German
+  - English
+  - French
+  Cultures:
+  - Language: French
+    Alias: fr
+  - Language: French
+    Alias: fr-FR
+  - Language: French
+    Alias: fr-BE
+  - Language: French
+    Alias: fr-CA
+  - Language: French
+    Alias: fr-CH
+  - Language: French
+    Alias: fr-LU
+  - Language: French
+    Alias: fr-MC
+  - Language: German
+    Alias: de
+  - Language: German
+    Alias: de-DE
+  - Language: German
+    Alias: de-CH
+  - Language: German
+    Alias: de-AT
+  - Language: German
+    Alias: de-LU
+  - Language: German
+    Alias: de-LI
+  - Language: English
+    Alias: en
+  - Language: English
+    Alias: en-GB
+  - Language: English
+    Alias: en-US
+  - Language: English
+    Alias: en-AU
+  - Language: English
+    Alias: en-CA
+  - Language: English
+    Alias: en-NZ
+  - Language: English
+    Alias: en-IE
+  - Language: English
+    Alias: en-ZA
+  - Language: English
+    Alias: en-JM
+  - Language: English
+    Alias: en-en029
+  - Language: English
+    Alias: en-BZ
+  - Language: English
+    Alias: en-TT
+  - Language: English
+    Alias: en-ZW
+  - Language: English
+    Alias: en-PH
+  Phrases: []
+--- !u!114 &114669974430493188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517072911406830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086ae75064fca9f46b315403da7f5d20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  Source: {fileID: 4900000, guid: 091b0f4e177771c47b242169159f44f8, type: 3}
+  SourceLanguage: English
+  Separator: ' = '
+  NewLine: \n
+  Comment: ' // '
+--- !u!114 &114964543323604654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517072911406830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086ae75064fca9f46b315403da7f5d20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  Source: {fileID: 4900000, guid: e9cc46df1f690b84cbe2aafeb34f8527, type: 3}
+  SourceLanguage: German
+  Separator: ' = '
+  NewLine: \n
+  Comment: ' // '
+--- !u!114 &114988448502085720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517072911406830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086ae75064fca9f46b315403da7f5d20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  Source: {fileID: 4900000, guid: 9e6437d9338fb3747b6697ce82b95461, type: 3}
+  SourceLanguage: French
+  Separator: ' = '
+  NewLine: \n
+  Comment: ' // '
