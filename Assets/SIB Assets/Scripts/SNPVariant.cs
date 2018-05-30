@@ -34,7 +34,8 @@ public class SNPVariant : MonoBehaviour {
 	private GameObject[] rightHandItems;
 	private GameObject pointsText;
 	public GameObject particles;
-	public GameObject SnpPlateforme;
+    public GameObject snpBubble;
+    public GameObject SnpPlateforme;
 	public GameObject SnpReplace;
 
     public bool SnpTriggered = false;
@@ -76,6 +77,7 @@ public class SNPVariant : MonoBehaviour {
 		pointsText = GameObject.Find("PointsText");
 		thisSpriteRenderer = GetComponent<SpriteRenderer>();
 		snpPlateformOrigin = SnpPlateforme.transform.position;
+        snpBubble = GameObject.Find("SnpBubble");
         HeadItemPersistency = PlayerPrefs.GetString("CurrentGeneHeadItem");
         HandItemPersistency = PlayerPrefs.GetString("CurrentGeneHandItem");
         SkinVariantPersistency = PlayerPrefs.GetString("CurrentGeneSkinModification");
@@ -86,8 +88,6 @@ public class SNPVariant : MonoBehaviour {
         isFirstGeneOfAvatar = PlayerPrefs.GetString("IsFirstGeneOfAvatar");
         currentAvatar = PlayerPrefs.GetInt("CombinationPlayAvatar");
         audio = GameObject.Find("Global").GetComponent<AudioSource>();
-
-        Debug.Log("Debug hand : " + HandItemPersistency);
 
         if(PlayerPrefs.GetString("PlayerTookSNP") == "true") {
             if (sceneName == "AKT1" || sceneName == "CYP1A2" || sceneName == "HERC2" || sceneName == "FOXO3" || sceneName == "MCM6" || sceneName == "TCF7L2") {
@@ -104,15 +104,7 @@ public class SNPVariant : MonoBehaviour {
                 if (sceneName == "AKT1") { SuperVariantEffects.transform.GetChild(1).gameObject.SetActive(true); }
                 if (sceneName == "PCDH15") { SuperVariantEffects.transform.GetChild(2).gameObject.SetActive(true);  }
             }
-            if (PlayerPrefs.GetString("Difficulty") == "hard") {
-                transform.position = new Vector3(Player.transform.position.x, (Player.transform.position.y - 1.3f), Player.transform.position.z);
-            }
-            else if (PlayerPrefs.GetString("Difficulty") == "medium") {
-                transform.position = new Vector3(Player.transform.position.x, (Player.transform.position.y - 0.8f), Player.transform.position.z);
-            }
-            else {
-                transform.position = new Vector3(Player.transform.position.x, (Player.transform.position.y), Player.transform.position.z);
-            }
+                transform.position = new Vector3(0, 0, 0);
         }
 
         if(currentAvatar == 21) {
@@ -259,7 +251,6 @@ public class SNPVariant : MonoBehaviour {
 					}
 
 					if (HandItemPersistency != null) {
-                        Debug.Log("Test if : " + HandItemPersistency);
 						for (int i = 0; i < GameObject.Find("Right Hand Item Container").transform.childCount; i++) {
 							if (HandItemPersistency == "HandMask") { GameObject.Find("Right Hand Item Container").transform.GetChild(0).gameObject.SetActive(true); }
 							if (HandItemPersistency == "InsulineSyringue") { GameObject.Find("Right Hand Item Container").transform.GetChild(1).gameObject.SetActive(true); }

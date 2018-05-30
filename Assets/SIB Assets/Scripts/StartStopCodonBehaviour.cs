@@ -29,15 +29,7 @@ public class StartStopCodonBehaviour : MonoBehaviour {
         pointsText = GameObject.Find("PointsText");
         thisSpriteRenderer = GetComponent<SpriteRenderer>();
 		if(PlayerPrefs.GetString("PlayerTookStart").Equals("true") && transform.name.Equals("StartBubble")) {
-			if(PlayerPrefs.GetString("Difficulty").Equals("hard")) {
-                transform.position = new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, (GameObject.FindGameObjectWithTag("Player").transform.position.y - 1.3f), GameObject.FindGameObjectWithTag("Player").transform.position.z);
-            }
-			else if (PlayerPrefs.GetString("Difficulty").Equals("medium")) {
-                transform.position = new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, (GameObject.FindGameObjectWithTag("Player").transform.position.y - 0.8f), GameObject.FindGameObjectWithTag("Player").transform.position.z);
-            }
-            else {
-                transform.position = new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, (GameObject.FindGameObjectWithTag("Player").transform.position.y), GameObject.FindGameObjectWithTag("Player").transform.position.z);
-            }
+            transform.position = new Vector3(0, 0, 0);
             Debug.Log(transform.position + " v " + GameObject.FindGameObjectWithTag("Player").transform.position);
         }
     }

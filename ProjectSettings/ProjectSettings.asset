@@ -128,7 +128,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 2.2
+  bundleVersion: 2.3
   preloadedAssets:
   - {fileID: 4800000, guid: 6ab8493603d8f8e408750b81666a95f1, type: 3}
   - {fileID: 10900000, guid: c83956915580e42489479d2a109470ab, type: 3}
@@ -170,7 +170,7 @@ PlayerSettings:
     tvOS: com.reuno.corgienginetechdemo
   buildNumber:
     iOS: 0
-  AndroidBundleVersionCode: 13
+  AndroidBundleVersionCode: 14
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -253,7 +253,7 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/keystore/user.keystore
+  AndroidKeystoreName: C:/keystores/user.keystore
   AndroidKeyaliasName: sib
   AndroidTVCompatibility: 0
   AndroidIsGame: 1

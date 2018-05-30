@@ -4,12 +4,12 @@ gene-abo-text = Le gène ABO code pour une protéine qui influence les groupes s
 gene-abo-short-text = Ton groupe sanguin est du type B!
 gene-actn3-text = Le gène ACTN3 code pour une protéine active dans les muscles du squelette; elle influence leur puissance "explosive". Les porteurs du variant T (env. 17-25% de la population humaine) ont moins de puissance musculaire, un sprint moins performant et une endurance augmentée. En revanche, les porteurs du variant C ont une plus grande force musculaire. Seul 2 à 3% de variabilité pour le sprint est expliqué par le variant C, mais un régime et de l'entraînement contribuent beaucoup à la performance.
 gene-actn3-short-text = Tu as des super muscles!
-gene-aldh2-text = Le gène ALDH2 code pour une protéine qui métabolise l'alcool. Les porteurs du variant A sont sensibilisés à l'alcool. Ils sont plus enclins à avoir de sévères gueules de bois ou des rougeurs sur le visage et le cou. Le variant A est sur-représenté chez les asiatiques mais on ne sait pas pourquoi...
+gene-aldh2-text = Le gène ALDH2 code pour une protéine qui métabolise l'alcool. Les porteurs du variant A sont plus sensibles à l'alcool. Ils sont plus enclins à avoir de sévères gueules de bois ou des rougeurs sur le visage et le cou. Le variant A est sur-représenté chez les asiatiques mais on ne sait pas pourquoi...
 gene-aldh2-short-text = Tu es peut-être très sensible à l'alcool!
 gene-apoe-text = Le gène APOE code pour une protéine qui influence le métabolisme du cholestérol dans le foie et le cerveau. Le variant C est associé au risque de développer l'Alzheimer tardivement. L'effet observé est moins sévère chez les africains que chez les caucasiens et les asiatiques, parce que les taux de cholestérol chez les africains sont plus bas.
 gene-apoe-short-text = Cette mutation est associée à un risque possible d'Alzheimer.
 gene-ar-text = Le gène AR code pour une protéine qui se lie à l'androgène, une hormone mâle. L'androgène influence le développement de traits mâles ainsi que la pousse des cheveux. Le variant G augmente le risque de calvitie mais il faut la présence d'autres variants aussi. 
-gene-ar-short-text = Oups! Tu perds tes cheveux!
+gene-ar-short-text = Oups, tu perds tes cheveux!
 gene-braf-text = Le gène BRAF code pour une protéine impliquée dans la prolifération cellulaire. Le variant A augmente l'activité de la protéine BRAF. Le gène BRAF est muté dans 40-60% de mélanomes de la peau. Les médicaments ciblant une protéine BRAF suractive pourrait être un traitement potentiel. 
 gene-braf-short-text = Protège-toi du soleil! 
 gene-brca1-text = Le gène BRCA1 code pour une protéine qui répare l'ADN. Si les mécanismes de réparation sont défectueux, d'autres gènes peuvent muter. Lorsque le gène BRCA1 est muté, les femmes ont un plus grand risque de cancer du sein. 
@@ -21,52 +21,52 @@ gene-edar-short-text = Tes cheveux sont épais et raides!
 gene-epor-text = Le gène EPOR code pour une protéine qui contrôle la prolifération des cellules rouges du sang. La mutation A est très rare et provoque des taux très élevés de cellules rouges. Les porteurs ont plus d'oxygène dans leur sang et présentent de meilleures performances physiques. Les athlètes porteurs peuvent être accusés à tort de dopage.
 gene-epor-short-text = Profite de tes super puissances!
 gene-fgfr3-text = Le gène FGFR3 code pour une protéine impliquée dans le développement des os et leur maintenance. Le variant A est très rare et résulte en une protéine suractive, menant ainsi à des os plus courts et plus petits. Les porteurs du variant A sont bien plus petits que la moyenne (nanisme). 
-gene-fgfr3-short-text = Petit, mais rusé !
+gene-fgfr3-short-text = Petit, mais rusé!
 gene-gjb2-text = Le gène GJB2 code pour une protéine membranaire impliquée dans la communication intercellulaire dans différents tissus, comme l'oreille. La délétion du nucléotide G est associée à la surdité. Chez les européens, il s'agit du variant le plus commun en cas de surdité. 
-gene-gjb2-short-text = Cet appareil auditif va t'aider
+gene-gjb2-short-text = Cet appareil auditif va t'aider.
 gene-hbb-text = Le gène HBB code pour une sous-unité de l'hémoglobine qui lie l'oxygène dans le sang. Les personnes portant un seul variant T du gène sont saines. Les personnes qui en portent deux (hérités de chaque parent) souffrent d'une malformation des cellules rouges, une maladie connue sous le nom de drépanocytose. Les personnes portant un seul variant T sont aussi plus résistantes à la malaria. 
 gene-hbb-short-text = Tes globules rouges ont la forme d'un croissant...
 gene-herc2-text = Le variant G se trouve dans l'intron du gène HERC2. Il n'a aucune influence sur la protéine HERC2, mais influence la traduction du gène OCA2 avoisinant. La protéine OCA2 est essentielle pour la synthèse de la mélanine (pigment foncé). Le variant G mène à des taux plus bas de la protéine OCA2, moins de pigments cellulaires et augmente donc la probabilité d'yeux bleus. Ce variant est très commun en Europe. 
-gene-herc2-short-text = T'as de beaux yeux tu sais... 
+gene-herc2-short-text = T'as de beaux yeux tu sais! 
 gene-lct-text = Le gène LCT code pour une protéine pour la digestion du lait. Le variant C mène à une intolérance au lactose. Les porteurs de ce variant ne peuvent digérer le lait maternel ni d'autres produits laitiers plus tard.
-gene-lct-short-text = Tu as besoin de lait sans lactose pour grandir.
-gene-mc1r-text = Le gène MC1R code pour une protéine-clé impliquée dans la couleur de la peau et des cheveux chez les humains. Le variant T mène à une augmentation des pigments rouges/jaunes (phéomélanine). Les porteurs du variant T ont une peau plus claire et les cheveux roux. Le variant T est très rare chez les africains parce qu'une perte des pigments foncés rendraient les cellules de la peau plus vulnérables au fort ensoleillement. Le variant T est moins nocif chez les européens parce qu'ils connaissent un ensoleillement moins fort.  
+gene-lct-short-text = Tu as besoin de lait sans lactose pour grandir!
+gene-mc1r-text = Le gène MC1R code pour une protéine-clé impliquée dans la couleur de la peau et des cheveux chez les humains. Le variant T mène à une augmentation des pigments rouges/jaunes (phéomélanine). Les porteurs du variant T ont une peau plus claire et les cheveux roux. Le variant T est très rare chez les africains parce qu'une perte des pigments foncés rendrait les cellules de la peau plus vulnérables au fort ensoleillement. Le variant T est moins nocif chez les européens parce qu'ils connaissent un ensoleillement moins fort.  
 gene-mc1r-short-text = Tu as les cheveux roux!
 gene-mcm6-text = Le variant C se trouve dans l'intron du gène MCM6 et augmente la traduction du gène avoisinant LCT. LCT produit une protéine responsable de la digestion du lait. Les porteurs du variant C sont intolérants au lactose à l'âge adulte, mais peuvent digérer le lait maternel. 
 gene-mcm6-short-text = Évite le lait à l'âge adulte!
-gene-oca2-text = Le gène OCA2 code pour une protéine impliquée dans la synthèse de la mélanine (pigment foncé). Des mutations dans ce gène, comme le variant T, peuvent mener à une plus faible production de mélanine. Des niveaux réduits de mélanine donnent des yeux verts, alors que des niveaux très bas, ou pas de mélanine du tout, donnent des yeux bleus.
+gene-oca2-text = Le gène OCA2 code pour une protéine impliquée dans la synthèse de la mélanine (pigment foncé). Des mutations dans ce gène, comme le variant T, peuvent mener à une plus faible production de mélanine. Des niveaux normaux de mélanine donnent des yeux bruns, des niveaux réduits de mélanine donnent des yeux verts, alors que des niveaux très bas, ou pas de mélanine du tout, donnent des yeux bleus.
 gene-oca2-short-text = Une forte chance d'avoir les yeux bruns!
-gene-opn1mw-text = Le gène OPN1MW code pour une protéine sensible à la lumière jaune et verte, et se trouve dans la rétine. Des variations dans ce gène peuvent mener à une vision altérée du rouge et du vert. Le variant est fréquent ches les hommes européens. Les femmes souffrent moins du daltonisme, toutefois, parce que le gène OPN1MW se trouve sur le chromosome X. Les femmes en portent deux - ce qui augmente les chances d'avoir un gène OPN1MW fonctionnel.  
+gene-opn1mw-text = Le gène OPN1MW code pour une protéine sensible à la lumière jaune et verte, et se trouve dans la rétine. Des variations dans ce gène peuvent mener à une vision altérée du rouge et du vert. Le variant est fréquent chez les hommes européens. Les femmes souffrent moins du daltonisme, toutefois, parce que le gène OPN1MW se trouve sur le chromosome X. Les femmes en portent deux - ce qui augmente les chances d'avoir un gène OPN1MW fonctionnel.  
 gene-opn1mw-short-text = Le rouge et le vert sont la même couleur pour toi!
 gene-opn4-text = Le gène OPN4 code pour un photorécepteur qui peut mesurer l'intensité de la lumière. Le variant T diminue l'activité de la protéine. Les individus portant la version moins active réagissent plus fortement à l'absence de la lumière. Le variant T se trouve chez les personnes souffrant d'une dépression liée à l'hiver (trouble affectif saisonnier), période où il y a moins de soleil. 
 gene-opn4-short-text = Une dépression saisonnière peut se faire sentir en hiver...
 gene-or2j3-text = Le gène ORNJ3 code pour une protéine olfactive nasale. Le variant G décroît la sensibilisation à une molécule libérée par des plantes blessées (de l'herbe coupée par exemple). Les porteurs de ce variant ne peuvent pas sentir l'herbe coupée. La même molécule se trouve aussi dans les légumes et les fruits frais. Le variant G pourrait alors influencer les préférences alimentaires d'un individu. 
-gene-or2j3-short-text = L'odeur d'herbe coupée ne te dit rien...
+gene-or2j3-short-text = L'odeur d'herbe coupée ne te dit rien!
 gene-pcdh15-text = Le gène PCDH15 code pour une protéine importante pour nos yeux et nos oreilles. Le variant T est à l'origine du "Syndrome d'Usher du type 1", la condition la plus répandue à l'origine de la surdité et de la cécité liée. 
-gene-pcdh15-short-text = Cette mutation est liée à la cécité et surdité
+gene-pcdh15-short-text = Cette mutation est liée à la cécité et surdité.
 gene-per2-text = Le gène PER2 code pour une protéine impliquée dans le rythme sommeil-réveil. Les porteurs du variant G ont des taux diminués de la protéine PER2 et souffrent du "Syndrome d'avance de phase du sommeil" où le cycle de sommeil est modifié: ils se couchent très tôt (18h-20h) et se lèvent aussi très tôt (3h). 
 gene-per2-short-text = T'es un lève-tôt!
-gene-sh2b3-text = Le gène SH2B3 code pour une protéine régulatrice impliquée dans le développement des cellules du sang, dans l'inflammation et dans la migration cellulaire. Elle est fortement exprimée dans l'intestin grêle. Le variant T pourrait mener à une protéine plus sensibilisée qui déclencherait une forte réponse auto-immunitaire au gluten (maladie coeliaque). 
+gene-sh2b3-text = Le gène SH2B3 code pour une protéine régulatrice impliquée dans le développement des cellules du sang, dans l'inflammation et dans la migration cellulaire. Elle est fortement exprimée dans l'intestin grêle. Le variant T pourrait mener à une protéine plus sensibilisée qui déclencherait une forte réponse auto-immunitaire au gluten (maladie cœliaque). 
 gene-sh2b3-short-text = Produits sans gluten s'il vous plait!!
 gene-slc24a5-text = Le gène SLC24A5 code pour une protéine impliquée dans la pigmentation de la peau. Le variant A se trouve chez près de 100% des européens et a évolué récemment. Les porteurs ont une peau plus claire. Dans les régions où la lumière est moins intense (l'Europe du Nord p.ex.), une peau claire peut faciliter l'absorption des UV et donc la synthèse de vitamine D.
 gene-slc24a5-short-text = Tu as la peau claire!
 gene-slc45a2-text = Le gène SLC45A2 code pour une protéine impliquée dans la synthèse de la mélanine (pigment foncé). Le variant C ne se trouve pas habituellement chez les européens. Toutefois, si une personne a des ancêtres européens et possède le variant C, il y a de fortes chances qu'elle ait les cheveux noirs. 
 gene-slc45a2-short-text = Forte chance d'avoir les cheveux noir!
-gene-tas2r38-text = Le gène TAS2R38 code pour un récepteur gustatif sensible à l'amertume. Les porteurs du variant G ne peuvent pas goûter l'amertume de substances dans des aliments comme le chou ou le brocoli cru. De tels variants peuvent influencer les préférences alimentaires et un régime.
+gene-tas2r38-text = Le gène TAS2R38 code pour un récepteur gustatif sensible à l'amertume. Les porteurs du variant G ne ressentent pas l'amertume de substances dans des aliments comme le chou ou le brocoli cru. De tels variants peuvent influencer les préférences alimentaires et un régime.
 gene-tas2r38-short-text = Le brocoli est vraiment amer pour toi!
 gene-tcf7l2-text = Le gène TCF7L2 code pour une protéine qui régule la transcription d'un gène. Quelques gènes sous le contrôle de TCF7L2 sont impliqués dans le métabolisme du glucose et les niveaux de sucres sanguins. Si ces gènes sont mal réglés, le risque de développer le diabète de type 2 est augmenté. 
-gene-tcf7l2-short-text = Attention au sucre! Tu as des risques de diabete...
-gene-tchh-text = Le gène TCHH code pour une protéine qui donne de la force mécanique aux fibres capillaires. Les porteurs du variant T ont des fibres capillaires moins robustes et frisés. 
-gene-tchh-short-text = Tu as les cheveux frisés!
+gene-tcf7l2-short-text = Attention au sucre! Tu as des risques de diabète.
+gene-tchh-text = Le gène TCHH code pour une protéine qui donne de la force mécanique aux fibres capillaires. Les porteurs du variant T ont des fibres capillaires moins robustes et frisées. 
+gene-tchh-short-text = Tu as des cheveux frisés!
 gene-serpine1-text = Le gène SERPINE1 code pour une protéine essentielle dans les processus de coagulation suite à une blessure. L'insertion de deux nucléotides (TA) dans le gène mène à une protéine non-fonctionnelle. Récemment, ce gène a été associé à une longévité augmentée chez les Amish - bien que sa réelle contribution n'est pas connue.
 gene-serpine1-short-text = Tu as peut-être une longévité augmentée!
 gene-smarcad1-text = Le gène SMARCAD1 code pour une protéine exprimée dans les cellules de la peau. Le variant T mène à une condition rare: l'adermatoglyphie. Les personnes qui en souffrent n'ont pas de crêtes dans la peau au bout des doigts et ne peuvent alors pas être identifiées par leurs empreintes digitales. 
 gene-smarcad1-short-text = Attention à la douane!
 gene-foxo3-text = Le gène FOXO3 code pour une protéine qui contrôle la mort cellulaire. Les variations dans ce gène ont été associées à la longévité chez les japonais. Point intéressant: le variant chez les femmes et chez les hommes n'est pas le même: les hommes ont un variant G dans l'intron, alors que les femmes portent le variant T. On ne comprend pas encore leur influence sur la longévité. 
-gene-foxo3-short-text = Tu vivras peut-être jusqu'à 100 ans
-gene-akt1-text = Le gène AKT1 code pour une protéine exprimée dans le cerveau et contrôle la survie des cellules. Le variant C augmente la réaction psychotique au cannabis. Le cannabis est employé lors de traitements médicaux, il est donc important de comprendre commment les personnes réagissent à sa consommation. 
+gene-foxo3-short-text = Tu vivras peut-être jusqu'à 100 ans!
+gene-akt1-text = Le gène AKT1 code pour une protéine exprimée dans le cerveau et contrôle la survie des cellules. Le variant C augmente la réaction psychotique au cannabis. Le cannabis est employé lors de traitements médicaux, il est donc important de comprendre comment les personnes réagissent à sa consommation. 
 gene-akt1-short-text = Il se peut que tu réagisses fortement au cannabis.
-gene-tutorial-short-text = Tu changes d'apparence !
+gene-tutorial-short-text = Tu changes d'apparence!
 static-about-sib-paragraph-1 = Le <color=cyan><b>SIB Institut Suisse de Bioinformatique</b></color> est une organisation à but non lucratif fédérant environ 800 scientifiques en Suisse. 
 static-about-sib-paragraph-2 = Ses missions sont (1) de fournir une infrastructure de recherche complète pour les sciences de la vie et la médecine - allant de la mise à disposition de bases de données et de logiciels, à des expertises sur-mesure en analyse de données et calcul de haute performance – et (2) de représenter la communauté bioinformatique suisse et ses nombreux projets de recherche, et proposer des formations tant au monde académique que privé. Notre <color=cyan> vidéo </color> vous donnera un aperçu des activités du SIB en seulement 2 minutes.
 static-about-sib-paragraph-3 = Pour fêter ses 20 d’existence en 2018, l’Institut a lancé des projets valorisant la bioinformatique auprès d’un public large et non-spécialiste. D’où ce jeu sur les variants génétiques humains mais aussi d’autres projets à découvrir sur notre site web ou <color=cyan>notre compte Facebook</color>.
@@ -74,28 +74,8 @@ sib-website-link = https://www.sib.swiss/
 video-link-paragraph-2 = https://www.sib.swiss/about-us/news/1154-sib-the-movie-swiss-bioinformatics-in-action
 facebook-link-for-icon = https://www.facebook.com/SIBbioinformatics/
 static-legal-button-label = Notice Légale
-static-legal-text = Last update: 17 April 2017
-\n
-\n<b>Genome Jumper</b> is a mobile game, which was developed by PINTERAC SARL, 27 hameau colbert, Route de barjol, 83470 St-Maximin-La-Ste-Baume, France, and which is provided to you by SIB Swiss Institute of Bioinformatics, Lausanne - Management office, Quartier Sorge - Batiment Genopode, 1015 Lausanne, Switzerland.
-\n
-\nThe information contained in or on Genome Jumper is provided to you for general information and educational purposes only.
-\n
-\nGenome Jumper and its source code are owned by the SIB. The source code is available on https://github.com/sib-swiss, under Creative Commons 4.0 license CC-BY, which text is accessible at https://creativecommons.org/licenses/by/4.0/legalcode of which explanatory summary is accessible at https://creativecommons.org/licenses/by/4.0/deed.
-\n
-\nYou agree that your access and use of Genome Jumper are at your own risks and under your sole responsibility. Genome Jumper is provided to you “as is” and “as available”.
-\n
-\nSIB does not warrant that Genome Jumper and its content will meet your requirements, or are timely, secure, uninterrupted or error-free. The SIB does not warrant that any information contained in or on Genome Jumper will be complete, accurate or reliable.
-\n
-\nTo the extent permitted by applicable law, the SIB disclaims and waives any warranty, whether express or implied, and any liability whatsoever.
-\n
-\nGenome Jumper was developed with a software solution called “Unity” of Unity Technologies SARL, 83-85 boulevard Vincent Auriol, 75013 Paris, France, wich contains the analytics tool “Unity Analytics”. This analytics tool allows SIB to perform and make run properly Genome Jumper, as well as to collect anonymous data for analytical and statistics purposes in order to improve Genome Jumper and your game experience. This tool also allows SIB without limitation to analyze on an anonymous basis your progression through the game, to lower or increase the game difficulty level or, upon your next access to Genome Jumper, to add obtsacles to your progression through the game.
-\n
-\nBy accessing or using Genome Jumper, you agree to defend, indemnify and hold SIB, its legal administrators, officers, and employees, harmless from all claims, suits, liabilities, costs and expenses including SIB’s attroneys fees, arising out of or in connection with your access or use of Genome Jumper.
-\n
-\nThis legal disclaimer and the interpretation thereof are subject to substantive laws of Switzerland to the exclusion of its ocnflict of laws rules. Any claim, dispute or litigation shall be finally settled by the competent courts of Lausanne, Switzerland, save an appeal to the Swiss Federal Tribunal.
-\n
-\nIn case of question, inquiry or reclamation, please contact the SIB at the abovementioned address or by email to: info@sib.swiss.\n
-static-about-game-text = <b>BUT DU JEU:</b> Genome Jumper a été développé à l’occasion des 20 ans du SIB Institut Suisse de Bioinformatique. Il a pour but de présenter les concepts de base permettant de comprendre comment l’information contenue dans notre ADN permet de fabriquer des protéines, tout en explorant l’impact de certaines variations génétiques. L’être humain possède environ 20’000 gènes codant pour des protéines; chaque gène est caractérisé par une séquence plus ou moins longue composée avec un alphabet de 4 lettres: A (Adénine), G (Guanine), C (Cytosine) et T (Thymine). La bioinformatique est essentielle au développement des connaissances que nous souhaitons transmettre dans ce jeu. La bioinformatique, c’est en effet l’utilisation de technologies informatiques pour l’analyse et la conservation des données biologiques.\n\n<b>CONCEPT:</b> Le jeu propose d’explorer une trentaine de gènes associés à différentes caractéristiques comme la couleur des yeux, la calvitie ou certaines maladies. Au fur et à mesure de l'avancée de l'avatar le long des gènes, celui-ci va ‘rencontrer’ des variations génétiques. Ces variations vont influencer les caractéristiques de l'avatar. Ces caractéristiques seront rendues visibles par l'ajout d'un accessoire ou d’une spécificité phénotypique.\n\n<b>VÉRACITÉ SCIENTIFIQUE:</b>\n    1) L’aspect de chaque avatar dépend de 3 gènes contenant chacun une variation. Chaque être humain possède 20’000 gènes et des millions de variations. Le lien entre variation et phénotype est très difficile à établir: il est très rare qu’une seule variation soit responsable d’un phénotype. L’environnement et d’autres facteurs encore mal connus jouent un rôle majeur sur l’effet de ces variations. L’un des buts de la recherche biomédicale, avec l’aide de la bioinformatique, est justement d’étudier et de mieux comprendre le lien entre variations génétiques et phénotypes. \n    2) Dans le cas d’une variation associée avec une maladie, il est important de souligner que le fait de porter une mutation ne signifie pas que l’on va nécessairement contracter la maladie en question, mais qu’il existe simplement un risque plus élevé de développer cette maladie. Bien qu’ayant tenté de traiter le sujet avec le maximum de précaution et de diplomatie, le SIB s’excuse par avance de la possibilité qu'un joueur familiarisé avec l’une ou l’autre condition présentée dans le jeu se sente offusqué d’une manière ou d’une autre.\n    3) L’avatar court le long de la séquence ARN des différents gènes (avant épissage). Les transcripts choisis émanent, dans la majorité des cas d’une base de données reconnue Ensembl. Le nombre d’exons et d’introns est respecté, mais leurs longueurs ont été normalisées afin que le jeu soit “jouable”. Les variations sont placées sur les bons exons / introns selon des données extraites de publications scientifiques. La thymine est remplacée par l’uracil puisque l’on se trouve au niveau de l’ARN et non de l’ADN. Le fonctionnement du spliceosome et des protéines SR (splicing enhancer) a été simplifié pour les besoins du jeu. Les bases de l’ARN ainsi que ses structures secondaires ont été réparties aléatoirement le long de la chaîne. 
+static-legal-text = Last update: 17 April 2018\n\n<b>Genome Jumper</b> is a mobile game, which was developed by PINTERAC SARL, 27 hameau colbert, Route de barjol, 83470 St-Maximin-La-Ste-Baume, France, and which is provided to you by SIB Swiss Institute of Bioinformatics, Lausanne - Management office, Quartier Sorge - Bâtiment Génopode, 1015 Lausanne, Switzerland.\n\nThe information contained in or on Genome Jumper is provided to you for general information and educational purposes only.\n\nGenome Jumper and its source code are owned by the SIB. The source code is available on https://github.com/sib-swiss, under Creative Commons 4.0 license CC-BY, which text is accessible at https://creativecommons.org/licenses/by/4.0/legalcode of which explanatory summary is accessible at https://creativecommons.org/licenses/by/4.0/deed.\n\nYou agree that your access and use of Genome Jumper are at your own risks and under your sole responsibility. Genome Jumper is provided to you “as is” and “as available”.\n\nSIB does not warrant that Genome Jumper and its content will meet your requirements, or are timely, secure, uninterrupted or error-free. The SIB does not warrant that any information contained in or on Genome Jumper will be complete, accurate or reliable.\n\nTo the extent permitted by applicable law, the SIB disclaims and waives any warranty, whether express or implied, and any liability whatsoever.\n\nGenome Jumper was developed with a software solution called “Unity” of Unity Technologies SARL, 83-85 boulevard Vincent Auriol, 75013 Paris, France, which contains the analytics tool “Unity Analytics”. This analytics tool allows SIB to perform and make run properly Genome Jumper, as well as to collect anonymous data for analytical and statistics purposes in order to improve Genome Jumper and your game experience. This tool also allows SIB without limitation to analyse on an anonymous basis your progression through the game, to lower or increase the game difficulty level or, upon your next access to Genome Jumper, to add obstacles to your progression through the game.\n\nBy accessing or using Genome Jumper, you agree to defend, indemnify and hold SIB, its legal administrators, officers, and employees, harmless from all claims, suits, liabilities, costs and expenses including SIB’s attorneys fees, arising out of or in connection with your access or use of Genome Jumper.\n\nThis legal disclaimer and the interpretation thereof are subject to substantive laws of Switzerland to the exclusion of its conflict of laws rules. Any claim, dispute or litigation shall be finally settled by the competent courts of Lausanne, Switzerland, save an appeal to the Swiss Federal Tribunal.\n\nIn case of question, inquiry or reclamation, please contact the SIB at the abovementioned address or by email to: info@sib.swiss.
+static-about-game-text = <b>BUT DU JEU:</b> Genome Jumper a été développé à l’occasion des 20 ans du SIB Institut Suisse de Bioinformatique. Il a pour but de présenter les concepts de base permettant de comprendre comment l’information contenue dans notre ADN permet de fabriquer des protéines, tout en explorant l’impact de certaines variations génétiques. L’être humain possède environ 20’000 gènes codant pour des protéines; chaque gène est caractérisé par une séquence plus ou moins longue composée avec un alphabet de 4 lettres: A (Adénine), G (Guanine), C (Cytosine) et T (Thymine). La bioinformatique est essentielle au développement des connaissances que nous souhaitons transmettre dans ce jeu. La bioinformatique, c’est en effet l’utilisation de technologies informatiques pour l’analyse et la conservation des données biologiques.\n\n<b>CONCEPT:</b> Le jeu propose d’explorer une trentaine de gènes associés à différentes caractéristiques comme la couleur des yeux, la calvitie ou certaines maladies. Au fur et à mesure de l'avancée de l'avatar le long des gènes, celui-ci va ‘rencontrer’ des variations génétiques. Ces variations vont influencer les caractéristiques de l'avatar. Ces caractéristiques seront rendues visibles par l'ajout d'un accessoire ou d’une spécificité phénotypique.\n\n<b>VÉRACITÉ SCIENTIFIQUE:</b>\n    1) L’aspect de chaque avatar dépend de 3 gènes contenant chacun une variation. Chaque être humain possède 20’000 gènes et des millions de variations. Le lien entre variation et phénotype est très difficile à établir: il est très rare qu’une seule variation soit responsable d’un phénotype. L’environnement et d’autres facteurs encore mal connus jouent un rôle majeur sur l’effet de ces variations. L’un des buts de la recherche biomédicale, avec l’aide de la bioinformatique, est justement d’étudier et de mieux comprendre le lien entre variations génétiques et phénotypes. \n    2) Dans le cas d’une variation associée avec une maladie, il est important de souligner que le fait de porter une mutation ne signifie pas que l’on va nécessairement contracter la maladie en question, mais qu’il existe simplement un risque plus élevé de développer cette maladie. Bien qu’ayant tenté de traiter le sujet avec le maximum de précaution et de diplomatie, le SIB s’excuse par avance de la possibilité qu'un joueur familiarisé avec l’une ou l’autre condition présentée dans le jeu se sente offusqué d’une manière ou d’une autre.\n    3) L’avatar court le long de la séquence ARN des différents gènes (avant épissage). Les transcripts choisis émanent, dans la majorité des cas d’une base de données reconnue Ensembl. Le nombre d’exons et d’introns est respecté, mais leurs longueurs ont été normalisées afin que le jeu soit “jouable”. Les variations sont placées sur les bons exons / introns selon des données extraites de publications scientifiques. La thymine est remplacée par l’uracile puisque l’on se trouve au niveau de l’ARN et non de l’ADN. Le fonctionnement du spliceosome et des protéines SR (splicing enhancer) a été simplifié pour les besoins du jeu. Les bases de l’ARN ainsi que ses structures secondaires ont été réparties aléatoirement le long de la chaîne. 
 static-about-game-paragraph-1 = BUT DU JEU. Genome Jumper a été développé à l’occasion des 20 ans du SIB Institut Suisse de Bioinformatique. Il a pour but de présenter les concepts de base permettant de comprendre comment l’information contenue dans notre ADN permet de fabriquer des protéines, tout en explorant l’impact de certaines variations génétiques. L’être humain possède environ 20’000 gènes codant pour des protéines; chaque gène est caractérisé par une séquence plus ou moins longue composée avec un alphabet de 4 lettres (Adénine = A, Guanine = G, Thymine = T, Cytosine = C)): on comprend aisément que la bioinformatique soit essentielle au développement des connaissances que nous souhaitons transmettre dans ce jeu. La bioinformatique, c’est en effet l’utilisation de technologies informatiques pour l’analyse et la conservation des données biologiques.
 static-about-game-paragraph-2 = CONCEPT. Le jeu propose d’explorer une trentaine de gènes associés à différentes caractéristiques comme la couleur des yeux, la calvitie ou certaines maladies. Au fur et à mesure de l'avancée de l'avatar le long des gènes, celui-ci va ‘rencontrer’ des variations génétiques. Ces variations vont influencer les caractéristiques de l'avatar. Ces caractéristiques seront rendues visibles par l'ajout d'un accessoire ou d’une spécificité phénotypique.
 static-about-game-paragraph-3 = VÉRACITÉ SCIENTIFIQUE. L’aspect de chaque avatar dépend de 3 gènes contenant chacun une variation. Chaque être humain possède 20’000 gènes et des millions de variations. Le lien entre variation et phénotype est très difficile à établir: il est très rare qu’une seule variation soit responsable d’un phénotype. L’environnement et d’autres facteurs encore mal connus jouent un rôle majeur sur l’effet de ces variations. L’un des buts de la recherche biomédicale, avec l’aide de la bioinformatique, est justement d’étudier et de mieux comprendre le lien entre variations génétiques et phénotypes. 
@@ -138,7 +118,7 @@ gloss-splicing-text = Le splicing est l'étape intermédiaire dans la synthèse 
 gloss-splicing-enhancer-label = Le splicing enhancer (plateforme d'épissage)
 gloss-splicing-enhancer-text = Un splicing enhancer est un court segment d'ADN ou d'ARN qui sert de plateforme d'épissage (ou de splicing) pour une classe spécifique de protéines. Une fois liées à cette plateforme, les protéines peuvent renforcer et soutenir l'épissage du pré-ARNm en ARNm. 
 gloss-start-codon-label = Start codon (Codon d'initiation)
-gloss-start-codon-text = Le codon d'initiation est le premier codon se trouvant sur le mRNA d'une protéine. Ce codon est habituellement formé du trio de nucléotides AUG, et mène à l'incorporation de l'amino acide méthionine au tout début de la séquence de la protéine. 
+gloss-start-codon-text = Le codon d'initiation est le premier codon se trouvant sur le mRNA d'une protéine. Ce codon est habituellement formé du trio de nucléotides AUG, et mène à l'incorporation de l'acide aminé méthionine au tout début de la séquence de la protéine. 
 gloss-stop-codon-label = Stop codon (codon-stop)
 gloss-stop-codon-text = Le codon-stop est le dernier codon à être traduit sur l'ARNm. Il est habituellement formé des trios de nucléotides UAG, UAA ou UGA. 
 gloss-transcription-label = Transcription
@@ -168,14 +148,14 @@ CaucasianBoth = Caucasien (les 2 sexes)
 CaucasianFemale = Caucasien (femelle)
 CaucasianMale = Caucasien (mâle)
 CHANGELANGUAGE = CHANGER LA LANGUE
-ChooseLanguage = Choisissez votre langue
+ChooseLanguage = Choisis ta langue
 CREDITS = CREDITS
 Credits = Crédits
 GameOver = Perdu
 GameResetQuestion = Es-tu certain de vouloir réinitialiser toutes les données du jeu ? Cette action sera définitive.
 Gene = Gène
-Gene: = Gène :
-GeneCompleted = Gène {0} terminé !
+Gene: = Gène:
+GeneCompleted = Gène {0} terminé!
 Glossary = Glossaire
 LastCheckpoint = Dernier Checkpoint
 LevelSelection = Sélection niveau
@@ -186,18 +166,18 @@ OPTIONS = OPTIONS
 Play = Jouer
 PLAY = JOUER
 Population = Population concernée
-Population: = Population :
+Population: = Population concernée:
 ProteinLength = Longueur protéine
-ProteinLength: = Longueur protéine :
+ProteinLength: = Longueur protéine:
 QUIT = QUITTER
 RESETGAME = REINITIALISER LE JEU
 ResetGame = Réinitialiser le jeu
 Restart = Recommencer
 RESTARTLVL = REDEMARRER NIVEAU
 RESUME = REPRENDRE
-ScientificLinks: = Liens scientifiques :
+ScientificLinks: = Liens scientifiques:
 SelectGeneToPlay = Sélectionne le gène que tu veux jouer
-SelectLvl = Sélectionnez un niveau pour jouer
+SelectLvl = Sélectionne un niveau pour jouer
 SETTINGS = OPTIONS
 Share = Partager
 ShareScore = Partager le score
@@ -205,25 +185,25 @@ SkipIntro = Passer la transcription
 SkipOutro = Passer la traduction
 Skip = Ignorer
 SNPVariant = Variant
-SNPVariant: = Variant :
+SNPVariant: = Variant:
 SOUNDSANDMUSIC = SONS & MUSIQUE
 SRProtein = SR protéine
 Spliceosome = Spliceosome
 StarsCollected = Etoiles collectées
 Statistics = Statistiques
-TheSnpPresented = Le variant presenté dans ce niveau est : <color=cyan><i>{0}</i></color>
-ThisLvlWasGenerated = Ce niveau a été généré avec le transcript : <color=cyan><i>{0}</i></color>
+TheSnpPresented = Le variant présenté dans ce niveau est: <color=cyan><i>{0}</i></color>
+ThisLvlWasGenerated = Ce niveau a été généré avec le transcript: <color=cyan><i>{0}</i></color>
 TotalTimePlayed = Total temps joué
 Tutorial = Tutoriel
-TutorialEnd = Bravo ! Tu viens d'atteindre la fin du <b>Tutoriel</b>. Tu peux désormais accéder à la sélection d'avatars et de gènes. Et consulte le glossaire pour en apprendre plus!
+TutorialEnd = Bravo! Tu viens d'atteindre la fin du <b>Tutoriel</b>. Tu peux désormais accéder à la sélection d'avatars et de gènes. Et consulte le glossaire pour en apprendre plus!
 TutorialRNA = Tu es sur le point d'apprendre comment les gènes fonctionnent et comment les protéines sont créées. Tu te trouves sur <b>l'ARN</b>. L'ARN est transcrit de l'ADN et se compose de 4 bases: Adenine (A), Guanine (G), Cytosine (C) et Uracile (U).
-TutorialExon = Tu cours sur un <b>Exon</b>. Un exon est la partie codante du gène et sera utilisé pour créer la protéine. Chez les humains, il y a environ 20'000 gènes différents qui codent pour des protéines. Tu peux courir sans risque sur les exons. 
+TutorialExon = Tu cours sur un <b>Exon</b>. Un exon est la partie codante du gène et sera utilisé pour créer la protéine. Tu peux courir sans risque sur les exons. 
 TutorialIntronAndSplicing = Tu es sur le point de traverser un <b>Intron</b>. Les introns sont les parties non-codantes de l'ARN transcrit. Ils sont retirés (splicés) avant que la molécule d'ARN ne soit traduite en une protéine. Ne tombe pas dedans!
-TutorialSNP = Cette bulle représente un <b>Variant</b>. Les variants sont nombreux dans une population donnée et en partie responsables des différences entre les gens. Comme tu l'apprendras, une seule modification d'une base d'ARN peut influencer la couleur de la peau ou augmenter le risque d'être atteint d'une certaine maladie. Tu découvriras les variants en les attrapant. 
+TutorialSNP = Cette bulle représente un <b>Variant</b>. Les variants sont nombreux dans une population donnée et en partie responsables des différences entre les gens. Tu découvriras les variants en les attrapant. 
 TutorialSpliceosome = Ceci est un <b>Spliceosome</b>. Le spliceosome est responsable de l'épissage de l'ARN (retrait des parties non-codantes, ou les introns). Dans ce jeu, le spliceosome t'aidera à traverser de très grands introns et forme une plateforme qui bouge toute seule. Ne tombe pas!
 TutorialSRProtein = Ceci est un <b>Splicing Enhancer</b>. Cette petite protéine t'aidera à renforcer le splicing et permet à ton avatar de traverser des introns. Cours et saute dessus pour te faire catapulter!
-TutorialStartCodon = Ceci est un <b>Start Codon</b>, ou codon d'initiation. C'est le premier codon traduit par ton ami le ribosome vu dans la vidéo d'intro. Chez les humains, c'est presque toujours AUG qui code pour la méthionine. Attrape-la pour acquérir encore une étoile!
+TutorialStartCodon = Ceci est un <b>Start Codon</b>, ou codon d'initiation. C'est le premier codon traduit par ton ami le ribosome. Chez les humains, c'est presque toujours AUG qui code pour la méthionine. Attrape-la pour acquérir encore une étoile!
 TutorialStopCodon = Ceci est le <b>Stop Codon</b> (ou codon de terminaison). Il signale au ribosome que c'est le moment d'arrêter la traduction de l'ARN en une protéine. Attrape-le!
 TutorialUTR = Cette région n'est pas traduite (UTR). Les UTR se trouvent au début et à la fin de chaque gène et ne codent pas pour des protéines. Tu peux courir dessus sans risque. 
 TOS = Conditions d'utilisation
-Victory = Bravo! 
+Victory = Bravo tu as réussi!
