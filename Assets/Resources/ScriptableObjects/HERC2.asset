@@ -19,13 +19,20 @@ MonoBehaviour:
   population: AllBoth
   geneDescENKey: blue eyes in combinaison with brown
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-15/
+  transcript: hg38_sibGene_HTR011213_15_189_5
+  snpName: rs12913832
   uniprotLink: https://www.uniprot.org/uniprot/O95714
   nextprotLink: https://www.nextprot.org/entry/NX_O95714
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs12913832
   transcriptLink: https://ccg.vital-it.ch/cgi-bin/tromer/query_result.pl?Entry_0=hg38%3AHTR011213
-  transcript: hg38_sibGene_HTR011213_15_189_5
-  snpName: rs12913832
+  publication1Title: Eiberg H et al., Blue eye color in humans may be caused by a
+    perfectly associated founder mutation in a regulatory element located within the
+    HERC2 gene inhibiting OCA2 expression, Hum Genet, 2008
+  publication1Link: https://link.springer.com/article/10.1007%2Fs00439-007-0460-x
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 31
   score1Star: 4875
   score2Stars: 6000

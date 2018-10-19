@@ -45,6 +45,9 @@ TagManager:
   - HeadItemUI
   - RightHandItemUI
   - Checkpoint
+  - verticalEnemy
+  - horizontalEnemy
+  - circularEnemy
   layers:
   - Default
   - TransparentFX

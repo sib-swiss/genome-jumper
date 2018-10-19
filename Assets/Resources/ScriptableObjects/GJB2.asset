@@ -20,13 +20,21 @@ MonoBehaviour:
   geneDescENKey: "chromosomewalk : G\xE8ne associ\xE9 \xE0 une surdit\xE9 cong\xE9nitale.
     game : Il gagne un appareil auditif"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-13/?g=baisse-le-son
+  transcript: ENST00000382848
+  snpName: rs80338939
   uniprotLink: https://www.uniprot.org/uniprot/P29033
   nextprotLink: https://www.nextprot.org/entry/NX_P29033
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs80338939
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000382848
-  transcript: ENST00000382848
-  snpName: rs80338939
+  publication1Title: Gasparini P et al., High carrier frequency of the 35delG deafness
+    mutation in European populations. Genetic Analysis Consortium of GJB2 35delG,
+    Eur J Hum Genet, 2000
+  publication1Link: https://www.nature.com/articles/5200406
+  publication2Title: Kelsell DP et al., Connexin 26 mutations in hereditary non-syndromic
+    sensorineural deafness, Nature, 1997
+  publication2Link: ttps://www.nature.com/articles/387080a0
   objectiveTimeSeconds: 15
   score1Star: 4095
   score2Stars: 5040

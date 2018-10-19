@@ -20,13 +20,19 @@ MonoBehaviour:
   geneDescENKey: "G\xE8ne impliqu\xE9 dans la fabrication des cheveux. Certaines variations
     de ce g\xE8ne sont associ\xE9es avec des cheveux cr\xE9pus."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-1/?g=de-beaux-cheveux
+  transcript: ENST00000614923
+  snpName: rs11803731
   uniprotLink: https://www.uniprot.org/uniprot/Q07283
   nextprotLink: https://www.nextprot.org/entry/NX_Q07283
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs11803731
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000614923
-  transcript: ENST00000614923
-  snpName: rs11803731
+  publication1Title: Medland SE et al., Common variants in the trichohyalin gene are
+    associated with straight hair in Europeans, Am J Hum Genet, 2009
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2775823/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 79
   score1Star: 11408
   score2Stars: 14040

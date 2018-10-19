@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/SIB Scenes/Settings.unity
     guid: 62e443d9e81be0e4a8e80e5e65ea42af
   - enabled: 1
+    path: Assets/SIB Scenes/Publications.unity
+    guid: 98671d59229e0e84dbd279eb052b89a6
+  - enabled: 1
     path: Assets/SIB Scenes/Genes/SLC24A5.unity
     guid: 4984cdc0eeeac4a48bfdd27dba7ee159
   - enabled: 1

@@ -22,13 +22,19 @@ MonoBehaviour:
     le PTC, une substance retrouv\xE9e dans les brocolis). game : TAS2R38 is a bitter
     taste receptor..."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=un-gout-amer
+  transcript: ENST00000547270
+  snpName: rs713598
   uniprotLink: https://www.uniprot.org/uniprot/P59533
   nextprotLink: https://www.nextprot.org/entry/NX_P59533
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs713598
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000547270
-  transcript: ENST00000547270
-  snpName: rs713598
+  publication1Title: Kim UK et al., Positional cloning of the human quantitative trait
+    locus underlying taste sensitivity to phenylthiocarbamide, Science, 2003
+  publication1Link: http://science.sciencemag.org/content/299/5610/1221.full
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 18
   score1Star: 6728
   score2Stars: 8280

@@ -9,6 +9,10 @@ public class DifficultyManager : MonoBehaviour {
 
 	private GameObject[] intronFlags;
 	private GameObject[] exonFlags;
+    private GameObject[] Coins;
+    private GameObject[] verticalEnemies;
+    private GameObject[] horizontalEnemies;
+    private GameObject[] circularEnemies;
     public GameObject VideoOutroPrefab;
 
 
@@ -24,8 +28,11 @@ public class DifficultyManager : MonoBehaviour {
         EnemyCollideEffect[] ece = transform.parent.GetComponentsInChildren<EnemyCollideEffect> ();
 		intronFlags = GameObject.FindGameObjectsWithTag("Intron Flag");
 		exonFlags = GameObject.FindGameObjectsWithTag("Exon Flag");
+        Coins = GameObject.FindGameObjectsWithTag("Coins");
+        verticalEnemies = GameObject.FindGameObjectsWithTag("verticalEnemy");
+        horizontalEnemies = GameObject.FindGameObjectsWithTag("horizontalEnemy");
+        circularEnemies = GameObject.FindGameObjectsWithTag("circularEnemy");
 
-		Debug.Log ("EnnemyCollideEffect "+ece.Length);
 
 		if (difficulty.Equals ("hard")) {
 			Debug.Log ("Difficulty set to hard");
@@ -34,6 +41,14 @@ public class DifficultyManager : MonoBehaviour {
 			foreach (EnemyCollideEffect effect in ece) {
 				effect.damagesToDeal = (int) (effect.damagesToDeal * 1.00f); //Default
 			}
+
+            // We destroy 1 coin on 2
+            for(int i = 0; i < Coins.Length; i++) {
+                Coins[i].transform.localPosition = new Vector3(Coins[i].transform.localPosition.x, Coins[i].transform.localPosition.y + Random.Range(0, 0.45f), Coins[i].transform.localPosition.z);
+                if (i%2 == 0) {
+                    Destroy(Coins[i]);
+                }
+            }
 				
 			DisableFlagsDisplay ();
             setStartAndStopAndSnpY(1.3f);
@@ -54,9 +69,20 @@ public class DifficultyManager : MonoBehaviour {
 					effect.damagesToDeal = (int) (effect.damagesToDeal * 0.75f);
 				}
 			}
+
+            // We destroy 1 coin on 4
+            for (int i = 0; i < Coins.Length; i++) {
+                if (i % 4 == 0) {
+                    Destroy(Coins[i]);
+                }
+            }
             setStartAndStopAndSnpY(.8f);
 
             DisableFlagsDisplay ();
+
+            foreach(GameObject enemy in circularEnemies) {
+                enemy.SetActive(false);
+            }
 
 		} else {
 			Debug.Log ("Difficulty set to easy");
@@ -73,6 +99,16 @@ public class DifficultyManager : MonoBehaviour {
 					}
 				}
 			}
+
+            foreach(GameObject enemy in circularEnemies) {
+                enemy.SetActive(false);
+            }
+            foreach(GameObject enemy in horizontalEnemies) {
+                enemy.SetActive(false);
+            }
+            foreach(GameObject enemy in verticalEnemies) {
+                enemy.SetActive(false);
+            }
 
             // Add Video Outro
             GameObject UICamera = GameObject.Find("UICamera");

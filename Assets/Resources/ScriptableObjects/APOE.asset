@@ -21,13 +21,18 @@ MonoBehaviour:
     les graisses dans notre sang et qui peut pr\xE9disposer \xE0 la maladie d\u2019Alzheimer.
     game : Alzheimer"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-19/?g=un-taxi-pour-nos-graisses
+  transcript: ENST00000252486
+  snpName: rs429358
   uniprotLink: https://www.uniprot.org/uniprot/P02649
   nextprotLink: https://www.nextprot.org/entry/NX_P02649
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs429358
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000252486
-  transcript: ENST00000252486
-  snpName: rs429358
+  publication1Title: Apolipoprotein E, Wikipedia, as of April 2018
+  publication1Link: https://en.wikipedia.org/wiki/Apolipoprotein_E
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 20
   score1Star: 3445
   score2Stars: 4240

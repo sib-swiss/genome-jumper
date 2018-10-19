@@ -13,6 +13,7 @@ public class CharacterState : MonoBehaviour {
     private Camera mainCamera;
     private GameObject mainCameraObj;
     private GameObject uiCameraObj;
+    private GameObject uiIcons;
     private GameObject endPoint;
 
     void Start()
@@ -23,6 +24,7 @@ public class CharacterState : MonoBehaviour {
         mainCamera = Camera.main;
         mainCameraObj = GameObject.FindGameObjectWithTag("MainCamera");
         uiCameraObj = GameObject.Find("HUDModifiable");
+        uiIcons = GameObject.Find("StartSnpStopIcons");
         endPoint = GameObject.FindGameObjectWithTag("endPoint");
     }
 
@@ -41,17 +43,27 @@ public class CharacterState : MonoBehaviour {
 
     void ToggleWinScreen()
     {
-        player.SetActive(false);
-        mainCameraObj.SetActive(false);
-        uiCameraObj.SetActive(false);
-        GameWinScreen.SetActive(true);
+            GameWinScreen.SetActive(true);
+            mainCameraObj.SetActive(false);
+            uiCameraObj.SetActive(false);
+            uiIcons.SetActive(false);
+            player.SetActive(false);
+            this.GetComponent<CharacterState>().enabled = false;
+            player.SetActive(true);
+            if(GameObject.Find("horizontalSpawner") != null) {
+                GameObject.Find("horizontalSpawner").SetActive(false);
+            }
     }
     void ToggleDeathScreen()
     {
-        player.SetActive(false);
         mainCameraObj.SetActive(false);
         uiCameraObj.SetActive(false);
+        uiIcons.SetActive(false);
         GameOverScreen.SetActive(true);
+        player.SetActive(false);
+        if (GameObject.Find("horizontalSpawner") != null) {
+            GameObject.Find("horizontalSpawner").SetActive(false);
+        }
     }
 }
 

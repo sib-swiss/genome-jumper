@@ -21,13 +21,20 @@ MonoBehaviour:
     journaliers. Des variations dans ce g\xE8ne sont li\xE9es \xE0 une r\xE9sistance
     plus ou moins grande au manque de sommeil."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=une-horloge-dans-la-peau
+  transcript: ENST00000254657
+  snpName: rs121908635
   uniprotLink: https://www.uniprot.org/uniprot/O15055
   nextprotLink: https://www.nextprot.org/entry/NX_O15055
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs121908635
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000254657
-  transcript: ENST00000254657
-  snpName: rs121908635
+  publication1Title: 'Jones CR et al., Familial advanced sleep-phase syndrome: A short-period
+    circadian rhythm variant in humans, Nat Med, 1999'
+  publication1Link: https://www.nature.com/articles/nm0999_1062
+  publication2Title: Toh KL et al., An hPer2 phosphorylation site mutation in familial
+    advanced sleep phase syndrome, Science, 2001
+  publication2Link: http://science.sciencemag.org/content/291/5506/1040.long
   objectiveTimeSeconds: 78
   score1Star: 11895
   score2Stars: 14640

@@ -48,7 +48,17 @@ public class StoreLevelToPlay : MonoBehaviour {
         //Debug.Log(test);
         PlayerPrefs.SetInt("CombinationPlayAvatar",AvatarNumber);
         PlayerPrefs.SetInt("CombinationPlayGene", GeneNumber);
-		PlayerPrefs.SetString("GenesNames", avatarObj.gene1+"|"+avatarObj.gene2+"|"+avatarObj.gene3);
+
+        string avatarNumberForResourceLoad;
+        if(AvatarNumber < 10) {
+            avatarNumberForResourceLoad = "0" + AvatarNumber.ToString();
+        }
+        else {
+            avatarNumberForResourceLoad = AvatarNumber.ToString();
+        }
+
+        PlayerPrefs.SetString("AvatarName", Resources.Load<LevelPopupCreator>("Avatar " + avatarNumberForResourceLoad).levelName);
+        PlayerPrefs.SetString("GenesNames", avatarObj.gene1+"|"+avatarObj.gene2+"|"+avatarObj.gene3);
 		Debug.Log("StoreLevelToPlayFunction GenesNames : "+avatarObj.gene1+"|"+avatarObj.gene2+"|"+avatarObj.gene3);
 		Debug.Log("StoreLevelToPlayFunction: A"+AvatarNumber+"G"+GeneNumber);
 		if(GeneNumber == 1 || GeneNumber == 2)

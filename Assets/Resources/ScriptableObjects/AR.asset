@@ -21,13 +21,21 @@ MonoBehaviour:
     qui est impliqu\xE9 dans le d\xE9veloppement des caract\xE8res sexuels m\xE2les,
     et associ\xE9 avec le d\xE9veloppement de la calvitie chez l\u2019homme."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-xx/?g=a-poil
+  transcript: ENST00000612452
+  snpName: rs6152
   uniprotLink: https://www.uniprot.org/uniprot/P10275
   nextprotLink: https://www.nextprot.org/entry/NX_P10275
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs6152
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000612452
-  transcript: ENST00000612452
-  snpName: rs6152
+  publication1Title: Ellis JA et al., Polymorphism of the androgen receptor gene is
+    associated with male pattern baldness, J Invest Dermatol, 2001
+  publication1Link: https://www.sciencedirect.com/science/article/pii/S0022202X15411753?via%3Dihub
+  publication2Title: Hillmer AM et al., Genetic variation in the human androgen receptor
+    gene is the major determinant of common early-onset androgenetic alopecia, Am
+    J Hum Genet, 2005
+  publication2Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1226186/
   objectiveTimeSeconds: 69
   score1Star: 6630
   score2Stars: 8160

@@ -13,7 +13,11 @@ namespace MoreMountains.CorgiEngine
 
         private GameObject Player;
         public bool PlayerAllowedToJump = false;
+        public InputManager inputManager;
 
+        public void Start() {
+            inputManager = GameObject.Find("UICamera").GetComponent<InputManager>();
+        }
 
 		public void OnTriggerEnter2D(Collider2D collision)
 		{
@@ -31,7 +35,7 @@ namespace MoreMountains.CorgiEngine
             {
                 Player = collision.gameObject;
                 Player.GetComponent<CharacterJump>().AbilityPermitted = false;
-                if(GameObject.Find("UICamera").GetComponent<InputManager>().isPlayerJumping == true && PlayerAllowedToJump) {
+                if(inputManager.isPlayerJumping == true && PlayerAllowedToJump) {
                         Player.transform.FollowPath("SRPath", 0f, Mr1.FollowType.Once);
                         if (Player.transform.position.x < transform.parent.GetChild(0).GetComponent<WaypointManager>().pathList[0].points[1].x && Player.transform.position.x > transform.parent.GetChild(0).GetComponent<WaypointManager>().pathList[0].points[0].x) {
                             Player.transform.Translate(new Vector3(Mathf.Cos(0.785398f) * Time.deltaTime * 4.25f, 0, 0));

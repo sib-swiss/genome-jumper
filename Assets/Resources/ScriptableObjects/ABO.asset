@@ -20,13 +20,19 @@ MonoBehaviour:
   geneDescENKey: "Chromosomewalk : G\xE8ne impliqu\xE9 dans la d\xE9termination de
     notre groupe sanguin \u2013 A, AB, B ou O."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-9/?g=a-b-ab-ou-o
+  transcript: ENST00000611156
+  snpName: rs7853989
   uniprotLink: https://www.uniprot.org/uniprot/P16442
   nextprotLink: https://www.nextprot.org/entry/NX_P16442
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs7853989
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000611156
-  transcript: ENST00000611156
-  snpName: rs7853989
+  publication1Title: ABO, Wikipedia, as of April 2018
+  publication1Link: https://en.wikipedia.org/wiki/ABO_(gene)
+  publication2Title: Reid ME et al., DNA-based methods in the immunohematology reference
+    laboratory, Transfus Apher Sci, 2011
+  publication2Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3058268/
   objectiveTimeSeconds: 38
   score1Star: 3608
   score2Stars: 4440

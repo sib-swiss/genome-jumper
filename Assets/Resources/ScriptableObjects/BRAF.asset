@@ -21,13 +21,20 @@ MonoBehaviour:
     cellules et associ\xE9 au cancer de la peau. game : This genes is responsible
     for bla bla bla..."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=foisonnement-de-cellules
+  transcript: ENST00000288602
+  snpName: rs113488022
   uniprotLink: https://www.uniprot.org/uniprot/P15056
   nextprotLink: https://www.nextprot.org/entry/NX_P15056
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs113488022
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000288602
-  transcript: ENST00000288602
-  snpName: rs113488022
+  publication1Title: Davies H et al., Mutations of the BRAF gene in human cancer,
+    Nature, 2002
+  publication1Link: https://www.nature.com/articles/nature00766
+  publication2Title: Feliciano P, Melanoma sequencing identifies new druggable targets,
+    Nature blog, 2011
+  publication2Link: http://blogs.nature.com/freeassociation/2011/08/melanoma_sequencing_identifies_1.html
   objectiveTimeSeconds: 87
   score1Star: 8174
   score2Stars: 10060

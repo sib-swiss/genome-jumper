@@ -19,13 +19,19 @@ MonoBehaviour:
   population: AsianFemale
   geneDescENKey: This genes is responsible for longevity in asian man.
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-6/?g=vivre-longtemps
+  transcript: ENST00000343882
+  snpName: rs1935949
   uniprotLink: https://www.uniprot.org/uniprot/O43524
   nextprotLink: https://www.nextprot.org/entry/NX_O43524
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs2802292
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000343882
-  transcript: ENST00000343882
-  snpName: rs1935949
+  publication1Title: Willcox BJ et al., FOXO3A genotype is strongly associated with
+    human longevity, PNAS, 2008
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2544566/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 51
   score1Star: 8093
   score2Stars: 9960

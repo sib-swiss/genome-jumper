@@ -23,13 +23,20 @@ MonoBehaviour:
     une sur l\u2019autre chromosome X.  game : Daltonien: yeux (un oeil jaune et un
     oeil bleu)"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-xx/?g=daltonisme
+  transcript: ENST00000595290
+  snpName: rs104894914
   uniprotLink: https://www.uniprot.org/uniprot/P04001
   nextprotLink: https://www.nextprot.org/entry/NX_P04001
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs104894914
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000595290
-  transcript: ENST00000595290
-  snpName: rs104894914
+  publication1Title: "Fl\xFCck D, Deuteranopia \u2013 Red-Green Color Blindness, www.color-blindness.com,
+    as of April 2018"
+  publication1Link: http://www.color-blindness.com/deuteranopia-red-green-color-blindness/
+  publication2Title: Neitz J et al., The genetics of normal and defective color vision,
+    Vision Res, 2011
+  publication2Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3075382/
   objectiveTimeSeconds: 21
   score1Star: 4388
   score2Stars: 5400

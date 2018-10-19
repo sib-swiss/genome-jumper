@@ -19,13 +19,19 @@ MonoBehaviour:
   population: CaucasianBoth
   geneDescENKey: brown eyes
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-15/
+  transcript: ENST00000354638
+  snpName: rs1800401
   uniprotLink: https://www.uniprot.org/uniprot/Q04671
   nextprotLink: https://www.nextprot.org/entry/NX_Q04671
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs1800401
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000354638
-  transcript: ENST00000354638
-  snpName: rs1800401
+  publication1Title: Branicki W et al., Association of polymorphic sites in the OCA2
+    gene with eye colour using the tree scanning method, Ann Hum Genet, 2008
+  publication1Link: https://onlinelibrary.wiley.com/doi/full/10.1111/j.1469-1809.2007.00407.x
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 125
   score1Star: 14560
   score2Stars: 17920

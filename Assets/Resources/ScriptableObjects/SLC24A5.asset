@@ -21,13 +21,19 @@ MonoBehaviour:
     un pigment que l\u2019on retrouve dans notre peau, nos cheveux et l\u2019iris
     de nos yeux. game : This genes is responsible for light skin"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-15/?g=la-couleur-de-la-peau
+  transcript: ENST00000341459
+  snpName: rs1426654
   uniprotLink: https://www.uniprot.org/uniprot/Q71RS6
   nextprotLink: https://www.nextprot.org/entry/NX_Q71RS6
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs1426654
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000341459
-  transcript: ENST00000341459
-  snpName: rs1426654
+  publication1Title: Norton HL et al., Genetic evidence for the convergent evolution
+    of light skin in Europeans and East Asians, Mol Biol Evol, 2007
+  publication1Link: https://academic.oup.com/mbe/article/24/3/710/1240790
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 30
   score1Star: 6533
   score2Stars: 8040

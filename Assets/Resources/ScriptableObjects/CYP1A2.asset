@@ -20,13 +20,19 @@ MonoBehaviour:
   geneDescENKey: "chromosomewalk : G\xE8ne impliqu\xE9 dans la d\xE9gradation de certaines
     mol\xE9cules, dont la caf\xE9ine. game : cafe"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-15/?g=degradation-moleculaire
+  transcript: ENST00000343932
+  snpName: rs762551
   uniprotLink: https://www.uniprot.org/uniprot/P05177
   nextprotLink: https://www.nextprot.org/entry/NX_P05177
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs762551
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000343932
-  transcript: ENST00000343932
-  snpName: rs762551
+  publication1Title: 'Thorn CF et al., PharmGKB summary: very important pharmacogene
+    information for CYP1A2, Pharmacogenet Genomics, 2012'
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3346273/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 30
   score1Star: 6338
   score2Stars: 7800

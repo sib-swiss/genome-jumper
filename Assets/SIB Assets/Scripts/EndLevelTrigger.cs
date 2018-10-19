@@ -1,5 +1,8 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Video;
@@ -30,6 +33,7 @@ namespace MoreMountains.CorgiEngine
 		private int multiplierTimePositive = 20;
 
         private CorgiController controller;
+        private GameObject Player;
 
         void Start()
         {
@@ -38,13 +42,16 @@ namespace MoreMountains.CorgiEngine
             SNPVariants = GameObject.FindObjectsOfType<SNPVariant>();
 			StartCodon =  GameObject.Find("StartBubble").GetComponent<StartStopCodonBehaviour>();
 			StopCodon =  GameObject.Find("StopBubble").GetComponent<StartStopCodonBehaviour>();
+            Player = GameObject.FindGameObjectWithTag("Player");
         }
             
         void OnTriggerEnter2D(Collider2D col)
         {
+            
             controller = col.GetComponent<CorgiController>();
             score.increaseScore(controller.GetComponent<Health>().CurrentHealth); // we add the number of life to score
             playTime = GameObject.Find("TimerText").GetComponent<Timer>().playTime;
+            Player.GetComponent<DisplayCharacterOnEndLevel>().enabled = true;
 
             /*
 			//old method based on time + score
@@ -79,11 +86,21 @@ namespace MoreMountains.CorgiEngine
                     ActionOnTrigger();
                 }
             }
+
+            string AvatarName = PlayerPrefs.GetString("AvatarName");
+            string GeneName = PlayerPrefs.GetString("GeneName");
+
+            // Sending Analytics event
+            Analytics.CustomEvent("level_completed", new Dictionary<string, object>
+            {
+                { "avatar", "Avatar " + AvatarName},
+                { "gene",  GeneName }
+            }
+        );
         }
 
         public void ActionOnTrigger()
         {
-
             characterSurvivedLevel = true;
             // CALCULATING STARS
             var allTaken = true;

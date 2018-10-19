@@ -20,13 +20,19 @@ MonoBehaviour:
   geneDescENKey: "chromosomewalk : G\xE8ne impliqu\xE9 dans l\u2019apparition d\u2019un
     diab\xE8te de type 2."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=resistance-a-linsuline
+  transcript: ENST00000355995
+  snpName: rs7903146
   uniprotLink: https://www.uniprot.org/uniprot/Q9NQB0
   nextprotLink: https://www.nextprot.org/entry/NX_Q9NQB0
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs7903146
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000355995
-  transcript: ENST00000355995
-  snpName: rs7903146
+  publication1Title: Grant SFA et al., Variant of transcription factor 7-like 2 (TCF7L2)
+    gene confers risk of type 2 diabetes, Nat Genet, 2006
+  publication1Link: https://www.nature.com/articles/ng1732
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 71
   score1Star: 7232
   score2Stars: 8900

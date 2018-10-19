@@ -19,4 +19,4 @@ MonoBehaviour:
   gene1: LCT
   gene2: HERC2
   gene3: PER2
-  population: CaucasianBoth
+  population: CaucasianMale

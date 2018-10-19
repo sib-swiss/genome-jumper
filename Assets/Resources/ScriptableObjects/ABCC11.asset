@@ -22,13 +22,21 @@ MonoBehaviour:
     ont une cire d\u2019oreille s\xE8che. game : Cire d'oreil et odeur. Interet pour
     les pharmacies"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-16/?g=cire-doreille
+  transcript: ENST00000356608
+  snpName: rs17822931
   uniprotLink: https://www.uniprot.org/uniprot/Q96J66
   nextprotLink: https://www.nextprot.org/entry/NX_Q96J66
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs17822931
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000356608
-  transcript: ENST00000356608
-  snpName: rs17822931
+  publication1Title: 'Rodriguez S et al., Dependence of deodorant usage on ABCC11
+    genotype: scope for personalized genetics in personal hygiene, J Invest Dermatol,
+    2013'
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3674910/
+  publication2Title: Yoshiura KI et al., A SNP in the ABCC11 gene is the determinant
+    of human earwax type, Nat Genet, 2006
+  publication2Link: https://www.nature.com/articles/ng1733
   objectiveTimeSeconds: 94
   score1Star: 7475
   score2Stars: 9200

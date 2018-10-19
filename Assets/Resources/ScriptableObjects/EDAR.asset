@@ -20,13 +20,21 @@ MonoBehaviour:
   geneDescENKey: "Chromosomewalk : G\xE8ne impliqu\xE9 dans la formation des cheveux.
     game : Thick and straight hair"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-beaux-cheveux
+  transcript: ENST00000258443
+  snpName: rs3827760
   uniprotLink: https://www.uniprot.org/uniprot/Q07283
   nextprotLink: https://www.nextprot.org/entry/NX_Q07283
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs3827760
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000258443
-  transcript: ENST00000258443
-  snpName: rs3827760
+  publication1Title: 'Fujimoto A et al., A scan for genetic determinants of human
+    hair morphology: EDAR is associated with Asian hair thickness, Hum Mol Genet,
+    2008'
+  publication1Link: https://academic.oup.com/hmg/article/17/6/835/601141
+  publication2Title: Tan J et al., The adaptive variant EDARV370A is associated with
+    straight hair in East Asians, Hum Genet, 2013
+  publication2Link: https://link.springer.com/article/10.1007%2Fs00439-013-1324-1
   objectiveTimeSeconds: 42
   score1Star: 4762
   score2Stars: 5860

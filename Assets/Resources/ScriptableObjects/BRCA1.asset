@@ -20,13 +20,19 @@ MonoBehaviour:
   geneDescENKey: "Chromosomewalk : G\xE8ne impliqu\xE9 dans la prolif\xE9ration des
     cellules et associ\xE9 en particulier au cancer du sein."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-17/?g=foisonnement-de-cellules
+  transcript: ENST00000357654
+  snpName: rs80357914
   uniprotLink: https://www.uniprot.org/uniprot/P38398
   nextprotLink: https://www.nextprot.org/entry/NX_P38398
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs80357914
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000357654
-  transcript: ENST00000357654
-  snpName: rs80357914
+  publication1Title: BRCA1, Wikipedia, as of April 2018
+  publication1Link: https://en.wikipedia.org/wiki/BRCA1#Mutations_and_cancer_risk
+  publication2Title: Kuchenbaecker KB et al., Risks of Breast, Ovarian, and Contralateral
+    Breast Cancer for BRCA1 and BRCA2 Mutation Carriers, JAMA, 2017
+  publication2Link: https://jamanetwork.com/journals/jama/fullarticle/2632503
   objectiveTimeSeconds: 84
   score1Star: 11245
   score2Stars: 13840

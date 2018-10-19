@@ -21,13 +21,19 @@ MonoBehaviour:
     et \xE0 une perte de la vision. game : Usher syndrome un gars avec lunette noir
     et appareil auditif..."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=baisse-le-son-et-la-vue
+  transcript: ENST00000395442
+  snpName: rs111033260
   uniprotLink: https://www.uniprot.org/uniprot/Q96QU1
   nextprotLink: https://www.nextprot.org/entry/NX_Q96QU1
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs111033260
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000395442
-  transcript: ENST00000395442
-  snpName: rs111033260
+  publication1Title: Ben-Yosef T et al., A mutation of PCDH15 among Ashkenazi Jews
+    with the type 1 Usher syndrome, N Engl J Med, 2003
+  publication1Link: http://www.nejm.org/doi/full/10.1056/NEJMoa021502
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 120
   score1Star: 17063
   score2Stars: 21000

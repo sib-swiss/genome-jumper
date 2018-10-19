@@ -20,13 +20,20 @@ MonoBehaviour:
   geneDescENKey: "Chromosomewalk : G\xE8ne impliqu\xE9 dans le d\xE9veloppement des
     os.  game : nain / dwarfism"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-4/?g=la-taille-du-squelette
+  transcript: ENST00000613647
+  snpName: rs75790268
   uniprotLink: https://www.uniprot.org/uniprot/P22607
   nextprotLink: https://www.nextprot.org/entry/NX_P22607
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs75790268
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000613647
-  transcript: ENST00000613647
-  snpName: rs75790268
+  publication1Title: "Online Mendelian Inheritance in Man, OMIM\xAE. Johns Hopkins
+    University, Baltimore, MD. MIM Number: 134934#0003, 10/20/2017. World Wide Web
+    URL: https://omim.org/"
+  publication1Link: https://www.omim.org/entry/134934#0003
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 34
   score1Star: 7703
   score2Stars: 9480

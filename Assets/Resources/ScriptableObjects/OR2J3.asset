@@ -20,13 +20,20 @@ MonoBehaviour:
   geneDescENKey: "G\xE8ne impliqu\xE9 dans la perception de l\u2019odeur de l\u2019herbe
     coup\xE9e."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-6/?g=herbe-coupee
+  transcript: ENST00000641151
+  snpName: rs28757581
   uniprotLink: https://www.uniprot.org/uniprot/O76001
   nextprotLink: https://www.nextprot.org/entry/NX_O76001
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs28757581
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000641151
-  transcript: ENST00000641151
-  snpName: rs28757581
+  publication1Title: McRae JF et al., Genetic variation in the odorant receptor OR2J3
+    is associated with the ability to detect the grassy smelling odor, cis-3-hexen-1-ol,
+    Chem Senses, 2012
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3408771/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 23
   score1Star: 5168
   score2Stars: 6360

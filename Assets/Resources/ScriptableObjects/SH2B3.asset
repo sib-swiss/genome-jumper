@@ -20,13 +20,19 @@ MonoBehaviour:
   geneDescENKey: "Chromosomewalk : G\xE8ne associ\xE9 avec une intol\xE9rance au gluten
     (maladie coeliaque)."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-12/?g=intolerance-au-gluten
+  transcript: ENST00000341259
+  snpName: rs3184504
   uniprotLink: https://www.uniprot.org/uniprot/Q9UQQ2
   nextprotLink: https://www.nextprot.org/entry/NX_Q9UQQ2
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs3184504
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000341259
-  transcript: ENST00000341259
-  snpName: rs3184504
+  publication1Title: Hunt KA et al., Novel celiac disease genetic determinants related
+    to the immune response, Nat Genet, 2008
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2673512/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 27
   score1Star: 4567
   score2Stars: 5620

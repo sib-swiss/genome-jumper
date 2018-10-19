@@ -20,13 +20,20 @@ MonoBehaviour:
   geneDescENKey: "Chromosomewalk : G\xE8ne codant pour une prot\xE9ine qui dig\xE8re
     le lactose."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-lorigine-des-flatulences
+  transcript: ENST00000264162
+  snpName: rs121908936
   uniprotLink: https://www.uniprot.org/uniprot/P09848
   nextprotLink: https://www.nextprot.org/entry/NX_P09848
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs121908936
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000264162
-  transcript: ENST00000264162
-  snpName: rs121908936
+  publication1Title: Kuokkanen M et al., Mutations in the translated region of the
+    lactase gene (LCT) underlie congenital lactase deficiency, Am J Hum Genet, 2006
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1380240/
+  publication2Title: Savilahti E et al., Congenital lactase deficiency. A clinical
+    study on 16 patients, Arch Dis Child, 1983
+  publication2Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1627962/
   objectiveTimeSeconds: 143
   score1Star: 15210
   score2Stars: 18720

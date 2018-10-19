@@ -21,13 +21,20 @@ MonoBehaviour:
     de certains tissus. Certaines variations de ce g\xE8ne influencent l\u2019effet
     du cannabis\u2026  game : more sensible to canabis"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-14/?g=foisonnement-de-cellules
+  transcript: ENST00000349310
+  snpName: rs2494732
   uniprotLink: https://www.uniprot.org/uniprot/P31749
   nextprotLink: https://www.nextprot.org/entry/NX_P31749
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs2494732
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000349310
-  transcript: ENST00000349310
-  snpName: rs2494732
+  publication1Title: Morgan CJA et al., AKT1 genotype moderates the acute psychotomimetic
+    effects of naturalistically smoked cannabis in young cannabis smokers, Transl
+    Psychiatry, 2016
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4872423/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 38
   score1Star: 4485
   score2Stars: 5520

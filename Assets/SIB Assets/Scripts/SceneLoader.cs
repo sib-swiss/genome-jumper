@@ -14,7 +14,7 @@ public class SceneLoader : MonoBehaviour
     {
 
         if (SceneManager.GetActiveScene().name == "LevelSelection"){
-            if(sceneName == "Menu" || sceneName == "Glossaire") {
+            if(sceneName == "Menu" || sceneName == "Glossaire" || sceneName == "Tutorial") {
                 SceneManager.LoadScene(sceneName);
 				return;
             }else {

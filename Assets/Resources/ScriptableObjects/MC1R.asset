@@ -21,13 +21,20 @@ MonoBehaviour:
     des cheveux (roux) et des yeux. Curieusement, il influence \xE9galement l\u2019efficacit\xE9
     de certains anesth\xE9siants utilis\xE9s par les dentistes. game : red hair"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-16/?g=pigmenter
+  transcript: ENST00000555427
+  snpName: rs1805007
   uniprotLink: https://www.uniprot.org/uniprot/Q01726
   nextprotLink: https://www.nextprot.org/entry/NX_Q01726
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs1805007
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000555427
-  transcript: ENST00000555427
-  snpName: rs1805007
+  publication1Title: Harding RM et al., Evidence for variable selective pressures
+    at MC1R, Am J Hum Genet, 2000
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1288200/
+  publication2Title: Mengel-From J et al., Genetic determinants of hair and eye colours
+    in the Scottish and Danish populations, BMC Genet, 2009
+  publication2Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2810292/
   objectiveTimeSeconds: 28
   score1Star: 5363
   score2Stars: 6600

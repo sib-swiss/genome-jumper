@@ -22,8 +22,10 @@ namespace MoreMountains.CorgiEngine
 				return;
 			if (collider.gameObject.tag.Equals("Player") && isInvicible == false)
             {
-	            LittleSparksGameObject.GetComponent<ParticleSystem>().Play();
-	            AudioSource.PlayClipAtPoint(sparkSound, transform.position, 0.6f);
+                if(this.gameObject.name != "horizontalEnemyPrefab") {
+                    LittleSparksGameObject.GetComponent<ParticleSystem>().Play();
+                    AudioSource.PlayClipAtPoint(sparkSound, transform.position, 0.6f);
+                }
             }
         }
 			

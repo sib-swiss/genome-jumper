@@ -1,16 +1,15 @@
 fileFormatVersion: 2
 guid: 7f3b36b05937c0246967396c92cacb71
-timeCreated: 1516292028
-licenseType: Pro
+timeCreated: 18446744011573954816
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6
   defaultSettings:
     loadType: 1
-    sampleRateSetting: 0
+    sampleRateSetting: 1
     sampleRateOverride: 44100
     compressionFormat: 1
-    quality: 1
+    quality: 0.79999995
     conversionMode: 0
   platformSettingOverrides: {}
   forceToMono: 0

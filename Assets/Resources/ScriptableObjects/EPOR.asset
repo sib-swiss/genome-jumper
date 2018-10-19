@@ -24,13 +24,19 @@ MonoBehaviour:
     de ces variations, a gagn\xE9 une m\xE9daille d\u2019or aux Jeux Olympiques d\u2019hiver
     en 1964. \xC9tait-il avantag\xE9? game : beaucoup de globule rouge"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-19/?g=medailles-olympiques
+  transcript: ENST00000222139
+  snpName: rs121918116
   uniprotLink: https://www.uniprot.org/uniprot/P19235
   nextprotLink: https://www.nextprot.org/entry/NX_P19235
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs121918116
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000222139
-  transcript: ENST00000222139
-  snpName: rs121918116
+  publication1Title: de la Chapelle A et al., Truncated erythropoietin receptor causes
+    dominantly inherited benign human erythrocytosis, Proc Natl Acad Sci USA, 1993
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC46538/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 24
   score1Star: 9848
   score2Stars: 12120

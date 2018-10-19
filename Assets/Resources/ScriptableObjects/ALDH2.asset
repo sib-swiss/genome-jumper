@@ -20,13 +20,19 @@ MonoBehaviour:
   geneDescENKey: "Chromosomewalk : G\xE8ne impliqu\xE9 dans la tol\xE9rance \xE0 l\u2019alcool.
     game : Avec une choppe de bi\xE8re a la main..."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-12/?g=un-verre-de-trop
+  transcript: ENST00000261733
+  snpName: rs671
   uniprotLink: https://www.uniprot.org/uniprot/P05091
   nextprotLink: https://www.nextprot.org/entry/NX_P05091
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs671
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000261733
-  transcript: ENST00000261733
-  snpName: rs671
+  publication1Title: Yoshida A et al., Molecular abnormality of an inactive aldehyde
+    dehydrogenase variant commonly found in Orientals, Proc Natl Acad Sci USA, 1984
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC344651/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 32
   score1Star: 9653
   score2Stars: 11880

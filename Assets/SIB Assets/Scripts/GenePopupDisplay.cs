@@ -24,8 +24,9 @@ public class GenePopupDisplay : MonoBehaviour
     public GameObject ChromoWalkLogo;
     public GameObject UniprotLogo;
     public GameObject NextProtLogo;
-    public GameObject PubmedLogo;
     public GameObject SNPediaLogo;
+    public GameObject PubmedLogo;
+    public GameObject PubmedLogo2;
 
     public GameObject AvatarToShow;
 
@@ -44,8 +45,9 @@ public class GenePopupDisplay : MonoBehaviour
         ChromoWalkLogo = transform.GetChild(11).GetChild(0).gameObject;
         UniprotLogo = transform.GetChild(11).GetChild(1).gameObject;
         NextProtLogo = transform.GetChild(11).GetChild(2).gameObject;
-        PubmedLogo = transform.GetChild(11).GetChild(3).gameObject;
-        SNPediaLogo = transform.GetChild(11).GetChild(4).gameObject;
+        SNPediaLogo = transform.GetChild(11).GetChild(3).gameObject;
+        PubmedLogo = transform.GetChild(11).GetChild(4).gameObject;
+        PubmedLogo2 = transform.GetChild(11).GetChild(5).gameObject;
 
         GeneTermine.GetComponent<Text>().text = activeGene.geneName;
         ProteinLength.SetArg(activeGene.proteinLength, 0);
@@ -62,11 +64,17 @@ public class GenePopupDisplay : MonoBehaviour
             ChromoWalkLogo.SetActive(true);
             ChromoWalkLogo.GetComponent<LogoLinks>().SetLink(activeGene.chromosomeLink);
         }
+        else {
+            ChromoWalkLogo.SetActive(false);
+        }
 
         if (!activeGene.nextprotLink.Equals("") && activeGene.nextprotLink != null)
         {
             NextProtLogo.SetActive(true);
             NextProtLogo.GetComponent<LogoLinks>().SetLink(activeGene.nextprotLink);
+        }
+        else {
+            NextProtLogo.SetActive(false);
         }
 
         if (!activeGene.pubmedLink.Equals("") && activeGene.pubmedLink != null)
@@ -74,17 +82,34 @@ public class GenePopupDisplay : MonoBehaviour
             PubmedLogo.SetActive(true);
             PubmedLogo.GetComponent<LogoLinks>().SetLink(activeGene.pubmedLink);
         }
+        else {
+            PubmedLogo.SetActive(false);
+        }
+
+        if (!activeGene.pubmedLink.Equals("") && activeGene.pubmedLink2 != null) {
+            PubmedLogo2.SetActive(true);
+            PubmedLogo2.GetComponent<LogoLinks>().SetLink(activeGene.pubmedLink2);
+        }
+        else {
+            PubmedLogo2.SetActive(false);
+        }
 
         if (!activeGene.uniprotLink.Equals("") && activeGene.uniprotLink != null)
         {
             UniprotLogo.SetActive(true);
             UniprotLogo.GetComponent<LogoLinks>().SetLink(activeGene.uniprotLink);
         }
+        else {
+            UniprotLogo.SetActive(false);
+        }
 
         if (!activeGene.snpediaLink.Equals("") && activeGene.snpediaLink != null)
         {
             SNPediaLogo.SetActive(true);
             SNPediaLogo.GetComponent<LogoLinks>().SetLink(activeGene.snpediaLink);
+        }
+        else {
+            SNPediaLogo.SetActive(false);
         }
 
     }

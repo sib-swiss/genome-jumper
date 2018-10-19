@@ -4,6 +4,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using SimpleJSON;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -42,6 +43,10 @@ public class LevelProperties : MonoBehaviour
     [Header("UI")] 
     public Text lvlNameTextUi;
 
+    [Header("Avatar infos")]
+    public string AvatarName;
+    public string GeneName;
+
     void Start()
     {
         GeneScriptableObject = Resources.Load<GenePopupCreator>("ScriptableObjects/"+SceneManager.GetActiveScene().name);
@@ -61,6 +66,17 @@ public class LevelProperties : MonoBehaviour
         LevelLength = ExonCount + IntronCount + UtrCount + SnpCount;
         SuperVariantCount = GameObject.FindGameObjectsWithTag("SuperVariante").Length;
 
+        AvatarName = PlayerPrefs.GetString("AvatarName");
+        PlayerPrefs.SetString("GeneName", GeneScriptableObject.geneName);
+        GeneName = GeneScriptableObject.geneName;
+
+        // Sending Analytics event
+        Analytics.CustomEvent("level_started", new Dictionary<string, object>
+            {
+                { "avatar", "Avatar " + AvatarName},
+                { "gene",  GeneName }
+            }
+        );
 
     }
     /*

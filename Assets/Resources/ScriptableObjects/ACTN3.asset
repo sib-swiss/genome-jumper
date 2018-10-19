@@ -22,13 +22,20 @@ MonoBehaviour:
     Environ 18 % de la population poss\xE8de une prot\xE9ine ACTN3 plus courte: cette
     variation est associ\xE9e avec une meilleure endurance physique! game : muscle? "
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=medailles-olympiques
+  transcript: ENST00000502692
+  snpName: rs1815739
   uniprotLink: https://www.uniprot.org/uniprot/Q08043
   nextprotLink: https://www.nextprot.org/entry/NX_Q08043
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs1815739
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000502692
-  transcript: ENST00000502692
-  snpName: rs1815739
+  publication1Title: MacArthur D, The gene for Jamaican sprinting success? No, not
+    really, Wired, 2008
+  publication1Link: https://www.wired.com/2008/10/the-gene-for-jamaican-sprinting-success-no-not-really/
+  publication2Title: Yang N et al., ACTN3 genotype is associated with human elite
+    athletic performance, Am J Hum Genet, 2003
+  publication2Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1180686/
   objectiveTimeSeconds: 66
   score1Star: 5688
   score2Stars: 7000

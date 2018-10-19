@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using PaperPlaneTools;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,12 +20,17 @@ public class isGameStartedForFirstTime : MonoBehaviour {
             //PlayerPrefs.SetString("CurrentAvatarAndGeneUnlocked", "A26G1");//A26G1 = unlock all, A1G1 all locked see UnlockedAvatars
 			PlayerPrefs.SetString("CurrentAvatarAndGeneUnlocked", "A1G1");//A26G1 = unlock all, A1G1 all locked see UnlockedAvatars
         }
+        RateBox.Instance.Statistics.DialogIsRated = false;
+        PlayerPrefs.SetInt("incrementRateCTA", 4);
+        PlayerPrefs.SetInt("gamesPlayedWithoutRating", 0);
     }
 
     public void SetGenesScoresAndTimesToNull()
     {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetFloat("timePlayed", 0);
+        PlayerPrefs.SetInt("incrementRateCTA", 4);
+        PlayerPrefs.SetInt("gamesPlayedWithoutRating", 0);
         PlayerPrefs.SetString("CurrentGeneSkinModification", "");
         //PlayerPrefs.SetInt("A1G1isPlayable", 1);
         for (int i = 1; i <= numberOfAvatars; i++)

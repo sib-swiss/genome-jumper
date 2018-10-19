@@ -19,13 +19,19 @@ MonoBehaviour:
   population: CaucasianBoth
   geneDescENKey: correlates with increased age in amish population
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=vivre-longtemps
+  transcript: ENST00000223095
+  snpName: '-'
   uniprotLink: https://www.uniprot.org/uniprot/P05121
   nextprotLink: https://www.nextprot.org/entry/NX_P05121
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: 
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000223095
-  transcript: ENST00000223095
-  snpName: '-'
+  publication1Title: Khan SS et al., A mutation in SERPINE1 protects against biological
+    aging in humans, Sci Adv, 2017
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5687852/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 27
   score1Star: 4567
   score2Stars: 5620

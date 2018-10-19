@@ -20,13 +20,19 @@ MonoBehaviour:
   geneDescENKey: "Chromosomewalk : G\xE8ne impliqu\xE9 dans la synchronisation de
     nos rythmes biologiques avec l\u2019alternance du jour et de la nuit. game : depression"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=une-horloge-dans-la-peau
+  transcript: ENST00000372071
+  snpName: rs2675703
   uniprotLink: https://www.uniprot.org/uniprot/Q9UHM6
   nextprotLink: https://www.nextprot.org/entry/NX_Q9UHM6
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs2675703
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000372071
-  transcript: ENST00000372071
-  snpName: rs2675703
+  publication1Title: Roecklein KA et al., A missense variant (P10L) of the melanopsin
+    (OPN4) gene in seasonal affective disorder, J Affect Disord, 2009
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2647333/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 36
   score1Star: 5850
   score2Stars: 7200

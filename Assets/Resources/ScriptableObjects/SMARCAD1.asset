@@ -22,13 +22,19 @@ MonoBehaviour:
     n\u2019ont pas d\u2019empreinte digitale (immigration delay disease) et ont souvent
     des probl\xE8mes pour passer la douane ! \u2026  game : No finger print"
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-4/?g=le-bout-de-nos-doigts
+  transcript: ENST00000509418
+  snpName: rs1057519613
   uniprotLink: https://www.uniprot.org/uniprot/Q9H4L7
   nextprotLink: https://www.nextprot.org/entry/NX_Q9H4L7
   pubmedLink: 
+  pubmedLink2: 
   snpediaLink: https://www.snpedia.com/index.php/rs1057519613
   transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000509418
-  transcript: ENST00000509418
-  snpName: rs1057519613
+  publication1Title: Nousbeck J et al., A mutation in a skin-specific isoform of SMARCAD1
+    causes autosomal-dominant adermatoglyphia, Am J Hum Genet, 2011
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3155166/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 43
   score1Star: 5200
   score2Stars: 6400

@@ -21,13 +21,20 @@ MonoBehaviour:
     l\u2019oxyg\xE8ne dans notre sang. Une variation dans ce g\xE8ne peux produire
     une maladie qui s'appele  l'an\xE9mie \xE0 cellules falciformes."
   chromosomeLink: http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=un-taxi-pour-loxygene
-  uniprotLink: https://www.uniprot.org/uniprot/P68871
-  nextprotLink: https://www.nextprot.org/entry/NX_P68871
-  pubmedLink: https://www.ncbi.nlm.nih.gov/pubmed/20552021
-  snpediaLink: https://www.snpedia.com/index.php/rs334
-  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000335295
   transcript: ENST00000335295
   snpName: rs334
+  uniprotLink: https://www.uniprot.org/uniprot/P68871
+  nextprotLink: https://www.nextprot.org/entry/NX_P68871
+  pubmedLink: 
+  pubmedLink2: 
+  snpediaLink: https://www.snpedia.com/index.php/rs334
+  transcriptLink: http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=ENST00000335295
+  publication1Title: Ayodo G et al., Combining evidence of natural selection with
+    association analysis increases power to detect malaria-resistance variants, Am
+    J Hum Genet, 2007
+  publication1Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1950820/
+  publication2Title: 
+  publication2Link: 
   objectiveTimeSeconds: 12
   score1Star: 3023
   score2Stars: 3720
