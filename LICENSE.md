@@ -1,8 +1,7 @@
-            © SIB Swiss Institute of Bionformatics - 2018
+**© SIB Swiss Institute of Bionformatics - 2018**
 
 Genome Jumper is owned exclusively by the SIB Swiss Institute of Bioinformatics 
 and made publicly available under the [GNU General Public License v3.0 or later version](https://www.gnu.org/licenses/gpl-3.0.html).
-
 
 
                     GNU GENERAL PUBLIC LICENSE
