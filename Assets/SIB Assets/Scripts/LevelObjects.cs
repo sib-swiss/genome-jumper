@@ -17,7 +17,7 @@ public class LevelObjects : MonoBehaviour {
     void Update()
     {
         variantesCount = GameObject.FindGameObjectsWithTag("SuperVariante").Length;
-        startingHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>().InitialHealth;
+        startingHealth = (int)GameObject.FindGameObjectWithTag("Player").GetComponent<Health>().InitialHealth;
         coinsCount = GameObject.FindGameObjectsWithTag("Coins").Length;
     }
 }

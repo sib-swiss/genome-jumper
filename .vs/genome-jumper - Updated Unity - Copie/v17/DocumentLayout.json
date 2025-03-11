@@ -1,0 +1,222 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|c:\\developpement\\genome-jumper - updated unity - copie\\assets\\sib assets\\scripts\\triggerspliceosomemovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|solutionrelative:assets\\sib assets\\scripts\\triggerspliceosomemovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|c:\\developpement\\genome-jumper - updated unity - copie\\assets\\sib assets\\scripts\\debugendgameitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|solutionrelative:assets\\sib assets\\scripts\\debugendgameitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\InputModules\\BaseInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\InputModules\\BaseInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{592FDAE3-5B0B-2839-1BF0-AB715A253EDC}|MoreMountains.Tools.csproj|c:\\developpement\\genome-jumper - updated unity - copie\\assets\\corgiengine\\thirdparty\\moremountains\\mmtools\\tools\\mmperformance\\mmfpsunlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{592FDAE3-5B0B-2839-1BF0-AB715A253EDC}|MoreMountains.Tools.csproj|solutionrelative:assets\\corgiengine\\thirdparty\\moremountains\\mmtools\\tools\\mmperformance\\mmfpsunlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{592FDAE3-5B0B-2839-1BF0-AB715A253EDC}|MoreMountains.Tools.csproj|c:\\developpement\\genome-jumper - updated unity - copie\\assets\\corgiengine\\thirdparty\\moremountains\\mmtools\\tools\\mmdebugmenu\\scripts\\commands\\mmdebugmenucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{592FDAE3-5B0B-2839-1BF0-AB715A253EDC}|MoreMountains.Tools.csproj|solutionrelative:assets\\corgiengine\\thirdparty\\moremountains\\mmtools\\tools\\mmdebugmenu\\scripts\\commands\\mmdebugmenucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|c:\\developpement\\genome-jumper - updated unity - copie\\assets\\sib assets\\scripts\\starttestandsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|solutionrelative:assets\\sib assets\\scripts\\starttestandsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|c:\\developpement\\genome-jumper - updated unity - copie\\assets\\sib assets\\scripts\\firsttimeplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|solutionrelative:assets\\sib assets\\scripts\\firsttimeplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|C:\\Developpement\\genome-jumper - Updated Unity - Copie\\assets\\sib assets\\i18n\\fr.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|solutionrelative:assets\\sib assets\\i18n\\fr.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\Plugins\\Android\\AndroidManifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Plugins\\Android\\AndroidManifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9CF2CF-299E-3F01-1935-8EE037054772}|MoreMountains.CorgiEngine.csproj|c:\\developpement\\genome-jumper - updated unity - copie\\assets\\corgiengine\\common\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9CF2CF-299E-3F01-1935-8EE037054772}|MoreMountains.CorgiEngine.csproj|solutionrelative:assets\\corgiengine\\common\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|C:\\Developpement\\genome-jumper - Updated Unity - Copie\\assets\\sib assets\\i18n\\de.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|solutionrelative:assets\\sib assets\\i18n\\de.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|C:\\Developpement\\genome-jumper - Updated Unity - Copie\\assets\\sib assets\\i18n\\en.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{803DFC13-1555-73D5-EF3F-C087E18FABEA}|Assembly-CSharp.csproj|solutionrelative:assets\\sib assets\\i18n\\en.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TriggerSpliceosomeMovement.cs",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\Scripts\\TriggerSpliceosomeMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\SIB Assets\\Scripts\\TriggerSpliceosomeMovement.cs",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\Scripts\\TriggerSpliceosomeMovement.cs*",
+              "RelativeToolTip": "Assets\\SIB Assets\\Scripts\\TriggerSpliceosomeMovement.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:59:46.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DebugEndGameItems.cs",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\Scripts\\DebugEndGameItems.cs",
+              "RelativeDocumentMoniker": "Assets\\SIB Assets\\Scripts\\DebugEndGameItems.cs",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\Scripts\\DebugEndGameItems.cs",
+              "RelativeToolTip": "Assets\\SIB Assets\\Scripts\\DebugEndGameItems.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:59:27.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseInput.cs",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\InputModules\\BaseInput.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\InputModules\\BaseInput.cs",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\InputModules\\BaseInput.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\InputModules\\BaseInput.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:57:50.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StartTestAndSound.cs",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\Scripts\\StartTestAndSound.cs",
+              "RelativeDocumentMoniker": "Assets\\SIB Assets\\Scripts\\StartTestAndSound.cs",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\Scripts\\StartTestAndSound.cs",
+              "RelativeToolTip": "Assets\\SIB Assets\\Scripts\\StartTestAndSound.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:45:20.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FirstTimePlay.cs",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\Scripts\\FirstTimePlay.cs",
+              "RelativeDocumentMoniker": "Assets\\SIB Assets\\Scripts\\FirstTimePlay.cs",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\Scripts\\FirstTimePlay.cs",
+              "RelativeToolTip": "Assets\\SIB Assets\\Scripts\\FirstTimePlay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T08:48:48.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MMFPSUnlock.cs",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\CorgiEngine\\ThirdParty\\MoreMountains\\MMTools\\Tools\\MMPerformance\\MMFPSUnlock.cs",
+              "RelativeDocumentMoniker": "Assets\\CorgiEngine\\ThirdParty\\MoreMountains\\MMTools\\Tools\\MMPerformance\\MMFPSUnlock.cs",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\CorgiEngine\\ThirdParty\\MoreMountains\\MMTools\\Tools\\MMPerformance\\MMFPSUnlock.cs",
+              "RelativeToolTip": "Assets\\CorgiEngine\\ThirdParty\\MoreMountains\\MMTools\\Tools\\MMPerformance\\MMFPSUnlock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T08:00:50.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MMDebugMenuCommands.cs",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\CorgiEngine\\ThirdParty\\MoreMountains\\MMTools\\Tools\\MMDebugMenu\\Scripts\\Commands\\MMDebugMenuCommands.cs",
+              "RelativeDocumentMoniker": "Assets\\CorgiEngine\\ThirdParty\\MoreMountains\\MMTools\\Tools\\MMDebugMenu\\Scripts\\Commands\\MMDebugMenuCommands.cs",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\CorgiEngine\\ThirdParty\\MoreMountains\\MMTools\\Tools\\MMDebugMenu\\Scripts\\Commands\\MMDebugMenuCommands.cs",
+              "RelativeToolTip": "Assets\\CorgiEngine\\ThirdParty\\MoreMountains\\MMTools\\Tools\\MMDebugMenu\\Scripts\\Commands\\MMDebugMenuCommands.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAcwHYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T08:00:44.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\CorgiEngine\\Common\\Scripts\\Managers\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\CorgiEngine\\Common\\Scripts\\Managers\\GameManager.cs",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\CorgiEngine\\Common\\Scripts\\Managers\\GameManager.cs",
+              "RelativeToolTip": "Assets\\CorgiEngine\\Common\\Scripts\\Managers\\GameManager.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAA9wNcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T08:00:29.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\Plugins\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Assets\\Plugins\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\Plugins\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "Assets\\Plugins\\Android\\AndroidManifest.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-02-26T10:30:54.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "fr.txt",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\I18N\\fr.txt",
+              "RelativeDocumentMoniker": "Assets\\SIB Assets\\I18N\\fr.txt",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\I18N\\fr.txt",
+              "RelativeToolTip": "Assets\\SIB Assets\\I18N\\fr.txt",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-25T11:49:19.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "en.txt",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\I18N\\en.txt",
+              "RelativeDocumentMoniker": "Assets\\SIB Assets\\I18N\\en.txt",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\I18N\\en.txt",
+              "RelativeToolTip": "Assets\\SIB Assets\\I18N\\en.txt",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAFQAAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-25T11:49:48.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "de.txt",
+              "DocumentMoniker": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\I18N\\de.txt",
+              "RelativeDocumentMoniker": "Assets\\SIB Assets\\I18N\\de.txt",
+              "ToolTip": "C:\\Developpement\\genome-jumper - Updated Unity - Copie\\Assets\\SIB Assets\\I18N\\de.txt",
+              "RelativeToolTip": "Assets\\SIB Assets\\I18N\\de.txt",
+              "ViewState": "AgIAACsAAAAAAAAAAAASwFMAAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-25T11:49:41.905Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

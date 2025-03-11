@@ -23,15 +23,17 @@ public class TutorialPopup : MonoBehaviour {
 
         // Update is called once per frame
         void OnTriggerEnter2D (Collider2D col) {
-        if(col.gameObject.tag == "Player")
-            //Camera.main.orthographicSize = Mathf.MoveTowards(Camera.main.orthographicSize, 1.3f, 18f * Time.deltaTime);
-            //Camera.main.GetComponent<CameraController>().CameraOffset.x = Mathf.MoveTowards(Camera.main.GetComponent<CameraController>().CameraOffset.x, 0, 18f * Time.deltaTime);
-            //Camera.main.GetComponent<CameraController>().CameraOffset.x = 0;
-            //Camera.main.GetComponent<CameraController>().HorizontalLookDistance = 0;
-            //Time.timeScale = 0.05F;
-            //Time.fixedDeltaTime = Time.timeScale * .02F;
-           // timeIsScale = true;
-            popup.gameObject.SetActive(true);
+            if(col.gameObject.tag == "Player")
+            {
+                //Camera.main.orthographicSize = Mathf.MoveTowards(Camera.main.orthographicSize, 1.3f, 18f * Time.deltaTime);
+                //Camera.main.GetComponent<CameraController>().CameraOffset.x = Mathf.MoveTowards(Camera.main.GetComponent<CameraController>().CameraOffset.x, 0, 18f * Time.deltaTime);
+                //Camera.main.GetComponent<CameraController>().CameraOffset.x = 0;
+                //Camera.main.GetComponent<CameraController>().HorizontalLookDistance = 0;
+                //Time.timeScale = 0.05F;
+                //Time.fixedDeltaTime = Time.timeScale * .02F;
+               // timeIsScale = true;
+                popup.gameObject.SetActive(true);
+            }
         }
 
     void OnTriggerExit2D(Collider2D collision)

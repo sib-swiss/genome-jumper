@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using MoreMountains.CorgiEngine;
+using MoreMountains.Tools;
 using UnityEngine;
 
 public class StarsAnimations : MonoBehaviour
@@ -24,7 +25,7 @@ public class StarsAnimations : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		zik.Stop();
+		//zik.Stop();
 		left = left.GetComponent<Animator>();
 		mid = mid.GetComponent<Animator>();
 		right = right.GetComponent<Animator>();
@@ -42,7 +43,7 @@ public class StarsAnimations : MonoBehaviour
 		yield return new WaitForSeconds(1);
 		if (endLvl.star1)
 		{
-			SoundManager.Instance.PlaySound(starL,transform.position);
+            MMSoundManager.Instance.PlaySound(starL, MMSoundManagerPlayOptions.Default);
 			left.enabled = true;
 		}
 	}
@@ -55,7 +56,7 @@ public class StarsAnimations : MonoBehaviour
 			particlesLeftOn = true;
 			if (endLvl.star2)
 			{
-				SoundManager.Instance.PlaySound(starR, transform.position);
+                MMSoundManager.Instance.PlaySound(starR, MMSoundManagerPlayOptions.Default);
 				right.enabled = true;
 			}
 			left.GetComponentInChildren<ParticleSystem>().Play();
@@ -66,8 +67,8 @@ public class StarsAnimations : MonoBehaviour
 			particlesRighttOn = true;
 			if (endLvl.star3)
 			{
-				SoundManager.Instance.PlaySound(starM,transform.position);
-				mid.enabled = true;
+                MMSoundManager.Instance.PlaySound(starM, MMSoundManagerPlayOptions.Default);
+                mid.enabled = true;
 			}
 			right.GetComponentInChildren<ParticleSystem>().Play();
 		}

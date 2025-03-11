@@ -92,5 +92,10 @@ public class DisplayItemsEndScreen : MonoBehaviour {
             HeadItems.transform.GetChild(6).GetChild(0).GetComponent<Renderer>().sortingOrder = 134;
             HeadItems.transform.GetChild(6).GetChild(0).GetComponent<Renderer>().sortingLayerName = "UI";
         }
+
+        if(avatarNumber == 21 && geneNumber == 2)
+        {
+            HeadItems.transform.GetChild(1).transform.localPosition = new Vector3(HeadItems.transform.GetChild(1).transform.localPosition.x - 1f, HeadItems.transform.GetChild(1).transform.localPosition.y - 4f, HeadItems.transform.GetChild(1).transform.localPosition.z);
+        }
     }
 }

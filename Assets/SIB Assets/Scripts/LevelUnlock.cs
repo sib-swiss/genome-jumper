@@ -37,6 +37,7 @@ public class LevelUnlock : MonoBehaviour {
         geneNumber = PlayerPrefs.GetInt("CombinationPlayGene");
         Debug.Log(geneNumber);
         string currentUnlocked = PlayerPrefs.GetString("CurrentAvatarAndGeneUnlocked");
+        Debug.Log("currentUnlocked " + currentUnlocked);
         if (currentUnlocked[3].ToString() == "G")
         {
             if(Convert.ToInt32(currentUnlocked[1].ToString()) == 1)
@@ -57,7 +58,11 @@ public class LevelUnlock : MonoBehaviour {
         }
         
         int currentTimer = PlayerPrefs.GetInt("CurrentTimer");
-        
+        Debug.Log("currentTimer " + currentTimer);
+
+        Debug.Log("avatarNumber " + avatarNumber);
+        Debug.Log("currentUnlockedAvatar " + currentUnlockedAvatar);
+
         if (avatarNumber < currentUnlockedAvatar)
         {
             if(PlayerPrefs.GetInt("A" + avatarNumber + "G" + geneNumber + "score") == 0 || PlayerPrefs.GetInt("A" + avatarNumber + "G" + geneNumber + "score") < levelScore) {
@@ -74,7 +79,7 @@ public class LevelUnlock : MonoBehaviour {
             if(geneNumber == 3)
             {
                 GameObject.Find("GoToNextLevelBtn").SetActive(true);
-                GameObject.Find("NexLvl").SetActive(true);
+                GameObject.Find("NextLvl").SetActive(true);
             }
             
         }
@@ -96,6 +101,7 @@ public class LevelUnlock : MonoBehaviour {
         {
             if (geneNumber == 3)
             {
+                Debug.Log("test1");
                 if (PlayerPrefs.GetInt("A" + avatarNumber + "G" + geneNumber + "score") == 0 || PlayerPrefs.GetInt("A" + avatarNumber + "G" + geneNumber + "score") < levelScore) {
                     PlayerPrefs.SetInt("A" + avatarNumber + "G" + geneNumber + "score", levelScore);
                 };
@@ -105,10 +111,14 @@ public class LevelUnlock : MonoBehaviour {
                 if (PlayerPrefs.GetInt("A" + avatarNumber + "G" + geneNumber + "collectedStars") == 0 || PlayerPrefs.GetInt("A" + avatarNumber + "G" + geneNumber + "collectedStars") <= levelStars) {
                     PlayerPrefs.SetInt("A" + avatarNumber + "G" + geneNumber + "collectedStars", levelStars);
                 }
+                Debug.Log("test2");
 
                 PlayerPrefs.SetString("CurrentAvatarAndGeneUnlocked", "A" + (currentUnlockedAvatar + 1) + "G1");
+                Debug.Log("test3");
                 GameObject.Find("GoToNextLevelBtn").SetActive(true);
-                GameObject.Find("NexLvl").SetActive(true);
+                Debug.Log("test3");
+                GameObject.Find("NextLvl").SetActive(true);
+                Debug.Log("test4");
             }
             else
             {
@@ -116,7 +126,7 @@ public class LevelUnlock : MonoBehaviour {
                     PlayerPrefs.SetString("CurrentAvatarAndGeneUnlocked", "A" + currentUnlockedAvatar + "G" + (currentUnlockedGene + 1));
                 }
                 GameObject.Find("GoToNextLevelBtn").SetActive(true);
-                GameObject.Find("NexLvl").SetActive(true);
+                GameObject.Find("NextLvl").SetActive(true);
                 if (PlayerPrefs.GetInt("A" + avatarNumber + "G" + geneNumber + "score") == 0 || PlayerPrefs.GetInt("A" + avatarNumber + "G" + geneNumber + "score") < levelScore) {
                     PlayerPrefs.SetInt("A" + avatarNumber + "G" + geneNumber + "score", levelScore);
                 }
@@ -131,9 +141,10 @@ public class LevelUnlock : MonoBehaviour {
                 Debug.Log(PlayerPrefs.GetString("CurrentAvatarAndGeneUnlocked"));
             }
         }
-
+        Debug.Log("FinalScore1");
         GameObject.Find("FinalScore").GetComponent<Text>().text = levelScore.ToString();
         GameObject.Find("TimeScore").GetComponent<Text>().text = PlayerPrefs.GetString("TimerText");
+        Debug.Log("FinalScore2");
         //GameObject.Find("GeneName").GetComponent<Text>().text = SceneManager.GetActiveScene().name;
     }
 }

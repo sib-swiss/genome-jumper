@@ -13,7 +13,7 @@ public class Life : MonoBehaviour {
 	public Sprite plein;
 
 	public void UpdateLife (float life) {
-        if(GameObject.Find("UICamera").transform.GetChild(0).GetChild(11).gameObject.activeInHierarchy == false) {
+        //if(GameObject.Find("UICamera").transform.GetChild(0).GetChild(11).gameObject.activeInHierarchy == false) {
             Image h1 = GameObject.Find("h1").GetComponent<Image>();
             Image h2 = GameObject.Find("h2").GetComponent<Image>();
             Image h3 = GameObject.Find("h3").GetComponent<Image>();
@@ -85,7 +85,7 @@ public class Life : MonoBehaviour {
                     h1.sprite = plein;
                     break;
             }
-        }
+        //}
 		
 	}
 }

@@ -300,7 +300,7 @@ public class WaypointManagerEditor : Editor
         Handles.color = Color.green;
         foreach (var point in script.selected.points)
         {
-            Handles.SphereCap(0, point, Quaternion.identity, script.selected.pointSize);
+            Handles.SphereHandleCap(0, point, Quaternion.identity, script.selected.pointSize, EventType.Ignore);
         }
         Handles.color = Color.white;
     }
@@ -325,7 +325,7 @@ public class WaypointManagerEditor : Editor
         for (int i = 0; i < wayPoints.Count; i++)
         {
             Handles.color = Color.magenta;
-            wayPoints[i] = Handles.FreeMoveHandle(wayPoints[i], Quaternion.identity, script.selected.pointSize, Vector3.zero, Handles.SphereCap);
+            var fmh_328_65_638717739403233239 = Quaternion.identity; wayPoints[i] = Handles.FreeMoveHandle(wayPoints[i], script.selected.pointSize, Vector3.zero, Handles.SphereHandleCap);
 
             if (script.selected.lineType == PathLineType.BezierCurve)
             {
@@ -335,7 +335,7 @@ public class WaypointManagerEditor : Editor
                 Handles.color = Color.gray;
                 if (i != 0)
                 {
-                    Vector3 movedPoint = Handles.FreeMoveHandle(firstControlPoint, Quaternion.identity, script.selected.pointSize, Vector3.zero, Handles.SphereCap);
+                    var fmh_338_84_638717739403248490 = Quaternion.identity; Vector3 movedPoint = Handles.FreeMoveHandle(firstControlPoint, script.selected.pointSize, Vector3.zero, Handles.SphereHandleCap);
                     if (firstControlPoint != movedPoint)
                     {
                         firstControlPoint = movedPoint - wayPoints[i];
@@ -348,7 +348,7 @@ public class WaypointManagerEditor : Editor
                 }
                 if (i != wayPoints.Count - 1)
                 {
-                    Vector3 movedPoint = Handles.FreeMoveHandle(secondControlPoint, Quaternion.identity, script.selected.pointSize, Vector3.zero, Handles.SphereCap);
+                    var fmh_351_85_638717739403250242 = Quaternion.identity; Vector3 movedPoint = Handles.FreeMoveHandle(secondControlPoint, script.selected.pointSize, Vector3.zero, Handles.SphereHandleCap);
                     if (secondControlPoint != movedPoint)
                     {
                         secondControlPoint = movedPoint - wayPoints[i];

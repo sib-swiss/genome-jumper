@@ -18,13 +18,15 @@ namespace MoreMountains.CorgiEngine
 
 		public virtual void Update () {
 
-			if (ctrl.jumpSoon) {
-				Camera.main.orthographicSize = Mathf.MoveTowards (Camera.main.orthographicSize, targetOrtho, smoothSpeed * Time.deltaTime);
-			}
-			if (!ctrl.jumpSoon && ctrl.isGrounded) {
-				Camera.main.orthographicSize = Mathf.MoveTowards (Camera.main.orthographicSize, orthoOrigin, smoothSpeed * Time.deltaTime);
-			
-			}
-		}
+            if (ctrl.jumpSoon)
+            {
+                Camera.main.orthographicSize = Mathf.MoveTowards(Camera.main.orthographicSize, targetOrtho, smoothSpeed * Time.deltaTime);
+            }
+            if (!ctrl.jumpSoon && ctrl.State.IsGrounded)
+            {
+                Camera.main.orthographicSize = Mathf.MoveTowards(Camera.main.orthographicSize, orthoOrigin, smoothSpeed * Time.deltaTime);
+
+            }
+        }
 	}
 }

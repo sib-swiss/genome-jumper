@@ -5,8 +5,7 @@ using UnityEngine;
 using MoreMountains.CorgiEngine;
 using MoreMountains.Tools;
 using UnityEngine.Events;
-using UnityEngine.PostProcessing;
-using VoxelBusters.Utility;
+using UnityEngine.Rendering.PostProcessing;
 using Object = UnityEngine.Object;
 
 public class SuperVariant_oldVersion : MonoBehaviour {
@@ -18,11 +17,11 @@ public class SuperVariant_oldVersion : MonoBehaviour {
     public Camera PostProcessCam;
 
 	[Header("PostProcessing Profiles")]
-	public PostProcessingProfile superMusclesProfile;
-	public PostProcessingProfile beerProfile;
-	public PostProcessingProfile colorblindProfile;
-	public PostProcessingProfile cannabisProfile;
-	public PostProcessingProfile deafnessProfile;
+	public PostProcessProfile superMusclesProfile;
+	public PostProcessProfile beerProfile;
+	public PostProcessProfile colorblindProfile;
+	public PostProcessProfile cannabisProfile;
+	public PostProcessProfile deafnessProfile;
 
 	[Header("Attributes")]
 	/// <summary>
@@ -94,8 +93,8 @@ public class SuperVariant_oldVersion : MonoBehaviour {
                 svpm.enableSuperHeart();
             }
         }
-        PostProcessCam.GetComponent<PostProcessingBehaviour>().enabled = true;
-        Debug.Log(PostProcessCam.GetComponent<PostProcessingBehaviour>().isActiveAndEnabled);
+        //PostProcessCam.GetComponent<PostProcessingBehaviour>().enabled = true;
+        //Debug.Log(PostProcessCam.GetComponent<PostProcessingBehaviour>().isActiveAndEnabled);
     }
 
 	private IEnumerator IncreaseScore()

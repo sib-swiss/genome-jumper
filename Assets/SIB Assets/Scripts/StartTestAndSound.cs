@@ -29,5 +29,9 @@ public class StartTestAndSound : MonoBehaviour
 		{
 			AudioListener.volume = 0;
 		}
+		else
+		{
+			AudioListener.volume = 1;
+		}
 	}
 }

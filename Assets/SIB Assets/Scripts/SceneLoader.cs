@@ -25,6 +25,7 @@ public class SceneLoader : MonoBehaviour
         if (sceneName == "LevelSelection"){
 			if (PlayerPrefs.GetInt ("TutorialCompleted") == 0 && !SceneManager.GetActiveScene().name.Equals("Glossaire")) {
 				Debug.Log("Launching tutorial");
+                PlayerPrefs.SetInt("HasTriggeredSnp", 0);
 				PlayerPrefs.SetString ("checkpoint", "");
                 PlayerPrefs.SetString("SuperVariantEffect", "None");
                 PlayerPrefs.SetInt("PreviousTime", 0);
@@ -37,27 +38,32 @@ public class SceneLoader : MonoBehaviour
 						{ "gene", "tutorial" }
 					}
 				);
-                LoadingSceneManager.LoadScene("Tutorial");
-				return;
+                Debug.Log("<color=red> SceneLoader LoadingSceneManager.LoadScene A DEBUG </color>");
+                MoreMountains.Tools.MMSceneLoadingManager.LoadScene("Tutorial");
+                //LoadingSceneManager.LoadScene("Tutorial");
+                //SceneManager.LoadScene("Tutorial");
+
+                return;
 			} else {
 				Debug.Log("Launching level selection");
-				LevelSplicing.moveables = new List<GameObject>();
-				LevelSplicing.lastExonFlag = new GameObject();
-				LevelSplicing.lastIntronFlag = new GameObject();
-				LevelSplicing.scriptCounter = 0;
+				//LevelSplicing.moveables = new List<GameObject>();
+				//LevelSplicing.lastExonFlag = new GameObject();
+				//LevelSplicing.lastIntronFlag = new GameObject();
+				//LevelSplicing.scriptCounter = 0;
 				PlayerPrefs.SetString ("checkpoint", "");
 				PlayerPrefs.SetInt("PreviousTime", 0);
                 PlayerPrefs.SetString("SuperVariantEffect", "None");
                 PlayerPrefs.SetInt("PreviousScore", 0);
 				PlayerPrefs.SetString("PlayerTookSNP", "false");
-				PlayerPrefs.SetString("PlayerTookStart", "false");
+                PlayerPrefs.SetInt("HasTriggeredSnp", 0);
+                PlayerPrefs.SetString("PlayerTookStart", "false");
 				PlayerPrefs.Save();
 				SceneManager.LoadScene(sceneName);
 				return;
 			}
         }
 
-		LevelSplicing.resetSplicing ();
+		//LevelSplicing.resetSplicing ();
 
 		//PlayerPrefs.SetString("levels", avatarObj.gene1+"|"+avatarObj.gene2+"|"+avatarObj.gene3);
 
@@ -70,11 +76,17 @@ public class SceneLoader : MonoBehaviour
 
 			PlayerPrefs.SetInt("PreviousTime", 0);
             PlayerPrefs.SetInt("PreviousScore", 0);
+            PlayerPrefs.SetString("checkpoint", "");
+            PlayerPrefs.SetString("CheckpointOrder", null);
+            PlayerPrefs.SetString("SuperVariantEffect", "None");
             PlayerPrefs.SetString("PlayerTookSNP", "false");
-			PlayerPrefs.SetString ("PlayerTookStart", "false");
+            PlayerPrefs.SetString("PlayerTookStart", "false");
+            PlayerPrefs.SetInt("hasTriggeredStartCodon", 0);
+            PlayerPrefs.SetInt("hasTriggeredStopCodon", 0);
+            PlayerPrefs.SetInt("HasTriggeredSnp", 0);
+            PlayerPrefs.Save();
 
 
-            PlayerPrefs.SetString ("checkpoint", "");
 			if (currentGeneNumber == 3 || (nextGeneNumber>3)) {
                 /*LevelPopupCreator nextAvatarGenes;
                 PlayerPrefs.SetInt("CombinationPlayAvatar", PlayerPrefs.GetInt("CombinationPlayAvatar") + 1);
@@ -119,6 +131,7 @@ public class SceneLoader : MonoBehaviour
             PlayerPrefs.SetInt("PreviousScore", 0);
             PlayerPrefs.SetString("PlayerTookSNP", "false");
             PlayerPrefs.SetString("PlayerTookStart", "false");
+            PlayerPrefs.SetInt("HasTriggeredSnp", 0);
 
             PlayerPrefs.SetString ("checkpoint", "");
             GetPersistency(CurrentAvatar, CurrentGene);
@@ -157,9 +170,12 @@ public class SceneLoader : MonoBehaviour
 
 		PlayerPrefs.SetString("SuperVariantPersistency","None");
 
+        Debug.Log("avatarNb " + avatarNb + " geneNb " + geneNb);
+
         // Avatar 01 //
         if (avatarNb == 1 && geneNb == 1) {
             PlayerPrefs.SetString("IsFirstGeneOfAvatar", "true");
+            Debug.Log("Set string firstGene to true");
             // SNP Persistency
             PlayerPrefs.SetString("CurrentGeneSkinModification", "city dweller male");
             PlayerPrefs.SetString("CurrentGeneHeadItem", "HeadMask");

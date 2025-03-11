@@ -6,15 +6,15 @@ public class LevelSplicing : MonoBehaviour {
 
 	public bool shouldTrigger = false;
 
-	public static float movingSpeed = 1f; // Compteur de déplacement
+	public static float movingSpeed = 3.33f; // Compteur de déplacement
 
 	public static GameObject lastExonFlag;
 	public static GameObject lastIntronFlag;
 
-	private GameObject _lastExonFlag;
-	private GameObject _lastIntronFlag;
+	public GameObject _lastExonFlag;
+	public GameObject _lastIntronFlag;
 
-	public static List<GameObject> moveables = new List<GameObject>(); // Liste statique de l'ensemble des objets déplacable lors du splicing
+	public List<GameObject> moveables = new List<GameObject>(); // Liste statique de l'ensemble des objets déplacable lors du splicing
 	public List<GameObject> toMoves = new List<GameObject>(); //Object à déplacer
 
 	private float toMoveDistance = 0; //Distance de déplacement en x
@@ -26,6 +26,9 @@ public class LevelSplicing : MonoBehaviour {
 
     void Start()
     {
+		//resetSplicing();
+
+
 		currentScriptCounter = scriptCounter;
 
 		if (moveables.Count == 0) {
@@ -51,12 +54,12 @@ public class LevelSplicing : MonoBehaviour {
 		//Debug.Log ("Initializing Moveables : "+moveables.Count+" items");
     }
 
-	public static void resetSplicing(){
-		moveables = new List<GameObject>(); 
+	public void resetSplicing(){
+		toMoves = new List<GameObject>();
+
 		lastExonFlag = null;
 		lastIntronFlag = null;
 		scriptCounter = 0;
-		movingSpeed = 1f;
 	}
 
     void Update()
@@ -64,12 +67,15 @@ public class LevelSplicing : MonoBehaviour {
 		if (shouldTrigger) {
 
 			if (toMoveDistance == 0) {
-				//Debug.Log ("Trigger Splicing !");
 
 				//Calcul de la distance entre les deux drapeaux OU autre solution possible calculer la taille de l'intron que l'on vient de franchir, cela implique de raycast aussi l'intron en plus des drapeaux
+				if(_lastExonFlag == null || _lastIntronFlag == null) {
+					return;
+				}
 				toMoveDistance = _lastExonFlag.transform.position.x - _lastIntronFlag.transform.position.x;
 
 				scriptCounter++;
+
 
 				//Recupération de tous les éléments avant le drapeau d'exon, pour les déplacer
 				foreach (GameObject moveable in moveables) {
@@ -85,16 +91,15 @@ public class LevelSplicing : MonoBehaviour {
 
 			} else {
 				//Distance déjà calculée
-				//Debug.Log ("Splicing in progress "+toMoveInc+" / "+toMoveDistance);
 				foreach (GameObject toMove in toMoves) {
-					toMove.transform.position = new Vector3(toMove.transform.position.x + (movingSpeed * Time.deltaTime),toMove.transform.position.y,toMove.transform.position.z);
+					toMove.transform.position =		new Vector3(toMove.transform.position.x + (movingSpeed * Time.deltaTime),toMove.transform.position.y,toMove.transform.position.z);
 				}
 
-				toMoveInc += (movingSpeed* Time.deltaTime);
+				toMoveInc += (movingSpeed * Time.deltaTime);
 
 				if (toMoveInc >= toMoveDistance) {
-					//Debug.Log ("Splicing done, disabling Component "+currentScriptCounter);
-					GetComponents<LevelSplicing>()[currentScriptCounter].enabled=false;
+					//GetComponents<LevelSplicing>()[currentScriptCounter].enabled=false;
+					this.enabled = false;
 				}
 			}
 		} else {
@@ -116,10 +121,7 @@ public class LevelSplicing : MonoBehaviour {
 
 						shouldTrigger = true;
 
-						//Debug.Log ("New Exon Flag, Start Splicing from _lastIntronFlag");
-					}/* else {
-						Debug.Log ("Exon Flag");
-					}*/
+					}
 
 				} else if (raycast.collider.tag == "Intron Flag") {
 
@@ -128,10 +130,7 @@ public class LevelSplicing : MonoBehaviour {
 					//On compare la variable statique de tous les script level splicing avec la variable locale
 					if (_lastIntronFlag != lastIntronFlag) {
 						lastIntronFlag = _lastIntronFlag;
-						//Debug.Log ("New Intron Flag");
-					}/* else {
-						Debug.Log ("Intron Flag");
-					}*/
+					}
 
 				}
 			}

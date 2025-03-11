@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using MoreMountains.CorgiEngine;
+using MoreMountains.Tools;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class StartStopCodonBehaviour : MonoBehaviour {
 
-    private GameObject pointsText;
+    public GameObject pointsText;
     public GameObject StartOrStopPlatform;
     public GameObject StartOrStopReplace;
     public GameObject particles;
@@ -25,17 +28,42 @@ public class StartStopCodonBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        move = 1.2f * Time.deltaTime;
+        move = 3.66f * Time.deltaTime;
         pointsText = GameObject.Find("PointsText");
         thisSpriteRenderer = GetComponent<SpriteRenderer>();
-		if(PlayerPrefs.GetString("PlayerTookStart").Equals("true") && transform.name.Equals("StartBubble")) {
-            transform.position = new Vector3(0, 0, 0);
-            Debug.Log(transform.position + " v " + GameObject.FindGameObjectWithTag("Player").transform.position);
+		//if(PlayerPrefs.GetString("PlayerTookStart").Equals("true") && transform.name.Equals("StartBubble")) {
+  //          transform.position = new Vector3(0, 0, 0);
+  //          Debug.Log(transform.position + " v " + GameObject.FindGameObjectWithTag("Player").transform.position);
+  //      }
+
+        if (gameObject.name.Contains("Start"))
+        {
+            if (PlayerPrefs.GetInt("hasTriggeredStartCodon") == 1)
+            {
+                hasBeenTriggered = true;
+                TriggerCodon(true);
+            }
+            else
+            {
+                hasBeenTriggered = false;
+            }
+        }
+        else
+        {
+            if (PlayerPrefs.GetInt("hasTriggeredStopCodon") == 1)
+            {
+                hasBeenTriggered = true;
+                TriggerCodon(true);
+            }
+            else
+            {
+                hasBeenTriggered = false;
+            }
         }
     }
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 		if(goMoveStartCodon)
         {
             StartOrStopReplace.transform.position = Vector3.MoveTowards(StartOrStopReplace.transform.position, StartOrStopPlatform.transform.position, move);
@@ -54,22 +82,43 @@ public class StartStopCodonBehaviour : MonoBehaviour {
     {
         if (!hasBeenTriggered)
         {
-            
-            SoundManager.Instance.PlaySound(bubbleExplosionSound,transform.position);
-            thisSpriteRenderer.enabled = false;
-            StartOrStopReplace.GetComponent<SpriteRenderer>().enabled = true;
-            goMoveStartCodon = true;
-            Instantiate(particles, transform.position, transform.rotation);
+            TriggerCodon(true);
+        }
+    }
 
-            pointsText.GetComponent<ScoreDisplay>().increaseScore(points);
+    private void TriggerCodon(bool playSound)
+    {
+        if(playSound == true)
+        {
+            MMSoundManager.Instance.PlaySound(bubbleExplosionSound, MMSoundManagerPlayOptions.Default);
+        }
+        thisSpriteRenderer.enabled = false;
+        StartOrStopReplace.GetComponent<SpriteRenderer>().enabled = true;
+        goMoveStartCodon = true;
+        Instantiate(particles, transform.position, transform.rotation);
 
-            ScaleFading scaleFading = GetComponent<ScaleFading>();
-            if (scaleFading != null)
-            {
-                scaleFading.enabled = true;
-            }
+        pointsText.GetComponent<ScoreDisplay>().increaseScore(points);
 
-            hasBeenTriggered = true;
+        ScaleFading scaleFading = GetComponent<ScaleFading>();
+        if (scaleFading != null)
+        {
+            scaleFading.enabled = true;
+        }
+
+        hasBeenTriggered = true;
+        if (gameObject.name.Contains("Start"))
+        {
+            PlayerPrefs.SetInt("hasTriggeredStartCodon", 1);
+            GameObject.Find("StartCodonIcon").GetComponent<Image>().color = new Color(255, 255, 255, 255);
+        }
+        if (gameObject.name.Contains("End"))
+        {
+            PlayerPrefs.SetInt("hasTriggeredStopCodon", 1);
+            GameObject.Find("StopCodonIcon").GetComponent<Image>().color = new Color(255, 255, 255, 255);
+        }
+        if (gameObject.name.Contains("Stop"))
+        {
+            GameObject.Find("StopCodonIcon").GetComponent<Image>().color = new Color(255, 255, 255, 255);
         }
     }
 
@@ -85,3 +134,4 @@ public class StartStopCodonBehaviour : MonoBehaviour {
         }
     }
 }
+

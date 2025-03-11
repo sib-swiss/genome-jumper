@@ -21,22 +21,41 @@ public class IntronRemover : MonoBehaviour {
 		if (collided) {
 			incWaiting++;
 			if (incWaiting > maxIncWaiting) {
-				gameObject.SetActive (false);
+				//gameObject.SetActive (false);
 			}
 		}
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		//Debug.Log ("On trigger enter 2d"+col.tag);
-		if (col.tag == "Intron") {
-			//Debug.Log ("Tag intron");
-			Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
-			rb2d.bodyType = RigidbodyType2D.Dynamic;
-			//HingeJoint2D [] hinges = GetComponentsInChildren<HingeJoint2D> ();
-			//foreach (HingeJoint2D hinge in hinges) {
-			//	hinge.enabled = false;
-			//}
-			collided = true;
-		}
+		if (col.gameObject.tag == "Intron") {
+			////Debug.Log ("Tag intron");
+			//Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
+			//rb2d.bodyType = RigidbodyType2D.Dynamic;
+			////HingeJoint2D [] hinges = GetComponentsInChildren<HingeJoint2D> ();
+			////foreach (HingeJoint2D hinge in hinges) {
+			////	hinge.enabled = false;
+			////}
+			//collided = true;
+
+            StartCoroutine(ChangeRigidbodyToDynamicAfterDelay(0.2f)); // 0.5f = délai en secondes
+            collided = true;
+        }
 	}
+
+
+    private IEnumerator ChangeRigidbodyToDynamicAfterDelay(float delay)
+    {
+        // Attendre le délai spécifié
+        yield return new WaitForSeconds(delay);
+
+        // Changer le Rigidbody2D en Dynamic
+        Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
+        rb2d.bodyType = RigidbodyType2D.Dynamic;
+
+
+		yield return new WaitForSeconds(0.9f);
+
+		this.gameObject.SetActive(false);
+
+    }
 }

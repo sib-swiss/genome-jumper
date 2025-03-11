@@ -36,7 +36,11 @@ namespace MoreMountains.CorgiEngine
 			CorgiController controller=collider.GetComponent<CorgiController>();
 			if (controller==null)
 				return;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Health>().Damage(damagesToDeal, gameObject, 0f, invincibilityDuration);
+
+            var healthScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
+            healthScript.Damage(damagesToDeal, gameObject, 0f, invincibilityDuration, Vector3.zero);
+            GameObject.FindGameObjectWithTag("hearts").GetComponent<Life>().UpdateLife(healthScript.CurrentHealth);
+
 
             if (!isInvicible)
             {
@@ -68,6 +72,12 @@ namespace MoreMountains.CorgiEngine
                     controller.SetHorizontalForce(Mathf.Sqrt(2f * knockBackForce/5 * -controller.Parameters.Gravity));
                 }
 				StartCoroutine(BumpDisabled(invincibilityDuration));
+            }
+
+
+            if (this.gameObject.name == "horizontalEnemyPrefab")
+            {
+                Destroy(this.gameObject.transform.parent.gameObject);
             }
         }
 

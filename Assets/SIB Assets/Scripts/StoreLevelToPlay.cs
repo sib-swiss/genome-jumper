@@ -14,7 +14,12 @@ public class StoreLevelToPlay : MonoBehaviour {
     public void Start()
     {
 		Debug.Log("Starting StoreLevelToPlay script with avatar A"+AvatarNumber+"G"+GeneNumber);
-        if(AvatarNumber < 10) {
+        PlayerPrefs.SetString("CheckpointOrder", null);
+        PlayerPrefs.SetInt("IsRestartingLevel", 0);
+        PlayerPrefs.SetInt("hasTriggeredStartCodon", 0);
+        PlayerPrefs.SetInt("hasTriggeredStopCodon", 0);
+        PlayerPrefs.SetInt("HasTriggeredSnp", 0);
+        if (AvatarNumber < 10) {
             avatarObj = Resources.Load("Avatar 0" + AvatarNumber) as LevelPopupCreator;
             Debug.Log(avatarObj.gene1 + "|" + avatarObj.gene2 + "|" + avatarObj.gene3);
 

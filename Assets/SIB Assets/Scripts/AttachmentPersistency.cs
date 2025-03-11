@@ -1,5 +1,6 @@
 ﻿using MoreMountains.CorgiEngine;
 using Spine.Unity;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +19,8 @@ public class AttachmentPersistency : MonoBehaviour {
     private GameObject PlayerSuperVariant;
     private string SuperVariantPersistency;
     private AudioSource audio;
+
+    private Boolean hasFixedPosition = false;
 
     void Awake()
     {
@@ -1623,8 +1626,13 @@ public class AttachmentPersistency : MonoBehaviour {
             PlayerHead.transform.GetChild(25).gameObject.SetActive(false);
             // Main
             PlayerRightHand.transform.GetChild(0).gameObject.SetActive(true);
-            // Chapeau
             PlayerHeadItem.transform.GetChild(0).gameObject.SetActive(true);
+
+            if (!hasFixedPosition)
+            {
+                hasFixedPosition = true;
+                PlayerHeadItem.transform.GetChild(1).transform.position = new Vector3(PlayerHeadItem.transform.GetChild(1).transform.position.x, PlayerHeadItem.transform.GetChild(1).transform.position.y - 0.05f, PlayerHeadItem.transform.GetChild(1).transform.position.z);
+            }
         }
         if (CurrentAvatar == 21 && CurrentGene == 3)
         {
@@ -1645,6 +1653,11 @@ public class AttachmentPersistency : MonoBehaviour {
             PlayerRightHand.transform.GetChild(0).gameObject.SetActive(true);
             // Chapeau
             PlayerHeadItem.transform.GetChild(1).gameObject.SetActive(true);
+            if (!hasFixedPosition)
+            {
+                hasFixedPosition = true;
+                PlayerHeadItem.transform.GetChild(1).transform.position = new Vector3(PlayerHeadItem.transform.GetChild(1).transform.position.x, PlayerHeadItem.transform.GetChild(1).transform.position.y - 0.05f, PlayerHeadItem.transform.GetChild(1).transform.position.z);
+            }
         }
         // Avatar 22 //
         if (CurrentAvatar == 22 && CurrentGene == 1)
@@ -1864,6 +1877,8 @@ public class AttachmentPersistency : MonoBehaviour {
 
     private void ToggleSuperVariantEffect(string variant) {
 
+        Debug.Log("VARIANT EFFECT " + variant);
+
         if (variant == "SuperMuscle") {
 			// SuperVariante
 			PlayerSuperVariant.transform.GetChild(0).gameObject.SetActive(true);
@@ -1881,7 +1896,7 @@ public class AttachmentPersistency : MonoBehaviour {
 
         }
         if (variant == "Usher") {
-            GameObject.Find("SuperVariantEffects").gameObject.transform.GetChild(2).gameObject.SetActive(true);
+            GameObject.Find("SuperVariantEffects").gameObject.transform.GetChild(1).gameObject.SetActive(true);
 			AudioSource asrc = Player.GetComponent<AudioSource> ();
 			asrc.clip = Resources.Load("Sounds/deafness") as AudioClip;
 			asrc.Play();
@@ -1896,7 +1911,7 @@ public class AttachmentPersistency : MonoBehaviour {
 			psem.rateOverTime = 100;
         }
         if (variant == "Cannabis") {
-            GameObject.Find("SuperVariantEffects").gameObject.transform.GetChild(1).gameObject.SetActive(true);
+            GameObject.Find("SuperVariantEffects").gameObject.transform.GetChild(2).gameObject.SetActive(true);
         }
         if (variant == "Speed") {
             Player.GetComponent<CorgiController>().DefaultParameters.SpeedFactor = 1.50f;

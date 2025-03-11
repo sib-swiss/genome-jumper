@@ -15,6 +15,11 @@ public class DieTest : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (Input.GetKey(KeyCode.X))
+        {
+            Debug.Log("Reinit checkpoint order");
+            PlayerPrefs.SetString("CheckpointOrder", null);
+        }
 		if (player == null) {
 			player = GameObject.FindGameObjectWithTag ("Player");
 

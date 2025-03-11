@@ -11,5 +11,7 @@ public class FirstTimePlay : MonoBehaviour {
             PlayerPrefs.SetInt("FirstTimeLaunch", 0);
             GetComponent<SceneLoader>().LoadScene("Options");
         }
-	}
+
+        QualitySettings.SetQualityLevel(1); // 1 = Fastest
+    }
 }

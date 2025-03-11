@@ -11,9 +11,9 @@ namespace MoreMountains.CorgiEngine
 
 			if (controller==null)
 				return;
-			
-			controller.jumpSoon = true;
-		}
+
+            controller.jumpSoon = true;
+        }
 
 		public virtual void OnTriggerExit2D(Collider2D col){
 			CorgiController controller = col.GetComponent<CorgiController>();
@@ -21,8 +21,8 @@ namespace MoreMountains.CorgiEngine
 			if (controller==null)
 				return;
 
-			controller.jumpSoon = false;
-		}
+            controller.jumpSoon = false;
+        }
 
 	}
 }

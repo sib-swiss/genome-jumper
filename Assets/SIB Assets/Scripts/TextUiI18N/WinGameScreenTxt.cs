@@ -6,7 +6,6 @@ using PaperPlaneTools;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using VoxelBusters.Utility;
 
 public class WinGameScreenTxt : MonoBehaviour {
 
@@ -34,7 +33,15 @@ public class WinGameScreenTxt : MonoBehaviour {
 
     private GenePopupCreator activeGene;
 
+    public GameObject[] ButtonsToDisable;
+
     private void Awake() {
+
+        for(int i = 0; i < ButtonsToDisable.Length; i++)
+        {
+            ButtonsToDisable[i].SetActive(false);
+        }
+
         activeGene = GameObject.Find("LevelManager").GetComponent<LevelProperties>().GeneScriptableObject;
 
         if (activeGene == null || activeGene.geneName == null || activeGene.geneName.Equals("")) {
@@ -79,7 +86,9 @@ public class WinGameScreenTxt : MonoBehaviour {
             ChromoWalkLogo.GetComponent<LogoLinks>().SetLink(activeGene.chromosomeLink);
         }
         else {
-            ChromoWalkLogo.SetActive(false);
+            if(ChromoWalkLogo != null) {
+                ChromoWalkLogo.SetActive(false);
+            }
         }
 
         if (!activeGene.nextprotLink.Equals("") && activeGene.nextprotLink != null) {
@@ -87,7 +96,9 @@ public class WinGameScreenTxt : MonoBehaviour {
             NextProtLogo.GetComponent<LogoLinks>().SetLink(activeGene.nextprotLink);
         }
         else {
-            NextProtLogo.SetActive(false);
+            if(NextProtLogo != null) {
+                NextProtLogo.SetActive(false);
+            }
         }
 
         if (!activeGene.pubmedLink.Equals("") && activeGene.pubmedLink != null) {
@@ -95,7 +106,10 @@ public class WinGameScreenTxt : MonoBehaviour {
             PubmedLogo.GetComponent<LogoLinks>().SetLink(activeGene.pubmedLink);
         }
         else {
-            PubmedLogo.SetActive(false);
+            if(PubmedLogo != null)
+            {
+                PubmedLogo.SetActive(false);
+            }
         }
 
         if (!activeGene.pubmedLink2.Equals("") && activeGene.pubmedLink2 != null) {
@@ -103,7 +117,10 @@ public class WinGameScreenTxt : MonoBehaviour {
             PubmedLogo2.GetComponent<LogoLinks>().SetLink(activeGene.pubmedLink2);
         }
         else {
-            PubmedLogo2.SetActive(false);
+            if(PubmedLogo2 != null)
+            {
+                PubmedLogo2.SetActive(false);
+            }
         }
 
         if (!activeGene.uniprotLink.Equals("") && activeGene.uniprotLink != null) {
@@ -111,7 +128,9 @@ public class WinGameScreenTxt : MonoBehaviour {
             UniprotLogo.GetComponent<LogoLinks>().SetLink(activeGene.uniprotLink);
         }
         else {
-            UniprotLogo.SetActive(false);
+            if(UniprotLogo != null) {
+                UniprotLogo.SetActive(false);
+            }
         }
 
         if (!activeGene.snpediaLink.Equals("") && activeGene.snpediaLink != null) {
@@ -119,7 +138,9 @@ public class WinGameScreenTxt : MonoBehaviour {
             SNPediaLogo.GetComponent<LogoLinks>().SetLink(activeGene.snpediaLink);
         }
         else {
-            SNPediaLogo.SetActive(false);
+            if(SNPediaLogo != null) {
+                SNPediaLogo.SetActive(false);
+            }
         }
 
         if (RateBox.Instance.Statistics.DialogIsRated == false && (PlayerPrefs.GetInt("gamesPlayedWithoutRating")% PlayerPrefs.GetInt("incrementRateCTA") == 0) && PlayerPrefs.GetInt("gamesPlayedWithoutRating") != 0) {

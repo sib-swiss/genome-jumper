@@ -51,7 +51,11 @@ public class DifficultyManager : MonoBehaviour {
             }
 				
 			DisableFlagsDisplay ();
-            setStartAndStopAndSnpY(1.3f);
+            Debug.Log(PlayerPrefs.GetString("CombinationPlayAvatar"));
+            if(SceneManager.GetActiveScene().name != "SMARCAD1")
+            {
+                setStartAndStopAndSnpY(1.3f);
+            }
 
         } else if (difficulty.Equals ("medium")) {
 			Debug.Log ("Difficulty set to medium");

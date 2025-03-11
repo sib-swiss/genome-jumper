@@ -5,6 +5,8 @@ using Spine.Unity;
 using UnityEngine;
  using UnityEngine.Scripting.APIUpdating;
 using UnityEngine.SceneManagement;
+using MoreMountains.Tools;
+using UnityEngine.UI;
 
 public class SNPVariant : MonoBehaviour {
 
@@ -19,7 +21,7 @@ public class SNPVariant : MonoBehaviour {
     private string SkinVariantPersistency;
     private string SuperVariant;
     private string SuperVariantPersistency;
-    private SkeletonAnimator PlayerCurrentSkin;
+    public SkeletonAnimator PlayerCurrentSkin;
     private string isFirstGeneOfAvatar;
     private int currentAvatar;
 
@@ -29,7 +31,7 @@ public class SNPVariant : MonoBehaviour {
   	private bool initDone = false;
     private bool movementDone = false;
 
-    private GameObject Player;
+    public GameObject Player;
     private GameObject[] headItems;
 	private GameObject[] rightHandItems;
 	private GameObject pointsText;
@@ -82,12 +84,10 @@ public class SNPVariant : MonoBehaviour {
         HandItemPersistency = PlayerPrefs.GetString("CurrentGeneHandItem");
         SkinVariantPersistency = PlayerPrefs.GetString("CurrentGeneSkinModification");
         SuperVariant = PlayerPrefs.GetString("SuperVariantEffect");
-        Debug.Log("SUPER VARIANT : " + SuperVariant);
-        Player = GameObject.FindGameObjectWithTag("Player");
-        PlayerCurrentSkin = Player.transform.GetChild(2).GetComponent<SkeletonAnimator>();
         isFirstGeneOfAvatar = PlayerPrefs.GetString("IsFirstGeneOfAvatar");
         currentAvatar = PlayerPrefs.GetInt("CombinationPlayAvatar");
         audio = GameObject.Find("Global").GetComponent<AudioSource>();
+        infoPanel = GameObject.Find("HUD").transform.GetChild(5).gameObject;
 
         if(PlayerPrefs.GetString("PlayerTookSNP") == "true") {
             if (sceneName == "AKT1" || sceneName == "CYP1A2" || sceneName == "HERC2" || sceneName == "FOXO3" || sceneName == "MCM6" || sceneName == "TCF7L2") {
@@ -101,20 +101,45 @@ public class SNPVariant : MonoBehaviour {
                 GameObject SuperVariantEffects = GameObject.Find("SuperVariantEffects").gameObject;
                 SuperVariantEffects.SetActive(true);
                 if (sceneName == "ALDH2") { SuperVariantEffects.transform.GetChild(0).gameObject.SetActive(true);  }
-                if (sceneName == "AKT1") { SuperVariantEffects.transform.GetChild(1).gameObject.SetActive(true); }
-                if (sceneName == "PCDH15") { SuperVariantEffects.transform.GetChild(2).gameObject.SetActive(true);  }
+                //if (sceneName == "AKT1") { SuperVariantEffects.transform.GetChild(1).gameObject.SetActive(true); }
+                //if (sceneName == "PCDH15") { SuperVariantEffects.transform.GetChild(1).gameObject.SetActive(true);  }
             }
                 transform.position = new Vector3(0, 0, 0);
         }
 
-        if(currentAvatar == 21) {
-            GameObject.Find("Head Item Container").transform.GetChild(1).gameObject.transform.position = new Vector3(GameObject.Find("Head Item Container").transform.GetChild(1).gameObject.transform.position.x-0.01f, GameObject.Find("Head Item Container").transform.GetChild(1).gameObject.transform.position.y-0.04f , GameObject.Find("Head Item Container").transform.GetChild(1).gameObject.transform.position.z);
-        }
+        StartCoroutine(CheckSNPTrigger());
 
+    }
+
+    private IEnumerator CheckSNPTrigger()
+    {
+        yield return new WaitForSeconds(1f);
+        if (PlayerPrefs.GetInt("HasTriggeredSnp") == 1)
+        {
+            hasBeenTriggered = true;
+            SnpTriggered = true;
+            TriggerSNP(true);
+        }
+        else
+        {
+            hasBeenTriggered = false;
+        }
     }
 
 	// Update is called once per frame
 	void FixedUpdate () {
+        if(Player == null)
+        {
+            Player = GameObject.Find("SIB Default Character");
+        }
+        if(PlayerCurrentSkin == null)
+        {
+            GameObject SibSpineCharacter = GameObject.Find("SIB Spine Character");
+            if(SibSpineCharacter != null)
+            {
+                PlayerCurrentSkin = GameObject.Find("SIB Spine Character").GetComponent<SkeletonAnimator>();
+            }
+        }
 		if(!initDone){
 			foreach(GameObject item in rightHandItems){
 					item.SetActive(false);
@@ -172,192 +197,232 @@ public class SNPVariant : MonoBehaviour {
 	public virtual void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag == "Player")
         {
-            Debug.Log("Enter SNP Variant");
             if (!hasBeenTriggered)
             {
+                TriggerSNP(true);
+            }
+        }
+	}
 
-                SoundManager.Instance.PlaySound(bubbleExplosionSound, transform.position);
+    public void TriggerSNP(bool playSound)
+    {
+        Debug.Log("Enter SNP Variant");
 
-                //PowerUp.GetComponent<Renderer>().enabled = true;
+            if(playSound == true)
+            {
+                MMSoundManager.Instance.PlaySound(bubbleExplosionSound, MMSoundManagerPlayOptions.Default);
+            }
+
+            //PowerUp.GetComponent<Renderer>().enabled = true;
+            if (PowerUp != null)
+            {
                 var renderers = PowerUp.GetComponentsInChildren<ParticleSystem>();
-
                 foreach (var rend in renderers)
                 {
                     rend.Play();
                 }
+            }
 
-                SoundManager.Instance.PlaySound(AuraEffect, transform.position);
+            MMSoundManager.Instance.PlaySound(AuraEffect, MMSoundManagerPlayOptions.Default);
 
-				//Test if tutorial
-				if (SceneManager.GetActiveScene ().name == "Tutorial") {
-					GameObject.Find("Head Item Container").transform.GetChild(3).gameObject.SetActive(true); 
-					GameObject.Find("Right Hand Item Container").transform.GetChild(9).gameObject.SetActive(true);
-					Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("amish");
-					Player.transform.GetChild(1).transform.GetChild(25).gameObject.SetActive(false);
-					Player.transform.GetChild(1).transform.GetChild(25).transform.gameObject.SetActive(false);
+            //Test if tutorial
+            if (SceneManager.GetActiveScene().name == "Tutorial")
+            {
+                GameObject.Find("Head Item Container").transform.GetChild(3).gameObject.SetActive(true);
+                GameObject.Find("Right Hand Item Container").transform.GetChild(9).gameObject.SetActive(true);
+                Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("amish");
+                Player.transform.GetChild(1).transform.GetChild(25).gameObject.SetActive(false);
+                Player.transform.GetChild(1).transform.GetChild(25).transform.gameObject.SetActive(false);
 
-					Player.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
-					Player.transform.GetChild(1).transform.GetChild(0).transform.gameObject.SetActive(true);
-					Player.transform.GetChild(1).transform.GetChild(0).gameObject.transform.GetChild(2).gameObject.SetActive(true);
-					SnpTriggered = true;
-				} else {
-					if (isFirstGeneOfAvatar.ToString() == "true")
-					{
-						if (currentAvatar == 6 ) {
-							SnpTriggered = true;
-							Player.transform.GetChild(1).transform.GetChild(25).gameObject.SetActive(false);
-							Player.transform.GetChild(1).transform.GetChild(25).transform.gameObject.SetActive(false);
+                Player.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
+                Player.transform.GetChild(1).transform.GetChild(0).transform.gameObject.SetActive(true);
+                Player.transform.GetChild(1).transform.GetChild(0).gameObject.transform.GetChild(2).gameObject.SetActive(true);
+                SnpTriggered = true;
+            }
+            else
+            {
+                if (isFirstGeneOfAvatar.ToString() == "true")
+                {
+                    if (currentAvatar == 6)
+                    {
+                        SnpTriggered = true;
+                        Player.transform.GetChild(1).transform.GetChild(25).gameObject.SetActive(false);
+                        Player.transform.GetChild(1).transform.GetChild(25).transform.gameObject.SetActive(false);
 
-							//Activate baby head 1
-							Player.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
-							Player.transform.GetChild(0).transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.SetActive(true);
-						}
-						if (currentAvatar == 24 ){
-							SnpTriggered = true;
-							Player.transform.GetChild(1).transform.GetChild(25).gameObject.SetActive(false);
-							Player.transform.GetChild(1).transform.GetChild(25).transform.gameObject.SetActive(false);
-
-							//Activate baby head 2
-							Player.transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(true);
-							Player.transform.GetChild(0).transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.SetActive(true);
-						}
-						else
-						{
-							SnpTriggered = true;
-							Player.transform.GetChild(1).transform.GetChild(25).gameObject.SetActive(false);
-							Player.transform.GetChild(1).transform.GetChild(25).transform.gameObject.SetActive(false);
-							Player.transform.GetChild(1).transform.GetChild(currentAvatar - 1).gameObject.SetActive(true);
-							Player.transform.GetChild(1).transform.GetChild(currentAvatar - 1).gameObject.transform.GetChild(0).gameObject.SetActive(true);
-						}
-					}
-					else {
-						SnpTriggered = true;
-					}
-
-					Debug.Log ("Setting Head Item Container to "+HeadItemPersistency);
-					if (HeadItemPersistency != null) {
-						for (int i = 0; i < GameObject.Find("Head Item Container").transform.childCount; i++) {
-							if (HeadItemPersistency == "HeadMask") { GameObject.Find("Head Item Container").transform.GetChild(0).gameObject.SetActive(true); }
-							if (HeadItemPersistency == "Nightcap") { GameObject.Find("Head Item Container").transform.GetChild(1).gameObject.SetActive(true); }
-							if (HeadItemPersistency == "AmishHat") { GameObject.Find("Head Item Container").transform.GetChild(2).gameObject.SetActive(true); }
-							if (HeadItemPersistency == "ClassicalCap") { GameObject.Find("Head Item Container").transform.GetChild(3).gameObject.SetActive(true); }
-							if (HeadItemPersistency == "HearingAid") { GameObject.Find("Head Item Container").transform.GetChild(4).gameObject.SetActive(true); }
-							if (HeadItemPersistency == "StrangeBrain") { GameObject.Find("Head Item Container").transform.GetChild(5).gameObject.SetActive(true); }
-							if (HeadItemPersistency == "BHeart") { GameObject.Find("Head Item Container").transform.GetChild(6).gameObject.SetActive(true); }
-							if (HeadItemPersistency == "MoonCell") { GameObject.Find("Head Item Container").transform.GetChild(7).gameObject.SetActive(true); }
-							if (HeadItemPersistency == "glasses") { GameObject.Find("Head Item Container").transform.GetChild(8).gameObject.SetActive(true); }
-							if (HeadItemPersistency == "Ribbon") { GameObject.Find("Head Item Container").transform.GetChild(9).gameObject.SetActive(true); }
-						}
-					}
-
-					if (HandItemPersistency != null) {
-						for (int i = 0; i < GameObject.Find("Right Hand Item Container").transform.childCount; i++) {
-							if (HandItemPersistency == "HandMask") { GameObject.Find("Right Hand Item Container").transform.GetChild(0).gameObject.SetActive(true); }
-							if (HandItemPersistency == "InsulineSyringue") { GameObject.Find("Right Hand Item Container").transform.GetChild(1).gameObject.SetActive(true); }
-							if (HandItemPersistency == "Bread") { GameObject.Find("Right Hand Item Container").transform.GetChild(2).gameObject.SetActive(true); }
-							if (HandItemPersistency == "Perfume") { GameObject.Find("Right Hand Item Container").transform.GetChild(3).gameObject.SetActive(true); }
-							if (HandItemPersistency == "FeedingBottle") { GameObject.Find("Right Hand Item Container").transform.GetChild(4).gameObject.SetActive(true); }
-							if (HandItemPersistency == "Cannabis") { GameObject.Find("Right Hand Item Container").transform.GetChild(5).gameObject.SetActive(true); }
-							if (HandItemPersistency == "CoffeCup") { GameObject.Find("Right Hand Item Container").transform.GetChild(6).gameObject.SetActive(true); }
-							if (HandItemPersistency == "Milk") { GameObject.Find("Right Hand Item Container").transform.GetChild(7).gameObject.SetActive(true); }
-							if (HandItemPersistency == "Cane") { GameObject.Find("Right Hand Item Container").transform.GetChild(8).gameObject.SetActive(true); }
-							if (HandItemPersistency == "Brocoli") { GameObject.Find("Right Hand Item Container").transform.GetChild(9).gameObject.SetActive(true); }
-							if (HandItemPersistency == "Beer") { GameObject.Find("Right Hand Item Container").transform.GetChild(10).gameObject.SetActive(true); }
-							if (HandItemPersistency == "Chisel") { GameObject.Find("Right Hand Item Container").transform.GetChild(11).gameObject.SetActive(true); }
-							if (HandItemPersistency == "Ribbon") { GameObject.Find("Right Hand Item Container").transform.GetChild(12).gameObject.SetActive(true); }
-							if (HandItemPersistency == "WhiteGlove") { GameObject.Find("Right Hand Item Container").transform.GetChild(13).gameObject.SetActive(true); }
-						}
-					}
-
-					if (SkinVariantPersistency != null && (PlayerCurrentSkin.initialSkinName != SkinVariantPersistency.ToString())) {
-						bool wasBaby = PlayerCurrentSkin.initialSkinName == "baby";
-						if(SkinVariantPersistency == "amish")  { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("amish"); }
-						if (SkinVariantPersistency == "athletic female") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("athletic female"); }
-						if (SkinVariantPersistency == "athletic female black") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("athletic female black"); }
-						if (SkinVariantPersistency == "athletic male") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("athletic male"); }
-						if (SkinVariantPersistency == "baby") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().initialSkinName = "baby"; Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("baby"); Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSlotsToSetupPose(); }
-						if (SkinVariantPersistency == "city dweller female") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller female"); }
-						if (SkinVariantPersistency == "city dweller female black") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller female black"); }
-						if (SkinVariantPersistency == "city dweller female latino") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller female latino"); }
-						if (SkinVariantPersistency == "city dweller male") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller male"); }
-						if (SkinVariantPersistency == "city dweller male black") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller male black"); }
-						if (SkinVariantPersistency == "city dweller male latino") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller male latino"); }
-						if (SkinVariantPersistency == "unknown") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("unknown");}
-						if (wasBaby) {
-							Player.transform.GetChild (2).GetComponent<SkeletonAnimator> ().initialSkinName = SkinVariantPersistency;
-							Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSlotsToSetupPose();
-						}
-					
-					}
-				}
-
-				AudioSource asrc = Player.GetComponent<AudioSource> ();
-
-				if(SuperVariant != null && SuperVariant != "None") {
-                    if(SuperVariant == "Speed") {
-                        points = points / 2;
-                        Player.GetComponent<CorgiController>().DefaultParameters.SpeedFactor = 1.50f;
+                        //Activate baby head 1
+                        Player.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
+                        Player.transform.GetChild(0).transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.SetActive(true);
                     }
-                    if(SuperVariant == "SuperMuscle") {
-						Player.GetComponent<CorgiController>().DefaultParameters.SpeedFactor = 1.50f;
-						asrc.clip = Resources.Load("Sounds/supermuscles") as AudioClip;
-                        if(!Player.transform.GetChild(5).gameObject.transform.GetChild(0).gameObject.activeSelf) {
-                            asrc.Play();
-                        }
-						
-                        points = points / 2;
-                        Player.transform.GetChild(5).gameObject.transform.GetChild(0).gameObject.SetActive(true);
-                    }
-                    if(SuperVariant == "Deef") {
-						asrc.clip = Resources.Load("Sounds/deafness") as AudioClip;
-						asrc.Play();
-						asrc.loop = true;
-                    }
-                    if(SuperVariant == "Blind") {
+                    if (currentAvatar == 24)
+                    {
+                        SnpTriggered = true;
+                        Player.transform.GetChild(1).transform.GetChild(25).gameObject.SetActive(false);
+                        Player.transform.GetChild(1).transform.GetChild(25).transform.gameObject.SetActive(false);
 
+                        //Activate baby head 2
+                        Player.transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(true);
+                        Player.transform.GetChild(0).transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.SetActive(true);
                     }
-                    if(SuperVariant == "Usher") {
-                        GameObject.Find("SuperVariantEffects").gameObject.transform.GetChild(2).gameObject.SetActive(true);
-						asrc.clip = Resources.Load("Sounds/deafness") as AudioClip;
-						asrc.Play();
-						asrc.loop = true;
+                    else
+                    {
+                        SnpTriggered = true;
+                        Player.transform.GetChild(1).transform.GetChild(25).gameObject.SetActive(false);
+                        Player.transform.GetChild(1).transform.GetChild(25).transform.gameObject.SetActive(false);
+                        Player.transform.GetChild(1).transform.GetChild(currentAvatar - 1).gameObject.SetActive(true);
+                        Player.transform.GetChild(1).transform.GetChild(currentAvatar - 1).gameObject.transform.GetChild(0).gameObject.SetActive(true);
                     }
-                    if(SuperVariant == "Beer") {
-                        GameObject.Find("SuperVariantEffects").gameObject.transform.GetChild(0).gameObject.SetActive(true);
-						ParticleSystem ps = GameObject.Find("bubbleBeer").GetComponent<ParticleSystem>();
-						ParticleSystem.MainModule psmm = ps.main;
-						psmm.maxParticles = 500;
-						ParticleSystem.EmissionModule psem = ps.emission;
-						psem.rateOverTime = 100;
-
-                    }
-                    if(SuperVariant == "Cannabis") {
-                        GameObject.Find("SuperVariantEffects").gameObject.transform.GetChild(1).gameObject.SetActive(true);
-                    }
-
-					//PlayerPrefs.SetString("SuperVariantEffect","None");
-					PlayerPrefs.Save ();
-
+                }
+                else
+                {
+                    SnpTriggered = true;
                 }
 
-                thisSpriteRenderer.enabled = false;
-                SnpReplace.GetComponent<SpriteRenderer>().enabled = true;
-                goMoveSNP = true;
-
-                infoPanel.SetActive(true);
-                Instantiate(particles, transform.position, transform.rotation);
-                hasBeenTriggered = true;
-
-                pointsText.GetComponent<ScoreDisplay>().increaseScore(points);
-
-                ScaleFading scaleFading = GetComponent<ScaleFading>();
-                if (scaleFading != null)
+                Debug.Log("Setting Head Item Container to " + HeadItemPersistency);
+                if (HeadItemPersistency != null)
                 {
-                    scaleFading.enabled = true;
+                    for (int i = 0; i < GameObject.Find("Head Item Container").transform.childCount; i++)
+                    {
+                        if (HeadItemPersistency == "HeadMask") { GameObject.Find("Head Item Container").transform.GetChild(0).gameObject.SetActive(true); }
+                        if (HeadItemPersistency == "Nightcap") { GameObject.Find("Head Item Container").transform.GetChild(1).gameObject.SetActive(true); }
+                        if (HeadItemPersistency == "AmishHat") { GameObject.Find("Head Item Container").transform.GetChild(2).gameObject.SetActive(true); }
+                        if (HeadItemPersistency == "ClassicalCap") { GameObject.Find("Head Item Container").transform.GetChild(3).gameObject.SetActive(true); }
+                        if (HeadItemPersistency == "HearingAid") { GameObject.Find("Head Item Container").transform.GetChild(4).gameObject.SetActive(true); }
+                        if (HeadItemPersistency == "StrangeBrain") { GameObject.Find("Head Item Container").transform.GetChild(5).gameObject.SetActive(true); }
+                        if (HeadItemPersistency == "BHeart") { GameObject.Find("Head Item Container").transform.GetChild(6).gameObject.SetActive(true); }
+                        if (HeadItemPersistency == "MoonCell") { GameObject.Find("Head Item Container").transform.GetChild(7).gameObject.SetActive(true); }
+                        if (HeadItemPersistency == "glasses") { GameObject.Find("Head Item Container").transform.GetChild(8).gameObject.SetActive(true); }
+                        if (HeadItemPersistency == "Ribbon") { GameObject.Find("Head Item Container").transform.GetChild(9).gameObject.SetActive(true); }
+                    }
+                }
+
+                if (HandItemPersistency != null)
+                {
+                    for (int i = 0; i < GameObject.Find("Right Hand Item Container").transform.childCount; i++)
+                    {
+                        if (HandItemPersistency == "HandMask") { GameObject.Find("Right Hand Item Container").transform.GetChild(0).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "InsulineSyringue") { GameObject.Find("Right Hand Item Container").transform.GetChild(1).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "Bread") { GameObject.Find("Right Hand Item Container").transform.GetChild(2).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "Perfume") { GameObject.Find("Right Hand Item Container").transform.GetChild(3).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "FeedingBottle") { GameObject.Find("Right Hand Item Container").transform.GetChild(4).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "Cannabis") { GameObject.Find("Right Hand Item Container").transform.GetChild(5).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "CoffeCup") { GameObject.Find("Right Hand Item Container").transform.GetChild(6).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "Milk") { GameObject.Find("Right Hand Item Container").transform.GetChild(7).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "Cane") { GameObject.Find("Right Hand Item Container").transform.GetChild(8).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "Brocoli") { GameObject.Find("Right Hand Item Container").transform.GetChild(9).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "Beer") { GameObject.Find("Right Hand Item Container").transform.GetChild(10).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "Chisel") { GameObject.Find("Right Hand Item Container").transform.GetChild(11).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "Ribbon") { GameObject.Find("Right Hand Item Container").transform.GetChild(12).gameObject.SetActive(true); }
+                        if (HandItemPersistency == "WhiteGlove") { GameObject.Find("Right Hand Item Container").transform.GetChild(13).gameObject.SetActive(true); }
+                    }
+                }
+
+                if (SkinVariantPersistency != null && (PlayerCurrentSkin.initialSkinName != SkinVariantPersistency.ToString()))
+                {
+                    bool wasBaby = PlayerCurrentSkin.initialSkinName == "baby";
+                    if (SkinVariantPersistency == "amish") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("amish"); }
+                    if (SkinVariantPersistency == "athletic female") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("athletic female"); }
+                    if (SkinVariantPersistency == "athletic female black") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("athletic female black"); }
+                    if (SkinVariantPersistency == "athletic male") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("athletic male"); }
+                    if (SkinVariantPersistency == "baby") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().initialSkinName = "baby"; Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("baby"); Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSlotsToSetupPose(); }
+                    if (SkinVariantPersistency == "city dweller female") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller female"); }
+                    if (SkinVariantPersistency == "city dweller female black") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller female black"); }
+                    if (SkinVariantPersistency == "city dweller female latino") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller female latino"); }
+                    if (SkinVariantPersistency == "city dweller male") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller male"); }
+                    if (SkinVariantPersistency == "city dweller male black") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller male black"); }
+                    if (SkinVariantPersistency == "city dweller male latino") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("city dweller male latino"); }
+                    if (SkinVariantPersistency == "unknown") { Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSkin("unknown"); }
+                    if (wasBaby)
+                    {
+                        Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().initialSkinName = SkinVariantPersistency;
+                        Player.transform.GetChild(2).GetComponent<SkeletonAnimator>().Skeleton.SetSlotsToSetupPose();
+                    }
+
                 }
             }
-        }
-	}
+
+            AudioSource asrc = Player.GetComponent<AudioSource>();
+
+            if (SuperVariant != null && SuperVariant != "None")
+            {
+                if (SuperVariant == "Speed")
+                {
+                    points = points / 2;
+                    Player.GetComponent<CorgiController>().DefaultParameters.SpeedFactor = 1.50f;
+                }
+                if (SuperVariant == "SuperMuscle")
+                {
+                    Player.GetComponent<CorgiController>().DefaultParameters.SpeedFactor = 1.50f;
+                    asrc.clip = Resources.Load("Sounds/supermuscles") as AudioClip;
+                    if (!Player.transform.GetChild(5).gameObject.transform.GetChild(0).gameObject.activeSelf)
+                    {
+                        asrc.Play();
+                    }
+
+                    points = points / 2;
+                    Player.transform.GetChild(5).gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                }
+                if (SuperVariant == "Deef")
+                {
+                    asrc.clip = Resources.Load("Sounds/deafness") as AudioClip;
+                    asrc.Play();
+                    asrc.loop = true;
+                }
+                if (SuperVariant == "Blind")
+                {
+
+                }
+                if (SuperVariant == "Usher")
+                {
+                    GameObject.Find("SuperVariantEffects").gameObject.transform.GetChild(1).gameObject.SetActive(true);
+                    asrc.clip = Resources.Load("Sounds/deafness") as AudioClip;
+                    asrc.Play();
+                    asrc.loop = true;
+                }
+                if (SuperVariant == "Beer")
+                {
+                    GameObject.Find("SuperVariantEffects").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                    ParticleSystem ps = GameObject.Find("bubbleBeer").GetComponent<ParticleSystem>();
+                    ParticleSystem.MainModule psmm = ps.main;
+                    psmm.maxParticles = 500;
+                    ParticleSystem.EmissionModule psem = ps.emission;
+                    psem.rateOverTime = 100;
+
+                }
+                if (SuperVariant == "Cannabis")
+                {
+                    GameObject.Find("SuperVariantEffects").gameObject.transform.GetChild(2).gameObject.SetActive(true);
+                }
+
+                //PlayerPrefs.SetString("SuperVariantEffect","None");
+                PlayerPrefs.Save();
+
+            }
+
+            thisSpriteRenderer.enabled = false;
+            SnpReplace.GetComponent<SpriteRenderer>().enabled = true;
+            goMoveSNP = true;
+
+            infoPanel.SetActive(true);
+            Instantiate(particles, transform.position, transform.rotation);
+            hasBeenTriggered = true;
+
+            PlayerPrefs.SetInt("HasTriggeredSnp", 1);
+
+            pointsText.GetComponent<ScoreDisplay>().increaseScore(points);
+
+            ScaleFading scaleFading = GetComponent<ScaleFading>();
+            if (scaleFading != null)
+            {
+                scaleFading.enabled = true;
+            }
+
+        GameObject.Find("SnpIcon").GetComponent<Image>().color = new Color(255, 255, 255, 255);
+
+        //if (currentAvatar == 21)
+        //{
+        //    GameObject.Find("Head Item Container").transform.GetChild(1).gameObject.transform.position = new Vector3(GameObject.Find("Head Item Container").transform.GetChild(1).gameObject.transform.position.x - 0.02f, GameObject.Find("Head Item Container").transform.GetChild(1).gameObject.transform.position.y -0.05f, GameObject.Find("Head Item Container").transform.GetChild(1).gameObject.transform.position.z);
+        //}
+    }
 
 	IEnumerator ScaleObject(float time, Transform transf, Vector3 targetV)
 	{

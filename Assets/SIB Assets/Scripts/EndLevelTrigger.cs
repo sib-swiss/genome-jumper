@@ -33,7 +33,7 @@ namespace MoreMountains.CorgiEngine
 		private int multiplierTimePositive = 20;
 
         private CorgiController controller;
-        private GameObject Player;
+        //private GameObject Player;
 
         void Start()
         {
@@ -42,16 +42,21 @@ namespace MoreMountains.CorgiEngine
             SNPVariants = GameObject.FindObjectsOfType<SNPVariant>();
 			StartCodon =  GameObject.Find("StartBubble").GetComponent<StartStopCodonBehaviour>();
 			StopCodon =  GameObject.Find("StopBubble").GetComponent<StartStopCodonBehaviour>();
-            Player = GameObject.FindGameObjectWithTag("Player");
+            //Player = GameObject.FindGameObjectWithTag("Player");
+            HudModifiable = GameObject.Find("HUD").gameObject;
         }
             
         void OnTriggerEnter2D(Collider2D col)
         {
-            
+            Debug.Log("Enter End");
             controller = col.GetComponent<CorgiController>();
-            score.increaseScore(controller.GetComponent<Health>().CurrentHealth); // we add the number of life to score
+            Debug.Log("Enter End 1");
+            score.increaseScore((int)controller.GetComponent<Health>().CurrentHealth); // we add the number of life to score
+            Debug.Log("Enter End 2");
             playTime = GameObject.Find("TimerText").GetComponent<Timer>().playTime;
-            Player.GetComponent<DisplayCharacterOnEndLevel>().enabled = true;
+            Debug.Log("Enter End 3");
+            GameObject.FindGameObjectWithTag("Player").GetComponent<DisplayCharacterOnEndLevel>().enabled = true;
+            Debug.Log("Enter End 4");
 
             /*
 			//old method based on time + score
@@ -66,37 +71,44 @@ namespace MoreMountains.CorgiEngine
 			*/
 
             PlayerPrefs.SetInt("CurrentLevelScore", score.score);
+            Debug.Log("Enter End 5");
             PlayerPrefs.SetInt("CurrentTimer", playTime);
+            Debug.Log("Enter End 6");
             PlayerPrefs.SetString("TimerText", GameObject.Find("TimerText").GetComponent<Text>().text);
+            Debug.Log("Enter End 7");
 
             if(SceneManager.GetActiveScene().name == "Tutorial") {
                 GameObject.FindGameObjectWithTag("Player").SetActive(false);
                 HudModifiable.SetActive(false);
-                SVInfoPanel.SetActive(false);
+                //SVInfoPanel.SetActive(false);
                 VideoOutroPanel.SetActive(true);
             }
             else {
-                if (PlayerPrefs.GetString("Difficulty").Equals("easy") && VideoOutroPanel != null) {
-                    GameObject.FindGameObjectWithTag("Player").SetActive(false);
-                    HudModifiable.SetActive(false);
-                    SVInfoPanel.SetActive(false);
-                    VideoOutroPanel.SetActive(true);
-                }
-                else {
-                    ActionOnTrigger();
-                }
+                //if (PlayerPrefs.GetString("Difficulty").Equals("easy") && VideoOutroPanel != null) {
+                //    GameObject.FindGameObjectWithTag("Player").SetActive(false);
+                //    HudModifiable.SetActive(false);
+                //    //SVInfoPanel.SetActive(false);
+                //    VideoOutroPanel.SetActive(true);
+                //}
+                //else {
+                Debug.Log("Enter End 8");
+                ActionOnTrigger();
+                Debug.Log("Enter End 9");
+                //}
             }
 
             string AvatarName = PlayerPrefs.GetString("AvatarName");
+            Debug.Log("Enter End 10");
             string GeneName = PlayerPrefs.GetString("GeneName");
+            Debug.Log("Enter End 11");
 
             // Sending Analytics event
-            Analytics.CustomEvent("level_completed", new Dictionary<string, object>
-            {
-                { "avatar", "Avatar " + AvatarName},
-                { "gene",  GeneName }
-            }
-        );
+            //Analytics.CustomEvent("level_completed", new Dictionary<string, object>
+            //{
+            //    { "avatar", "Avatar " + AvatarName},
+            //    { "gene",  GeneName }
+            //}
+        //);
         }
 
         public void ActionOnTrigger()
@@ -104,13 +116,18 @@ namespace MoreMountains.CorgiEngine
             characterSurvivedLevel = true;
             // CALCULATING STARS
             var allTaken = true;
+            Debug.Log("ActionOnTrigger 1");
             if (SNPVariants.Length > 0) allTaken = SNPVariants.All(snp => snp.hasBeenTriggered);
+            Debug.Log("ActionOnTrigger 2");
 
             var stopTaken = false;
+            Debug.Log("ActionOnTrigger 3");
             stopTaken = StopCodon.hasBeenTriggered;
+            Debug.Log("ActionOnTrigger 4");
 
             var startTaken = false;
             startTaken = StartCodon.hasBeenTriggered;
+            Debug.Log("ActionOnTrigger 5");
 
             int nbStars = 0;
             if (allTaken)
@@ -126,6 +143,7 @@ namespace MoreMountains.CorgiEngine
             {
                 nbStars++;
             }
+            Debug.Log("ActionOnTrigger 6");
 
             switch (nbStars)
             {
@@ -145,6 +163,7 @@ namespace MoreMountains.CorgiEngine
                     PlayerPrefs.SetInt("CurrentStars", 3);
                     break;
             }
+            Debug.Log("ActionOnTrigger 7");
 
             //old method based on time + score
             /*

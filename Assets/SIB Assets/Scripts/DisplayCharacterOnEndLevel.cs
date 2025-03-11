@@ -124,9 +124,9 @@ public class DisplayCharacterOnEndLevel : MonoBehaviour {
                 }
             }
         }
-        
-        Player.transform.SetParent(container.transform.GetChild(0).GetChild(11).GetChild(3).GetChild(0).transform);
-        this.transform.localScale = new Vector3(45f, 45f, transform.localScale.z);
+
+        Player.transform.SetParent(container.transform.GetChild(0).GetChild(1).GetChild(2).GetChild(0).transform);
+        this.transform.localScale = new Vector3(90f, 90f, transform.localScale.z);
         this.transform.localPosition = new Vector3(0,-53, 0);
         this.transform.GetChild(2).GetComponent<MeshRenderer>().sortingOrder = 90;
         this.transform.GetChild(2).GetComponent<MeshRenderer>().sortingLayerName = "UI";

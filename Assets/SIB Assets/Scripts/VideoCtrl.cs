@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using ExifLibrary;
 using FlyingWormConsole3;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
 using MoreMountains.CorgiEngine;
-using VoxelBusters.NativePlugins;
 using UnityEngine.SceneManagement;
 
 public class VideoCtrl : MonoBehaviour {
@@ -26,6 +24,16 @@ public class VideoCtrl : MonoBehaviour {
         haveAlreadyFade = false;
         videoLength = player.clip.length;
         main = Camera.main;
+
+
+        int isRestartingLevel = PlayerPrefs.GetInt("IsRestartingLevel");
+        if (isRestartingLevel == 1)
+        {
+            videoCamera.SetActive(false);
+            global.SetActive(true);
+            main.GetComponent<CameraController>().enabled = true;
+            havePlayed = false;
+        }
     }
 
     // Update is called once per frame
@@ -49,7 +57,8 @@ public class VideoCtrl : MonoBehaviour {
         else if (!player.isPlaying && player.clip.name.Equals("outro") && havePlayed) {
             if (SceneManager.GetActiveScene().name == "Tutorial") {
                 GetComponent<VideoFadeEffect>().FadeOut();
-                LoadingSceneManager.LoadScene("LevelSelection");
+                MoreMountains.Tools.MMSceneLoadingManager.LoadScene("LevelSelection");
+
             }
             videoCamera.SetActive(false);
             GameObject.FindGameObjectWithTag("endPoint").GetComponent<EndLevelTrigger>().ActionOnTrigger();

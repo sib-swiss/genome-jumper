@@ -16,25 +16,29 @@ public class CharacterState : MonoBehaviour {
     private GameObject uiIcons;
     private GameObject endPoint;
 
+    private bool hasTriggeredScreen = false;
+
     void Start()
     {
-
+        hasTriggeredScreen = false;
         // Getting the main components of the Character state : Player & Cameras
         player = GameObject.FindGameObjectWithTag("Player");
         mainCamera = Camera.main;
         mainCameraObj = GameObject.FindGameObjectWithTag("MainCamera");
-        uiCameraObj = GameObject.Find("HUDModifiable");
-        uiIcons = GameObject.Find("StartSnpStopIcons");
+        uiCameraObj = GameObject.Find("HUD");
+        //uiIcons = GameObject.Find("StartSnpStopIcons");
         endPoint = GameObject.FindGameObjectWithTag("endPoint");
     }
 
     void Update()
     {
-        
-        if(player.GetComponent<Health>().CurrentHealth <= 0)
+        if(player && player.gameObject)
         {
-            ToggleDeathScreen();
-        }
+            if (player.GetComponent<Health>().CurrentHealth <= 0)
+            {
+                ToggleDeathScreen();
+            }
+        } 
         if(endPoint.GetComponent<EndLevelTrigger>().characterSurvivedLevel == true)
         {
             ToggleWinScreen();
@@ -43,26 +47,38 @@ public class CharacterState : MonoBehaviour {
 
     void ToggleWinScreen()
     {
+        if (!hasTriggeredScreen)
+        {
+            hasTriggeredScreen = true;
             GameWinScreen.SetActive(true);
             mainCameraObj.SetActive(false);
             uiCameraObj.SetActive(false);
-            uiIcons.SetActive(false);
+            //uiIcons.SetActive(false);
             player.SetActive(false);
             this.GetComponent<CharacterState>().enabled = false;
             player.SetActive(true);
             if(GameObject.Find("horizontalSpawner") != null) {
                 GameObject.Find("horizontalSpawner").SetActive(false);
             }
+            GameObject.Find("Global").GetComponent<AudioSource>().Stop();
+        }
     }
     void ToggleDeathScreen()
     {
-        mainCameraObj.SetActive(false);
-        uiCameraObj.SetActive(false);
-        uiIcons.SetActive(false);
-        GameOverScreen.SetActive(true);
-        player.SetActive(false);
-        if (GameObject.Find("horizontalSpawner") != null) {
-            GameObject.Find("horizontalSpawner").SetActive(false);
+        if (!hasTriggeredScreen)
+        {
+            hasTriggeredScreen = true;
+            mainCameraObj.SetActive(false);
+            PlayerPrefs.SetInt("PreviousScore", GameObject.Find("PointsText").GetComponent<ScoreDisplay>().score);
+            PlayerPrefs.SetInt("PreviousTime", GameObject.Find("TimerText").GetComponent<Timer>().playTime);
+            uiCameraObj.SetActive(false);
+            //uiIcons.SetActive(false);
+            GameOverScreen.SetActive(true);
+            //player.SetActive(false);
+            if (GameObject.Find("horizontalSpawner") != null) {
+                GameObject.Find("horizontalSpawner").SetActive(false);
+            }
+            GameObject.Find("Global").GetComponent<AudioSource>().Stop();
         }
     }
 }

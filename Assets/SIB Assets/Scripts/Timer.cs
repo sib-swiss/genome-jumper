@@ -14,16 +14,28 @@ public class Timer : MonoBehaviour {
 	private string textS = "";
 	private Text text;
 
+    private Coroutine timerCoroutine;
+
 	// Use this for initialization
 	private void Awake()
 	{
         playTime += PlayerPrefs.GetInt("PreviousTime");
-		StartCoroutine ("PlayTimer");
-	}
+        StartTimer();
+    }
 
 	void Start () {
-		text = GetComponent<Text> ();
+		text = GetComponent<Text>();
 	}
+
+    public void StartTimer()
+    {
+        timerCoroutine = StartCoroutine("PlayTimer");
+    }
+
+    public void StopTimer()
+    {
+        StopCoroutine(timerCoroutine);
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -61,11 +73,11 @@ public class Timer : MonoBehaviour {
 
 	private IEnumerator PlayTimer(){
 		while (true) {
-			yield return new WaitForSeconds(1);
 			playTime +=1;
 			seconds = playTime % 60;
 			minutes = (playTime / 60) % 60;
 			hours = (playTime / 3600) % 24;
+			yield return new WaitForSeconds(1);
 		}
 	}
 		

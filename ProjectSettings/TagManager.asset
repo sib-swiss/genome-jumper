@@ -7,47 +7,39 @@ TagManager:
   - LevelBounds
   - Music
   - Background
-  - onlyTrigger
-  - vehicle
-  - gun
-  - ghost
-  - 2ddl
-  - deadTrigger
-  - timerText
-  - Exon
-  - Start Codon
-  - Small Intron
-  - Down
-  - Huge Intron
-  - Utr
+  - NoMask
+  - SVInfoPanel
+  - Checkpoint
   - Snp
-  - Up
-  - Medium Intron
+  - PowerUp
+  - circularEnemy
+  - Exon
   - Big Intron
-  - End Codon
-  - hearts
-  - GameOverScreen
-  - LevelsUI
-  - Large Intron
+  - Intron
+  - Huge Intron
+  - Coins
+  - Enemy
   - endPoint
+  - Large Intron
   - Right Hand Item
   - Head Item
-  - Coins
-  - SuperVariante
-  - Enemy
-  - Level Button
-  - finalScore
-  - SVInfoPanel
-  - Exon Flag
-  - Intron Flag
-  - PowerUp
-  - Intron
-  - HeadItemUI
-  - RightHandItemUI
-  - Checkpoint
   - verticalEnemy
   - horizontalEnemy
-  - circularEnemy
+  - RightHandItemUI
+  - HeadItemUI
+  - SuperVariante
+  - Small Intron
+  - Medium Intron
+  - Start Codon
+  - hearts
+  - finalScore
+  - Utr
+  - Intron Flag
+  - Exon Flag
+  - End Codon
+  - Level Button
+  - Up
+  - Down
   layers:
   - Default
   - TransparentFX
@@ -63,7 +55,7 @@ TagManager:
   - OneWayPlatforms
   - Projectiles
   - Enemies
-  - LevelBounds
+  - 
   - Ladders
   - PlayerProjectiles
   - MovingObjects
@@ -75,9 +67,9 @@ TagManager:
   - Friendlies
   - Invulnerable
   - PlatformsPlayerOnly
-  - GlobalProjectorLayer
-  - PlayerMarker
-  - Intron
+  - MidHeightOneWayPlatforms
+  - Pushables
+  - Stairs
   - 
   - 
   - 

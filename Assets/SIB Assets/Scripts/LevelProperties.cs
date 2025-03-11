@@ -54,8 +54,8 @@ public class LevelProperties : MonoBehaviour
         Score1Star = GeneScriptableObject.score1Star;
         Score2Stars = GeneScriptableObject.score2Stars;
         Score3Stars = GeneScriptableObject.score3Stars;
-        
-        lvlNameTextUi.text = GeneScriptableObject.geneName;
+
+        //lvlNameTextUi.text = GeneScriptableObject.geneName.ToString();
 
         currentCombinationPlayed = PlayerPrefs.GetString("CombinationPlay");
         //CurrentGene = int.Parse(SceneManager.GetActiveScene().name.Replace("Gene", ""));

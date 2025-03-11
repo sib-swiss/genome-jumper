@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using ExifLibrary;
 using MoreMountains.CorgiEngine;
 using UnityEngine;
 
@@ -127,7 +126,7 @@ public class CheckpointsManager : MonoBehaviour {
                         clone.transform.position = new Vector3(clone.transform.position.x + 3.5f, clone.transform.position.y, clone.transform.position.z);
                     }
                     if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "ABCC11" && clone.name == "Checkpoint 8") {
-                        clone.transform.position = new Vector3(clone.transform.position.x - 8f, clone.transform.position.y, clone.transform.position.z);
+                        clone.transform.position = new Vector3(clone.transform.position.x - 8f, clone.transform.position.y - 1f, clone.transform.position.z);
                     }
                     if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "ABCC11" && clone.name == "Checkpoint 4") {
                         clone.transform.position = new Vector3(clone.transform.position.x + 4.5f, clone.transform.position.y + 1f, clone.transform.position.z);
@@ -135,14 +134,11 @@ public class CheckpointsManager : MonoBehaviour {
                     if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "ABCC11" && clone.name == "Checkpoint 3") {
                         clone.transform.position = new Vector3(clone.transform.position.x - 1.5f, clone.transform.position.y - 1f, clone.transform.position.z);
                     }
-                    if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "OCA2" && clone.name == "Checkpoint 3") {
+                    if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "OCA2" && clone.name == "Checkpoint 7") {
                         clone.transform.position = new Vector3(clone.transform.position.x - 2f, clone.transform.position.y - 1f, clone.transform.position.z);
                     }
                     if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "OCA2" && clone.name == "Checkpoint 3") {
-                        clone.transform.position = new Vector3(clone.transform.position.x + 3.5f, clone.transform.position.y, clone.transform.position.z);
-                    }
-                    if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "OCA2" && clone.name == "Checkpoint 3") {
-                        clone.transform.position = new Vector3(clone.transform.position.x + 32f, clone.transform.position.y, clone.transform.position.z);
+                        clone.transform.position = new Vector3(clone.transform.position.x + 10f, clone.transform.position.y, clone.transform.position.z);
                     }
                     if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MCM6" && clone.name == "Checkpoint 3") {
                         clone.transform.position = new Vector3(clone.transform.position.x + 7f, clone.transform.position.y, clone.transform.position.z);
@@ -166,7 +162,7 @@ public class CheckpointsManager : MonoBehaviour {
                         clone.transform.position = new Vector3(clone.transform.position.x + 4f, clone.transform.position.y, clone.transform.position.z);
                     }
                     if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "AKT1" && clone.name == "Checkpoint 4") {
-                        clone.transform.position = new Vector3(clone.transform.position.x + 3f, clone.transform.position.y, clone.transform.position.z);
+                        clone.transform.position = new Vector3(clone.transform.position.x - 5.5f, clone.transform.position.y, clone.transform.position.z);
                     }
                     if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "AKT1" && clone.name == "Checkpoint 2") {
                         clone.transform.position = new Vector3(clone.transform.position.x + 13f, clone.transform.position.y  + 1f, clone.transform.position.z);

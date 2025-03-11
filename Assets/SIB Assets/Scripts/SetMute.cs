@@ -13,8 +13,10 @@ public class SetMute : MonoBehaviour
 
 	private void Start()
 	{
-		if (PlayerPrefs.HasKey("volume") && PlayerPrefs.GetInt("volume") == 1)
+		if (PlayerPrefs.HasKey("volume") && PlayerPrefs.GetInt("volume") == 0)
+		{
 			image.sprite = SpriteSoundMute;
+		}
 
 	}
 
@@ -23,13 +25,14 @@ public class SetMute : MonoBehaviour
 		if (!PlayerPrefs.HasKey("volume") || PlayerPrefs.GetInt("volume") == 1)
 		{
 			PlayerPrefs.SetInt("volume", 0);
-			image.sprite = SpriteSoundMute;
+            image.sprite = SpriteSoundMute;
 		}
 		else
 		{
 			image.sprite = SpriteSoundOK;
 			PlayerPrefs.SetInt("volume", 1);
 		}
+			PlayerPrefs.Save();
 	}
 	
 }
