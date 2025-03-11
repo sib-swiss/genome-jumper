@@ -1,0 +1,7 @@
+# Ignore temp builds files
+Library/
+Logs/
+Temp/
+obj/
+Build/
+Builds/
